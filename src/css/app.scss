@@ -1,0 +1,20 @@
+// app global css in SCSS form
+.q-date__calendar-weekdays > div {
+  opacity: 0.7;
+}
+
+.q-date__range:before,
+.q-date__range-from:before,
+.q-date__range-to:before {
+  opacity: 0.5;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.q-layout__section--marginal {
+  background-color: white;
+  border: none;
+}
