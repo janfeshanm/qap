@@ -1,8 +1,8 @@
 {
-  "name": "events-fe",
+  "name": "qap",
   "version": "0.0.1",
-  "description": "Events Management System",
-  "productName": "events_fe",
+  "description": "Alum Peyman Website",
+  "productName": "Alum Peyman",
   "author": "Jonathan Soufi <jsoufi.au@gmail.com>",
   "type": "module",
   "private": true,
