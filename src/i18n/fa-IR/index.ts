@@ -4,4 +4,5 @@
 export default {
   failed: 'سلام',
   success: 'Action was successful',
+  products: 'محصولات',
 };
