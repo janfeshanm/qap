@@ -6,7 +6,7 @@
     </div>
   </div>
   <div class="row">
-    <product-item v-for="pr in list" :key="pr.id" :product="pr" />
+    <product-item v-for="pr in list" :key="pr.image + pr.id" :product="pr" />
   </div>
 </template>
 <script lang="ts" setup>
@@ -32,13 +32,26 @@ interface Props {
 }
 
 const props = defineProps<Props>();
-const list = ref(producs.get(props.category));
+let origList: ProductInfo[] = [];
+const list = ref(<ProductInfo[]>[]);
+if (props.category == 'all') {
+  const temList = producs
+    .get('container')
+    ?.concat(
+      producs.get('foils') as ProductInfo[],
+      producs.get('lids') as ProductInfo[],
+      producs.get('pizza') as ProductInfo[],
+      producs.get('tablecover') as ProductInfo[],
+    );
+  origList = temList as ProductInfo[];
+} else origList = producs.get(props.category) as ProductInfo[];
+
+if (props.category != 'all') list.value = origList;
 
 watch(text, (newValue) => {
   list.value = [];
-  const orig = producs.get(props.category);
-  if (orig) {
-    list.value = orig.filter((prd) => JSON.stringify(prd).toLowerCase().includes(newValue));
+  if (newValue != '') {
+    list.value = origList.filter((prd) => JSON.stringify(prd).toLowerCase().includes(newValue));
   }
 });
 </script>

@@ -79,10 +79,7 @@
     <section class="products-section">
       <h1 class="section-title">OUR PRODUCTS</h1>
 
-      <div class="search-box">
-        <input type="text" placeholder="Search..." />
-        <button><img src="assets/search.png" alt="Search" /></button>
-      </div>
+      <search-product category="all" />
 
       <div class="product-category">
         <div class="category-header">
@@ -301,6 +298,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import NavComp from 'src/components/NavComp.vue';
+import SearchProduct from 'src/components/SearchProduct.vue';
 const slide = ref(1);
 const autoplay = ref(true);
 </script>
