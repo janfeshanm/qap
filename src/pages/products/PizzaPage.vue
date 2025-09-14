@@ -12,42 +12,7 @@
       <img src="assets/pizza.png" style="width: 100%" />
     </div>
 
-    <section class="pizza">
-      <div class="search-box">
-        <input type="text" placeholder="Search..." />
-        <button><img src="assets/search.png" alt="Search" /></button>
-      </div>
-
-      <div class="pizza-grid">
-        <div class="pizza-card">
-          <img src="assets/p2.png" alt="Product" />
-          <div class="pizza-info">
-            <p>Code: pizza box 1</p>
-            <p>Size: 250 × 250 mm</p>
-            <p>depth: 40 mm</p>
-          </div>
-          <a href="pp.html?id=1" class="pizzabtn">Explore More</a>
-        </div>
-        <div class="pizza-card">
-          <img src="assets/p1.png" alt="Product" />
-          <div class="pizza-info">
-            <p>Code: pizza box 2</p>
-            <p>Size: 300 × 300 mm</p>
-            <p>depth: 40 mm</p>
-          </div>
-          <a href="pp.html?id=2" class="pizzabtn">Explore More</a>
-        </div>
-        <div class="pizza-card">
-          <img src="assets/p3.png" alt="Product" />
-          <div class="pizza-info">
-            <p>Code: pizza box 3</p>
-            <p>Size: 500 × 160 mm</p>
-            <p>depth: 40 mm</p>
-          </div>
-          <a href="pp.html?id=3" class="pizzabtn">Explore More</a>
-        </div>
-      </div>
-    </section>
+    <section class="pizza"><search-product category="pizza" /></section>
 
     <section class="catalog-section">
       <div class="catalog-image">
@@ -69,6 +34,7 @@
 
 <script setup lang="ts">
 import NavComp from 'src/components/NavComp.vue';
+import SearchProduct from 'src/components/SearchProduct.vue';
 </script>
 
 <style lang="scss">

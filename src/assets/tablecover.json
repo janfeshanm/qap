@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "name": "tablecover1",
+    "code": "tc1",
+    "size1": "",
+    "Width": "1 meter",
+    "Weight": "1 kilogeram",
+    "description_short": "Small box suitable for mini pizzas",
+    "description_long": "This small pizza box has 20-micron thickness and dimensions of 600 × 1000 mm. Ideal for various kitchen and packaging uses.",
+    "image": "assets/tc1.png"
+  },
+  {
+    "id": 2,
+    "name": "tablecover2",
+    "code": "tc2",
+    "size1": "",
+    "Width": "1 meter",
+    "Weight": "500 geram",
+    "description_short": "Medium box suitable for single-person pizzas",
+    "description_long": "This medium pizza box has 25-micron thickness and dimensions of 800 × 1200 mm. Suitable for various kitchen and packaging uses.",
+    "image": "assets/tc2.png"
+  }
+]

@@ -22,32 +22,7 @@
     </header>
 
     <section class="foil">
-      <div class="search-box">
-        <input type="text" placeholder="Search..." />
-        <button><img src="assets/search.png" alt="Search" /></button>
-      </div>
-
-      <div class="foil-grid">
-        <div class="foil-card">
-          <img src="assets/tc1.png" alt="Product" />
-          <div class="foil-info">
-            <p>Code: table cover 1 kilogeram</p>
-            <p>Width: 1 meter</p>
-            <p>Weight: 1 kilogeram</p>
-          </div>
-          <a href="cp.html?id=1" class="foilbtn">Explore More</a>
-        </div>
-
-        <div class="foil-card">
-          <img src="assets/tc2.png" alt="Product" />
-          <div class="foil-info">
-            <p>Code: table cover 0/5 kilogeram</p>
-            <p>Width: 1 meter</p>
-            <p>Weight: 500 geram</p>
-          </div>
-          <a href="cp.html?id=2" class="foilbtn">Explore More</a>
-        </div>
-      </div>
+      <search-product category="tablecover" />
     </section>
 
     <section class="catalog-section">
@@ -70,6 +45,7 @@
 
 <script setup lang="ts">
 import NavComp from 'src/components/NavComp.vue';
+import SearchProduct from 'src/components/SearchProduct.vue';
 import { ref } from 'vue';
 const slide = ref(1);
 </script>

@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "name": "Small Pizza Box",
+    "code": "pizza box 1",
+    "size1": " 250 × 250 mm",
+    "size2": "-",
+    "depth": "40 mm",
+    "description_short": "Small box suitable for mini pizzas",
+    "description_long": "This small pizza box has 20-micron thickness and dimensions of 600 × 1000 mm. Ideal for various kitchen and packaging uses.",
+    "image": "assets/p2.png"
+  },
+  {
+    "id": 2,
+    "name": "Medium Pizza Box",
+    "code": "pizza box 2",
+    "size1": " 300 × 300 mm",
+    "size2": "-",
+    "depth": "40 mm",
+    "description_short": "Medium box suitable for single-person pizzas",
+    "description_long": "This medium pizza box has 25-micron thickness and dimensions of 800 × 1200 mm. Suitable for various kitchen and packaging uses.",
+    "image": "assets/p1.png"
+  },
+  {
+    "id": 3,
+    "name": "Large Pizza Box",
+    "code": "pizza box 3",
+    "size1": " 500 × 160 mm",
+    "size2": "-",
+    "depth": "40 mm",
+    "description_short": "Large box suitable for family pizzas",
+    "description_long": "This large pizza box has 30-micron thickness and dimensions of 1000 × 1200 mm. Suitable for various kitchen and packaging uses.",
+    "image": "assets/p3.png"
+  }
+]

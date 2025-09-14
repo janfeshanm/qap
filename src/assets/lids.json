@@ -1,0 +1,195 @@
+
+[
+  {
+    "id": 1,
+    "name": "Product 1",
+    "code": "40",
+    "size1": "115 × 142 mm",
+    
+    "description_short": "Product with code 40",
+    "description_long": "This product comes with code 40. Suitable for various uses in packaging and industry.",
+    "image": "assets/40l.png"
+  },
+  {
+    "id": 2,
+    "name": "Product 2",
+    "code": "50",
+    "size1": "119 × 146 mm",
+   
+    
+    "description_short": "Product with code 50",
+    "description_long": "This product comes with code 50. Suitable for various uses in packaging and industry.",
+    "image": "assets/50l.png"
+  },
+  {
+    "id": 3,
+    "name": "Product 3",
+    "code": "30",
+    "size1": "106 × 196 mm",
+  
+    
+    "description_short": "Product with code 30",
+    "description_long": "This product comes with code 30. Suitable for various uses in packaging and industry.",
+    "image": "assets/30l.png"
+  },
+  {
+    "id": 4,
+    "name": "Product 4",
+    "code": "301",
+    "size1": "106 × 196 mm",
+
+    "description_short": "Product with code 301",
+    "description_long": "This product comes with code 301. Suitable for various uses in packaging and industry.",
+    "image": "assets/301l.png"
+  },
+  {
+    "id": 5,
+    "name": "Product 5",
+    "code": "111",
+       "size1": "134 × 183 mm",
+
+    "description_short": "Product with code 111",
+    "description_long": "This product comes with code 111. Suitable for various uses in packaging and industry.",
+    "image": "assets/111l.png"
+  },
+  {
+    "id": 6,
+    "name": "Product 6",
+    "code": "711",
+       "size1": "140 × 203 mm",
+
+    "description_short": "Product with code 711",
+    "description_long": "This product comes with code 711. Suitable for various uses in packaging and industry.",
+    "image": "assets/711l.png"
+  },
+  {
+    "id": 7,
+    "name": "Product 7",
+    "code": "105t",
+       "size1": "144 × 208 mm",
+
+    "description_short": "Product with code 105t",
+    "description_long": "This product comes with code 105t. Suitable for various uses in packaging and industry.",
+    "image": "assets/105tl.png"
+  },
+  {
+    "id": 8,
+    "name": "Product 8",
+    "code": "105s",
+       "size1": "144 × 208 mm",
+
+    "description_short": "Product with code 105s",
+    "description_long": "This product comes with code 105s. Suitable for various uses in packaging and industry.",
+    "image": "assets/105sl.png"
+  },
+  {
+    "id": 9,
+    "name": "Product 9",
+    "code": "109",
+      "size1": "212 × 147 mm",
+
+    "description_short": "Product with code 109",
+    "description_long": "This product comes with code 109. Suitable for various uses in packaging and industry.",
+    "image": "assets/109l.png"
+  },
+  {
+    "id": 10,
+    "name": "Product 10",
+    "code": "106",
+     "size1": "149 × 210 mm",
+
+    "description_short": "Product with code 106",
+    "description_long": "This product comes with code 106. Suitable for various uses in packaging and industry.",
+    "image": "assets/106l.png"
+  },
+  {
+    "id": 11,
+    "name": "Product 11",
+    "code": "729",
+    "size1": "220 × 169 mm",
+
+    "description_short": "Product with code 729",
+    "description_long": "This product comes with code 729. Suitable for various uses in packaging and industry.",
+    "image": "assets/729l.png"
+  },
+  {
+    "id": 12,
+    "name": "Product 12",
+    "code": "107",
+      "size1": "216 × 158 mm",
+
+    "description_short": "Product with code 107",
+    "description_long": "This product comes with code 107. Suitable for various uses in packaging and industry.",
+    "image": "assets/107l.png"
+  },
+  {
+    "id": 13,
+    "name": "Product 13",
+    "code": "114",
+      "size1": "157 × 222 mm",
+
+    "description_short": "Product with code 114",
+    "description_long": "This product comes with code 114. Suitable for various uses in packaging and industry.",
+    "image": "assets/114l.png"
+  },
+  {
+    "id": 14,
+    "name": "Product 14",
+    "code": "222",
+     "size1": "220 × 174 mm",
+
+    "description_short": "Product with code 222",
+    "description_long": "This product comes with code 222. Suitable for various uses in packaging and industry.",
+    "image": "assets/222l.png"
+  },
+  {
+    "id": 15,
+    "name": "Product 15",
+    "code": "320",
+    "size1": "166 × 219 mm",
+
+    "description_short": "Product with code 320",
+    "description_long": "This product comes with code 320. Suitable for various uses in packaging and industry.",
+    "image": "assets/320l.png"
+  },
+  {
+    "id": 16,
+    "name": "Product 16",
+    "code": "230",
+    "size1": "251 × 146 mm",
+
+    "description_short": "Product with code 230",
+    "description_long": "This product comes with code 230. Suitable for various uses in packaging and industry.",
+    "image": "assets/230l.png"
+  },
+  {
+    "id": 17,
+    "name": "Product 17",
+    "code": "240",
+    "size1": "155 × 304 mm",
+
+    "description_short": "Product with code 240",
+    "description_long": "This product comes with code 240. Suitable for various uses in packaging and industry.",
+    "image": "assets/240l.png"
+  },
+  {
+    "id": 18,
+    "name": "Product 18",
+    "code": "250",
+     "size1": "318 × 167 mm",
+
+    "description_short": "Product with code 250",
+    "description_long": "This product comes with code 250. Suitable for various uses in packaging and industry.",
+    "image": "assets/250l.png"
+  },
+  {
+    "id": 19,
+    "name": "Product 19",
+    "code": "118",
+    "size1": "318 × 167 mm",
+
+    "description_short": "Product with code 118",
+    "description_long": "This product comes with code 118. Suitable for various uses in packaging and industry.",
+    "image": "assets/118l.png"
+  }
+]
