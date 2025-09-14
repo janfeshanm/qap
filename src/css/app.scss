@@ -1,4 +1,18 @@
 // app global css in SCSS form
+
+@font-face {
+  font-family: yekan;
+  src: url('assets/fonts/yekan/Yekan.eot');
+  src:
+    url('assets/fonts/yekan/Yekan.woff') format('woff'),
+    url('assets/fonts/yekan/Yekan.ttf') format('ttf');
+}
+//----------------------------------------------------------
+body {
+  font-family: yekan, 'Roboto', Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+}
+
 .q-date__calendar-weekdays > div {
   opacity: 0.7;
 }
@@ -7,11 +21,6 @@
 .q-date__range-from:before,
 .q-date__range-to:before {
   opacity: 0.5;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
 }
 
 .q-layout__section--marginal {

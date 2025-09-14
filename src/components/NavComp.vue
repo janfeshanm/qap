@@ -8,7 +8,7 @@
 
     <ul>
       <li class="dropdown">
-        <a href="/" class="dropbtn">Products</a>
+        <a href="/" class="dropbtn">{{ $t('products') }}</a>
         <ul class="dropdown-content">
           <li><a href="#/products/container">Aluminium Containers</a></li>
           <li><a href="#/products/foil">Aluminium Foil</a></li>
@@ -23,8 +23,31 @@
       <li><a href="#/blog">Blog</a></li>
       <li><a href="#/contact">Contact Us</a></li>
     </ul>
+    <q-select
+      class="q-pl-lg"
+      v-model="locale"
+      :options="localeOptions"
+      label="Language"
+      dark
+      dense
+      emit-value
+      map-options
+      options-dense
+      style="min-width: 150px"
+    />
   </nav>
 </template>
+
+<script setup lang="ts">
+import { useI18n } from 'vue-i18n';
+
+const { locale } = useI18n({ useScope: 'global' });
+
+const localeOptions = [
+  { value: 'en-US', label: 'English' },
+  { value: 'fa-IR', label: 'فارسی' },
+];
+</script>
 
 <style lang="scss">
 $fontColor: white;

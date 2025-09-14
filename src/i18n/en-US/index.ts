@@ -4,4 +4,5 @@
 export default {
   failed: 'Action failed 2',
   success: 'Action was successful',
+  products: 'Products',
 };
