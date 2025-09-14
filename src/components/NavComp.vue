@@ -7,21 +7,23 @@
     <div class="menu-toggle">☰</div>
 
     <ul>
-      <li class="dropdown">
-        <a href="/" class="dropbtn">{{ $t('products') }}</a>
-        <ul class="dropdown-content">
-          <li><a href="#/products/container">Aluminium Containers</a></li>
-          <li><a href="#/products/foil">Aluminium Foil</a></li>
-          <li><a href="#/products/lids">Aluminium Container Lids</a></li>
-          <li><a href="#/products/pizza">Cardboard Pizza Box</a></li>
-          <li><a href="#/products/tablecover">Plastic Table Cover Rolls</a></li>
-          <li><a href="#/products/papercup">Disposable Paper Cup</a></li>
-        </ul>
-      </li>
-      <li><a href="#/catalog">Catalog</a></li>
-      <li><a href="#/about">About Us</a></li>
-      <li><a href="#/blog">Blog</a></li>
-      <li><a href="#/contact">Contact Us</a></li>
+     <li class="dropdown">
+  <a href="/" class="dropbtn">{{ $t('products') }}</a>
+  <ul class="dropdown-content">
+    <li><a href="#/products/container">{{ $t('aluminiumContainers') }}</a></li>
+    <li><a href="#/products/foil">{{ $t('aluminiumFoil') }}</a></li>
+    <li><a href="#/products/lids">{{ $t('aluminiumLids') }}</a></li>
+    <li><a href="#/products/pizza">{{ $t('pizzaBox') }}</a></li>
+    <li><a href="#/products/tablecover">{{ $t('plasticTableCover') }}</a></li>
+    <li><a href="#/products/papercup">{{ $t('paperCup') }}</a></li>
+  </ul>
+</li>
+
+  <li><a href="#/catalog">{{ $t('catalog') }}</a></li>
+<li><a href="#/about">{{ $t('about') }}</a></li>
+<li><a href="#/blog">{{ $t('blog') }}</a></li>
+<li><a href="#/contact">{{ $t('contact') }}</a></li>
+
     </ul>
     <q-select
       class="q-pl-lg"

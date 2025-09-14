@@ -1,15 +1,19 @@
 // app global css in SCSS form
 
-@font-face {
-  font-family: yekan;
-  src: url('assets/fonts/yekan/Yekan.eot');
-  src:
-    url('assets/fonts/yekan/Yekan.woff') format('woff'),
-    url('assets/fonts/yekan/Yekan.ttf') format('ttf');
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+html[lang="fa"] body {
+  font-family: 'Vazirmatn', Tahoma, sans-serif;
+}
+
+html[lang="en"] body {
+  font-family: 'Roboto', Arial, sans-serif;
 }
 //----------------------------------------------------------
 body {
-  font-family: yekan, 'Roboto', Geneva, Tahoma, sans-serif;
+  font-family: Vazirmatn, 'Roboto', Geneva, Tahoma, sans-serif;
   font-size: 16px;
 }
 
