@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "name": "Product 1",
+    "code": "20/60",
+    "size1": "600 × 1000 mm",
+    "size2": "—",
+    "thickness": "20 microns",
+    "description_short": "Product with code 20/60",
+    "description_long": "This product comes with code 20/60. Suitable for various uses in packaging and industry.",
+    "image": "assets/6020.png"
+  },
+  {
+    "id": 2,
+    "name": "Product 2",
+    "code": "80/45",
+    "size1": "800 × 1000 mm",
+    "size2": "—",
+    "thickness": "45 microns",
+    "description_short": "Product with code 80/45",
+    "description_long": "This product comes with code 80/45. Suitable for various uses in packaging and industry.",
+    "image": "assets/8045.png"
+  },
+  {
+    "id": 3,
+    "name": "Product 3",
+    "code": "14/30",
+    "size1": "300 × 76000 mm",
+    "size2": "—",
+    "thickness": "14 microns",
+    "description_short": "Product with code 14/30",
+    "description_long": "This product comes with code 14/30. Suitable for various uses in packaging and industry.",
+    "image": "assets/1430.png"
+  },
+  {
+    "id": 4,
+    "name": "Product 4",
+    "code": "60/50",
+    "size1": "6000 × 1000 mm",
+    "size2": "—",
+    "thickness": "50 microns",
+    "description_short": "Product with code 60/50",
+    "description_long": "This product comes with code 60/50. Suitable for various uses in packaging and industry.",
+    "image": "assets/6050.png"
+  },
+  {
+    "id": 5,
+    "name": "Product 5",
+    "code": "80/70",
+    "size1": "800 × 1000 mm",
+    "size2": "—",
+    "thickness": "70 microns",
+    "description_short": "Product with code 80/70",
+    "description_long": "This product comes with code 80/70. Suitable for various uses in packaging and industry.",
+    "image": "assets/8070.png"
+  },
+  {
+    "id": 6,
+    "name": "Product 6",
+    "code": "30/14",
+    "size1": "300 × 10000 mm",
+    "size2": "—",
+    "thickness": "14 microns",
+    "description_short": "Product with code 30/14",
+    "description_long": "This product comes with code 30/14. Suitable for various uses in packaging and industry.",
+    "image": "assets/3014.png"
+  },
+  {
+    "id": 7,
+    "name": "Product 7",
+    "code": "14/20",
+    "size1": "200 × 130000 mm",
+    "size2": "—",
+    "thickness": "14 microns",
+    "description_short": "Product with code 14/20",
+    "description_long": "This product comes with code 14/20. Suitable for various uses in packaging and industry.",
+    "image": "assets/1420.png"
+  }
+]

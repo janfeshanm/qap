@@ -24,7 +24,6 @@
         </template>
       </q-carousel>
     </header>
-
     <section class="hero">
       <h4>High-Quality, Food-Grade Aluminum Products for Cooking, Packaging, and Storage</h4>
       <h1>Premium Aluminum Foil & Disposable Containers</h1>

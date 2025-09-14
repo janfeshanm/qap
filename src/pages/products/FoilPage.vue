@@ -11,80 +11,7 @@
     <img src="assets/foill.png" style="width: 100%; margin-bottom: -3px" />
 
     <section class="foil">
-      <div class="search-box">
-        <input type="text" placeholder="Search..." />
-        <button><img src="assets/search.png" alt="Search" /></button>
-      </div>
-      <div class="foil-grid">
-        <div class="foil-card">
-          <img src="assets/6020.png" alt="Product" />
-          <div class="foil-info">
-            <p>Code: 20/60</p>
-            <p>Size: 600 × 1000 mm</p>
-            <p>Thickness: 20 microns</p>
-          </div>
-          <a href="fp.html?id=1" class="foilbtn">Explore More</a>
-        </div>
-        <div class="foil-card">
-          <img src="assets/8045.png" alt="Product" />
-          <div class="foil-info">
-            <p>Code: 80/45</p>
-            <p>Size: 800 × 1000 mm</p>
-            <p>Thickness: 45 microns</p>
-          </div>
-          <a href="fp.html?id=2" class="foilbtn">Explore More</a>
-        </div>
-
-        <div class="foil-card">
-          <img src="assets/1430.png" alt="Product" />
-          <div class="foil-info">
-            <p>Code: 14/30</p>
-            <p>Size: 300 × 76000 mm</p>
-            <p>Thickness: 14 microns</p>
-          </div>
-          <a href="fp.html?id=3" class="foilbtn">Explore More</a>
-        </div>
-
-        <div class="foil-card">
-          <img src="assets/6050.png" alt="Product" />
-          <div class="foil-info">
-            <p>Code: 60/50</p>
-            <p>Size: 6000 × 1000 mm</p>
-            <p>Thickness: 50 microns</p>
-          </div>
-          <a href="fp.html?id=4" class="foilbtn">Explore More</a>
-        </div>
-
-        <div class="foil-card">
-          <img src="assets/8070.png" alt="Product" />
-          <div class="foil-info">
-            <p>Code: 80/70</p>
-            <p>Size: 800 × 1000 mm</p>
-            <p>Thickness: 70 microns</p>
-          </div>
-          <a href="fp.html?id=5" class="foilbtn">Explore More</a>
-        </div>
-
-        <div class="foil-card">
-          <img src="assets/3014.png" alt="Product" />
-          <div class="foil-info">
-            <p>Code: 30/14</p>
-            <p>Size: 300 × 10000 mm</p>
-            <p>Thickness: 14 microns</p>
-          </div>
-          <a href="fp.html?id=6" class="foilbtn">Explore More</a>
-        </div>
-
-        <div class="foil-card">
-          <img src="assets/1420.png" alt="Product" />
-          <div class="foil-info">
-            <p>Code: 14/20</p>
-            <p>Size: 200 × 130000 mm</p>
-            <p>Thickness: 14 microns</p>
-          </div>
-          <a href="fp.html?id=7" class="foilbtn">Explore More</a>
-        </div>
-      </div>
+      <search-product category="foils" />
     </section>
     <section class="catalog-section">
       <div class="catalog-image">
@@ -106,6 +33,7 @@
 
 <script setup lang="ts">
 import NavComp from 'src/components/NavComp.vue';
+import SearchProduct from 'src/components/SearchProduct.vue';
 </script>
 
 <style lang="scss">
