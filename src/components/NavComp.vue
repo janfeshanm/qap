@@ -1,10 +1,9 @@
 <template>
-  <nav class="navbar">
+<nav :class="{ 'active': isMenuOpen }" class="navbar">
     <a href="/" class="logo">
       <img src="assets/logo1.png" alt="Logo" style="height: 30px" />
     </a>
 
-    <div class="menu-toggle">☰</div>
 
     <ul>
      <li class="dropdown">
@@ -25,34 +24,42 @@
 <li><a href="#/contact">{{ $t('contact') }}</a></li>
 
     </ul>
-    <q-select
-      class="q-pl-lg"
-      v-model="locale"
-      :options="localeOptions"
-      label="Language"
-      dark
-      dense
-      emit-value
-      map-options
-      options-dense
-      style="min-width: 150px"
-    />
+  <div class="nav-actions">
+        <button class="lang-btn" @click="toggleLanguage">
+    🌏</button>
+<div class="menu-toggle" @click="toggleMenu">☰</div>
+  </div>
+
   </nav>
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue';
 import { useI18n } from 'vue-i18n';
-
 const { locale } = useI18n({ useScope: 'global' });
 
-const localeOptions = [
-  { value: 'en-US', label: 'English' },
-  { value: 'fa-IR', label: 'فارسی' },
-];
+// تابع تغییر زبان
+const toggleLanguage = () => {
+  locale.value = locale.value === 'en-US' ? 'fa-IR' : 'en-US';
+};
+
+const isMenuOpen = ref(false);
+
+const toggleMenu = () => {
+  isMenuOpen.value = !isMenuOpen.value;
+};
+
 </script>
 
 <style lang="scss">
 $fontColor: white;
+.lang-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
 .navbar {
   display: flex;
   justify-content: center;
@@ -69,6 +76,7 @@ $fontColor: white;
   padding: 0;
   display: flex;
   gap: 30px;
+  z-index: 9999;
 }
 
 .navbar ul li a {
@@ -78,13 +86,13 @@ $fontColor: white;
 }
 
 .navbar ul li a:hover {
-  color: #11304c;
+  color: #194d7aff;
   border-radius: 5px;
   padding: 4px 10px;
 }
 
 .dropbtn {
-  color: rgb(175, 175, 175);
+  color: #11304c;
   padding: 16px;
   font-size: 16px;
   border: none;
@@ -97,7 +105,9 @@ $fontColor: white;
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #dadada;
+  background-color: #11304c71;
+    border-radius: 5px;
+
   min-width: 220px;
 }
 
@@ -120,6 +130,11 @@ $fontColor: white;
 .dropdown:hover .dropdown-content {
   display: block;
 }
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
 .menu-toggle {
   display: none;
@@ -127,7 +142,11 @@ $fontColor: white;
   color: white;
   cursor: pointer;
 }
-
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+}
 @media (max-width: 768px) {
   .navbar {
     justify-content: space-between;
@@ -136,7 +155,7 @@ $fontColor: white;
   .navbar > ul {
     display: none;
     flex-direction: column;
-    background: #ffffff;
+    background: #11304c3d;
     position: absolute;
     top: 60px;
     width: 200px;
@@ -147,13 +166,10 @@ $fontColor: white;
   }
 
   .navbar > ul li a {
-    color: #11304c;
+    color: #ffffffff;
     font-size: 14px;
   }
 
-  .menu-toggle {
-    display: block;
-  }
 
   .navbar.active > ul {
     display: flex;
@@ -161,7 +177,8 @@ $fontColor: white;
 
   .dropdown-content {
     position: static;
-    background: #dadada;
+    color: #ffffffff;
+    background: #11304c71;
   }
 }
 </style>
