@@ -2,7 +2,16 @@
 // so you can safely delete all default props below
 
 export default {
-  failed: 'Action failed 2',
-  success: 'Action was successful',
   products: 'Products',
-};
+  aluminiumContainers: 'Aluminium Containers',
+  aluminiumFoil: 'Aluminium Foil',
+  aluminiumLids: 'Aluminium Container Lids',
+  pizzaBox: 'Cardboard Pizza Box',
+  plasticTableCover: 'Plastic Table Cover Rolls',
+  paperCup: 'Disposable Paper Cup',
+  catalog: 'Catalog',
+  about: 'About Us',
+  blog: 'Blog',
+  contact: 'Contact Us',
+}
+
