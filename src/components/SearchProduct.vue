@@ -5,7 +5,7 @@
       <button><img src="assets/search.png" alt="Search" /></button>
     </div>
   </div>
-  <div class="row">
+  <div class="row row cards-wrapper">
     <product-item v-for="pr in list" :key="pr.image + pr.id" :product="pr" />
   </div>
 </template>
@@ -57,8 +57,48 @@ watch(text, (newValue) => {
 </script>
 
 <style scoped>
+
 .custom-search-input {
   height: 60px;
   font-size: 16px;
+  
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;             
+  justify-content: flex-start;
+  max-width: 1200px;           
+ gap: 20px;
+   margin: 0 auto;              
+}
+
+.container-card {
+  flex: 0 0 calc((100% - 40px) / 3);
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  .container-card {
+    flex: 0 0 calc((100% - 20px) / 2);
+  }
+}
+
+@media (max-width: 767px) {
+  .container-card {
+    flex: 0 0 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .cards-wrapper {
+    padding: 0 40px; 
+  }
+}
+
+@media (min-width: 1200px) {
+  .cards-wrapper {
+    padding: 0 40px; 
+  }
 }
 </style>
