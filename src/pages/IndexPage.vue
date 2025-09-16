@@ -86,8 +86,8 @@
           <h2>Aluminium Containers</h2>
           <a href="container.html">view all</a>
         </div>
-        <div class="product-images">
-          <img src="assets/1.png" alt="Aluminium Containers 1" />
+        <div class="product-images" style="grid-template-columns: auto auto auto;">
+          <img src="assets/1.png" alt="Aluminium Containers 1"/>
           <img src="assets/2.png" alt="Aluminium Containers 2" />
           <img src="assets/3.png" alt="Aluminium Containers 3" />
         </div>
@@ -98,20 +98,20 @@
           <h2>Aluminium Foil</h2>
           <a href="foil.html">view all</a>
         </div>
-        <div class="product-images">
+        <div class="product-images" style="grid-template-columns: auto auto auto auto;">
           <img src="assets/4.png" alt="Aluminium Foil 1" />
           <img src="assets/5.png" alt="Aluminium Foil 2" />
-          <img src="assets/6.png" alt="Aluminium Foil 3" />
+          <img src="assets/6.png" alt="Aluminium Foil 3"/>
           <img src="assets/7.png" alt="Aluminium Foil 4" />
         </div>
       </div>
 
       <div class="product-category">
         <div class="category-header">
-          <h2>Aluminium Container Lids</h2>
+          <h2>Container Lids</h2>
           <a href="lids.html">view all</a>
         </div>
-        <div class="product-images">
+        <div class="product-images"  style="grid-template-columns: auto auto auto;">
           <img src="assets/8.png" alt="Lids 1" />
           <img src="assets/9.png" alt="Lids 2" />
           <img src="assets/10.png" alt="Lids 3" />
@@ -123,7 +123,7 @@
           <h2>Cardboard Pizza Box</h2>
           <a href="pizza.html">view all</a>
         </div>
-        <div class="product-images">
+        <div class="product-images" style="grid-template-columns: auto auto auto;">
           <img src="assets/11.png" alt="Pizza Box 1" />
           <img src="assets/12.png" alt="Pizza Box 2" />
           <img src="assets/13.png" alt="Pizza Box 3" />
@@ -132,10 +132,10 @@
 
       <div class="product-category">
         <div class="category-header">
-          <h2>Plastic Table Cover Rolls</h2>
+          <h2>Plastic Table Cover</h2>
           <a href="tablecover.html">view all</a>
         </div>
-        <div class="product-images">
+        <div class="product-images" style="grid-template-columns: auto auto auto;">
           <img src="assets/14.png" alt="Cover 1" />
           <img src="assets/15.png" alt="Cover 2" />
           <img src="assets/16.png" alt="Cover 3" />
@@ -146,7 +146,7 @@
         <div class="category-header">
           <h2>Disposable Paper Cup</h2>
         </div>
-        <div class="product-images">
+        <div class="product-images" style="grid-template-columns: auto auto;">
           <img src="assets/17.png" alt="Cup 1" />
           <img src="assets/18.png" alt="Cup Coming Soon" />
         </div>
@@ -195,7 +195,7 @@
     <section class="service-section">
       <div class="service-content">
         <div class="service-text">
-          <h1>SERVICE</h1>
+          <h2>SERVICE</h2>
           <h3>CUSTOM PRINTING ON DISPOSABLE TABLEWARE</h3>
           <p>
             Elevate your brand with custom-printed disposable tableware. Whether you're running a
@@ -321,16 +321,13 @@ h3 {
   height: auto;
 }
 
-.mySlides2 {
-  display: none;
-}
-
 .slider-overlay {
   color: #fff;
   z-index: 10;
   padding: 20px 60px;
   border-radius: 10px;
   background-color: #11304c41;
+  
 }
 
 .slider-overlay h1 {
@@ -369,56 +366,10 @@ h3 {
   color: #fff;
 }
 
-@media (max-width: 1024px) {
+
+
+@media (max-width: 1000px) {
   .slider-overlay {
-    top: 35%;
-    left: 10%;
-    padding: 16px 40px;
-    border-radius: 8px;
-  }
-
-  .slider-overlay h1 {
-    font-size: 36px;
-  }
-
-  .slider-overlay p {
-    font-size: 16px;
-    margin: 8px 0;
-  }
-
-  .slider-overlay .btn {
-    padding: 10px 20px;
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 768px) {
-  .slider-overlay {
-    top: 30%;
-    left: 5%;
-    padding: 14px 25px;
-    border-radius: 6px;
-  }
-
-  .slider-overlay h1 {
-    font-size: 24px;
-  }
-
-  .slider-overlay p {
-    font-size: 14px;
-    margin: 6px 0;
-  }
-
-  .slider-overlay .btn {
-    padding: 6px 14px;
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 480px) {
-  .slider-overlay {
-    top: 35%;
-    left: 5%;
     padding: 7px 15px;
     border-radius: 5px;
   }
@@ -428,8 +379,7 @@ h3 {
   }
 
   .slider-overlay p {
-    font-size: 10px;
-    margin: 5px 0;
+display: none;
   }
 
   .slider-overlay .btn {
@@ -500,6 +450,7 @@ h3 {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
 
 .product .text {
   flex: 1;
@@ -605,6 +556,8 @@ h3 {
   border-radius: 10px;
   margin: 10px auto 100px auto;
   max-width: 1000px;
+    min-width: 300px;
+
   justify-content: center;
 }
 
@@ -642,12 +595,12 @@ h3 {
 }
 
 .category-header h2 {
-  font-size: 14px;
+  font-size: 24px;
   font-weight: bold;
 }
 
 .category-header a {
-  font-size: 12px;
+  font-size: 18px;
   color: #11304c;
   text-decoration: none;
 }
