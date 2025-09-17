@@ -1,7 +1,6 @@
 <template>
-  <div
-    class="container-card col q-pb-xs-sm q-ma-sm-lg q-pa-md-xl col-xl-2 col-lg-2 col-md-3 col-sm-4 col-xs-12"
-  >
+ <div class="container-card col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 q-pa-md">
+
     <img :src="product.image" alt="Product" />
     <div class="container-info">
       <p>Code: {{ product.code }}</p>
@@ -52,6 +51,8 @@
     >
   </div>
 </template>
+
+
 
 <script setup lang="ts">
 export interface ProductInfo {

@@ -124,6 +124,7 @@ $fontColor: #1e3950;
   border-radius: 10px;
   margin: 10px auto 100px auto;
   max-width: 1000px;
+  min-width: 300px;
   justify-content: center;
 }
 

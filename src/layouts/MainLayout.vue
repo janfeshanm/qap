@@ -173,8 +173,9 @@ footer {
 }
 
 .footer-logo img {
-  width: 35px;
-  height: 35px;
+  width: 45px;
+  height: 45px;
+  margin-right:10px
 }
 
 .footer-logo h4 {
@@ -183,6 +184,7 @@ footer {
   font-weight: 600;
   color: #11304c;
   text-align: left;
+  line-height: 1.5rem
 }
 
 .footer-logo span {
@@ -192,6 +194,8 @@ footer {
   color: #11304c;
   letter-spacing: 3px;
   text-align: left;
+  line-height: 1rem
+
 }
 
 .footer-links {

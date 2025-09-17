@@ -10,7 +10,6 @@
           <q-carousel-control position="top" class="text-white rounded-borders">
             <nav-comp />
           </q-carousel-control>
-
           <q-carousel-control position="bottom" style="max-width: 60%"
             ><div class="slider-overlay">
               <h1><span>ALUM</span> PEYMAN</h1>
@@ -423,6 +422,31 @@ display: none;
   font-weight: 600;
 }
 
+@media (max-width: 600px) {
+  .hero {
+    margin-top: 60px; 
+    padding: 0 15px; 
+    text-align: center; 
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+    line-height: 1.3; 
+  }
+
+  .hero h4 {
+    font-size: 1rem; 
+    line-height: 1.8;
+  }
+
+  .hero p {
+    font-size: 0.9rem; 
+    line-height: 1.6;
+    margin-top: 10px;
+  }
+}
+
+
 .products {
   display: flex;
   flex-direction: column;
@@ -488,6 +512,9 @@ display: none;
   .hero {
     margin-top: 100px;
     padding: 0 10px;
+    margin-left: 10px;
+   margin-right: 10px;
+
   }
 
   .hero h1 {
@@ -516,7 +543,7 @@ display: none;
   .product .text {
     padding-top: 20px;
     text-align: left;
-    padding: 40px;
+    padding: auto;
   }
 
   .product h2 {
@@ -581,6 +608,17 @@ display: none;
   height: 16px;
 }
 
+@media (max-width: 600px) {
+  .search-box {
+    margin-bottom: 30px;
+    padding: 15px;   
+  }
+
+  .search-box input {
+    width: 100%;
+  }
+}
+
 .product-category {
   margin-bottom: 100px;
 }
@@ -619,6 +657,17 @@ display: none;
   object-fit: cover;
 }
 
+@media (max-width: 992px) {
+  .product-images img {
+    height: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-images img {
+    height: 150px;
+  }
+}
 .product-category:nth-child(3) .product-images,
 .product-category:nth-child(5) .product-images,
 .product-category:nth-child(6) .product-images,
@@ -734,6 +783,13 @@ display: none;
   background-color: rgb(217, 234, 248);
   color: #11304c;
 }
+
+@media (max-width: 768px) {
+  .service-section {
+    padding: 20px 15px;
+  }
+}
+
 
 .service-content {
   display: flex;
