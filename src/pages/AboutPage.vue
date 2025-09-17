@@ -15,11 +15,11 @@
           research to better respond to industry needs.
         </p>
         <div class="about-buttons">
-          <a href="#" class="btn primary">LEARN MORE</a>
-          <a href="#" class="btn secondary"> Watch Video <span class="play-icon">▶</span> </a>
+<router-link to="/contact" class="btn primary">Learn More</router-link>
+          <a href="https://www.aparat.com/v/l49is36" class="btn secondary"> Watch Video <span class="play-icon">▶</span> </a>
         </div>
       </div>
-
+      
       <div class="about-stats">
         <div class="stat-box">
           <div class="number">20</div>
