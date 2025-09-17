@@ -14,7 +14,7 @@
 
         <div class="contact-container">
           <div class="contact-card">
-            <h3>Get In Touch</h3>
+            <h3 style="padding-top: 0px; padding-bottom: 0px">Get In Touch</h3>
 
             <strong>Phone</strong>
             <p>098 413 366 0393<br />098 413 432 9665</p>
@@ -113,12 +113,12 @@
 .contact-card h3 {
   text-align: center;
   font-size: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 7px;
   color: #11304c;
 }
 
 .contact-card p {
-  margin: 8px 0;
+  margin: 5px 0;
   font-size: 14px;
   color: #333;
   line-height: 1.6;
@@ -175,7 +175,7 @@ footer {
 .footer-logo img {
   width: 45px;
   height: 45px;
-  margin-right:10px
+  margin-right: 10px;
 }
 
 .footer-logo h4 {
@@ -184,7 +184,7 @@ footer {
   font-weight: 600;
   color: #11304c;
   text-align: left;
-  line-height: 1.5rem
+  line-height: 1.5rem;
 }
 
 .footer-logo span {
@@ -194,8 +194,7 @@ footer {
   color: #11304c;
   letter-spacing: 3px;
   text-align: left;
-  line-height: 1rem
-
+  line-height: 1rem;
 }
 
 .footer-links {
