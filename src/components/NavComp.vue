@@ -1,35 +1,51 @@
 <template>
-<nav :class="{ 'active': isMenuOpen }" class="navbar">
+  <nav :class="{ active: isMenuOpen }" class="navbar">
     <a href="/" class="logo">
       <img src="assets/logo1.png" alt="Logo" style="height: 30px" />
     </a>
 
-
     <ul>
-     <li class="dropdown">
-  <a href="/" class="dropbtn">{{ $t('products') }}</a>
-  <ul class="dropdown-content">
-    <li><a href="#/products/container">{{ $t('aluminiumContainers') }}</a></li>
-    <li><a href="#/products/foil">{{ $t('aluminiumFoil') }}</a></li>
-    <li><a href="#/products/lids">{{ $t('aluminiumLids') }}</a></li>
-    <li><a href="#/products/pizza">{{ $t('pizzaBox') }}</a></li>
-    <li><a href="#/products/tablecover">{{ $t('plasticTableCover') }}</a></li>
-    <li><a href="#/products/papercup">{{ $t('paperCup') }}</a></li>
-  </ul>
-</li>
+      <li class="dropdown">
+        <a class="dropbtn">{{ $t('products') }}</a>
+        <ul class="dropdown-content">
+          <li>
+            <a href="#/products/container">{{ $t('aluminiumContainers') }}</a>
+          </li>
+          <li>
+            <a href="#/products/foil">{{ $t('aluminiumFoil') }}</a>
+          </li>
+          <li>
+            <a href="#/products/lids">{{ $t('aluminiumLids') }}</a>
+          </li>
+          <li>
+            <a href="#/products/pizza">{{ $t('pizzaBox') }}</a>
+          </li>
+          <li>
+            <a href="#/products/tablecover">{{ $t('plasticTableCover') }}</a>
+          </li>
+          <li>
+            <a href="#/products/papercup">{{ $t('paperCup') }}</a>
+          </li>
+        </ul>
+      </li>
 
-  <li><a href="#/catalog">{{ $t('catalog') }}</a></li>
-<li><a href="#/about">{{ $t('about') }}</a></li>
-<li><a href="#/blog">{{ $t('blog') }}</a></li>
-<li><a href="#/contact">{{ $t('contact') }}</a></li>
-
+      <li>
+        <a href="#/catalog">{{ $t('catalog') }}</a>
+      </li>
+      <li>
+        <a href="#/about">{{ $t('about') }}</a>
+      </li>
+      <li>
+        <a href="#/blog">{{ $t('blog') }}</a>
+      </li>
+      <li>
+        <a href="#/contact">{{ $t('contact') }}</a>
+      </li>
     </ul>
-  <div class="nav-actions">
-        <button class="lang-btn" @click="toggleLanguage">
-    🌏</button>
-<div class="menu-toggle" @click="toggleMenu">☰</div>
-  </div>
-
+    <div class="nav-actions">
+      <button class="lang-btn" @click="toggleLanguage">🌏</button>
+      <div class="menu-toggle" @click="toggleMenu">☰</div>
+    </div>
   </nav>
 </template>
 
@@ -48,7 +64,6 @@ const isMenuOpen = ref(false);
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
 };
-
 </script>
 
 <style lang="scss">
@@ -106,7 +121,7 @@ $fontColor: white;
   display: none;
   position: absolute;
   background-color: #11304c71;
-    border-radius: 5px;
+  border-radius: 5px;
 
   min-width: 220px;
 }
@@ -155,10 +170,10 @@ $fontColor: white;
   .navbar > ul {
     display: none;
     flex-direction: column;
-    background: #11304c3d;
-    position: absolute;
+    background: #11304cbb;
+    position: fixed;
     top: 60px;
-    width: 200px;
+    width: 140px;
     padding: 20px 0;
     gap: 15px;
     text-align: center;
@@ -170,15 +185,15 @@ $fontColor: white;
     font-size: 14px;
   }
 
-
   .navbar.active > ul {
     display: flex;
   }
 
   .dropdown-content {
-    position: static;
+    position: fixed;
     color: #ffffffff;
-    background: #11304c71;
+    background: #11304cbb;
+    right: 140px;
   }
 }
 </style>
