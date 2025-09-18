@@ -35,11 +35,11 @@
   {
     "id": 4,
     "name": "Product 4",
-    "code": "301",
+    "code": "30.1",
    "Topout": "41 × 113 × 203 mm",
     "Topin": "31 × 98 × 178 mm",
     "Capacity": "500 ml",
-    "description_short": "Product with code 301",
+    "description_short": "Product with code 30.1",
     "description_long": "This product comes with code 301. Suitable for various uses in packaging and industry.",
     "image": "assets/301.png"
   },

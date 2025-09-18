@@ -36,7 +36,7 @@
           and various applications, you can download our digital catalog. It provides all the
           necessary information to help you choose the right product for your needs.
         </p>
-        <a href="#" class="catalog-btn">DOWNLOAD CATALOG</a>
+        <a href="public\assets\catalog-en.pdf" class="catalog-btn">DOWNLOAD CATALOG</a>
       </div>
     </section>
   </q-page>
