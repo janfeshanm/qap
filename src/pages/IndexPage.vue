@@ -10,12 +10,14 @@
           <q-carousel-control position="top" class="text-white rounded-borders">
             <nav-comp />
           </q-carousel-control>
-          <q-carousel-control position="bottom" style="max-width: 60%">
-          <div class="slider-overlay">
+          <q-carousel-control position="bottom" style="max-width: 60%"
+            ><div class="slider-overlay">
               <h1><span>ALUM</span> PEYMAN</h1>
-              <p>The First and Largest Aluminum Foil and Disposable <br />
-                Container Manufacturer in Northwest Iran</p>
-<router-link to="/products/container" class="btn">PRODUCTS</router-link>
+              <p>
+                The First and Largest Aluminum Foil and Disposable <br />
+                Container Manufacturer in Northwest Iran
+              </p>
+              <a href="#" class="btn">PRODUCTS</a>
             </div>
           </q-carousel-control>
         </template>
@@ -24,9 +26,11 @@
     <section class="hero">
       <h4>High-Quality, Food-Grade Aluminum Products for Cooking, Packaging, and Storage</h4>
       <h1>Premium Aluminum Foil & Disposable Containers</h1>
-      <p>Looking for reliable aluminum foil or durable disposable aluminum containers? Our factory
+      <p>
+        Looking for reliable aluminum foil or durable disposable aluminum containers? Our factory
         specializes in manufacturing food-safe aluminum solutions used in households, restaurants,
-        catering services, and food industries.</p>
+        catering services, and food industries.
+      </p>
     </section>
 
     <section class="products">
@@ -35,7 +39,10 @@
         <div class="text">
           <h2>Disposable Aluminum Containers</h2>
           <h3>Oven & Freezer Safe</h3>
-          <p>Our disposable aluminum containers are perfect for hot and cold meals, widely used in catering, takeaway, and ready-meal packaging.</p>
+          <p>
+            Our disposable aluminum containers are perfect for hot and cold meals, widely used in
+            catering, takeaway, and ready-meal packaging.
+          </p>
           <ul>
             <li>Multiple shapes and sizes: round, rectangular, deep or shallow</li>
             <li>Optional lids for safe storage and transportation</li>
@@ -43,7 +50,7 @@
             <li>Oven-safe, microwave-safe and freezer-compatible</li>
             <li>Ideal for restaurants, food factories, and event catering</li>
           </ul>
-<router-link to="/products/container" class="link">Explore Disposable Containers Collection</router-link>
+          <a href="#" class="link">Explore Disposable Containers Collection</a>
         </div>
       </div>
 
@@ -52,8 +59,10 @@
         <div class="text">
           <h2>Aluminum Foil Rolls</h2>
           <h3>Heat-Resistant & Food-Safe</h3>
-          <p>We produce high-quality aluminum foil rolls in various widths and thicknesses, suitable
-            for both home and industrial use.</p>
+          <p>
+            We produce high-quality aluminum foil rolls in various widths and thicknesses, suitable
+            for both home and industrial use.
+          </p>
           <ul>
             <li>Food-grade and hygienic</li>
             <li>Resistant to high temperatures and moisture</li>
@@ -61,7 +70,7 @@
             <li>Ideal for kitchens, bakeries, takeaways, and supermarkets</li>
             <li>Available in custom sizes and private label options</li>
           </ul>
-          <router-link to="/products/foil" class="link">View All Aluminum Foil Products</router-link>
+          <a href="#" class="link">View All Aluminum Foil Products</a>
         </div>
       </div>
     </section>
@@ -74,7 +83,7 @@
       <div class="product-category">
         <div class="category-header">
           <h2>Aluminium Containers</h2>
-         <router-link to="/products/container">view all</router-link>
+          <a href="container.html">view all</a>
         </div>
         <div class="product-images" style="grid-template-columns: auto auto auto;">
           <img src="assets/1.png" alt="Aluminium Containers 1"/>
@@ -86,7 +95,7 @@
       <div class="product-category">
         <div class="category-header">
           <h2>Aluminium Foil</h2>
-         <router-link to="/products/foil">view all</router-link>
+          <a href="foil.html">view all</a>
         </div>
         <div class="product-images" style="grid-template-columns: auto auto auto auto;">
           <img src="assets/4.png" alt="Aluminium Foil 1" />
@@ -99,7 +108,7 @@
       <div class="product-category">
         <div class="category-header">
           <h2>Container Lids</h2>
-         <router-link to="/products/lids">view all</router-link>
+          <a href="lids.html">view all</a>
         </div>
         <div class="product-images"  style="grid-template-columns: auto auto auto;">
           <img src="assets/8.png" alt="Lids 1" />
@@ -111,7 +120,7 @@
       <div class="product-category">
         <div class="category-header">
           <h2>Cardboard Pizza Box</h2>
-         <router-link to="/products/pizza">view all</router-link>
+          <a href="pizza.html">view all</a>
         </div>
         <div class="product-images" style="grid-template-columns: auto auto auto;">
           <img src="assets/11.png" alt="Pizza Box 1" />
@@ -123,7 +132,7 @@
       <div class="product-category">
         <div class="category-header">
           <h2>Plastic Table Cover</h2>
-         <router-link to="/products/tablecover">view all</router-link>
+          <a href="tablecover.html">view all</a>
         </div>
         <div class="product-images" style="grid-template-columns: auto auto auto;">
           <img src="assets/14.png" alt="Cover 1" />
@@ -157,8 +166,8 @@
           research to better respond to industry needs.
         </p>
         <div class="about-buttons">
-<router-link to="/about" class="btn primary">Learn More</router-link>
-          <a href="https://www.aparat.com/v/l49is36" class="btn secondary"> Watch Video <span class="play-icon">▶</span> </a>
+          <a href="#" class="btn primary">Learn More</a>
+          <a href="#" class="btn secondary"> Watch Video <span class="play-icon">▶</span> </a>
         </div>
       </div>
 
@@ -213,7 +222,7 @@
             Perfect for Coffee shops, fast food chains, events, marketing campaigns, and private
             labels.
           </p>
-<router-link to="/contact" class="contact-btn">CONTACT</router-link>
+          <a href="#" class="contact-btn">CONTACT</a>
         </div>
       </div>
 
@@ -234,7 +243,7 @@
           and various applications, you can download our digital catalog. It provides all the
           necessary information to help you choose the right product for your needs.
         </p>
-        <a href="public\assets\catalog-en.pdf" class="catalog-btn">DOWNLOAD CATALOG</a>
+        <a href="#" class="catalog-btn">DOWNLOAD CATALOG</a>
       </div>
     </section>
 
@@ -257,7 +266,7 @@
             faucibus convallis aliquam varius nisi commodo.
           </p>
           <h3>The Environmental Benefits of Recycling Aluminum</h3>
-<router-link to="/blog" class="btn">Learn More</router-link>
+          <a href="#" class="btn">Learn More</a>
         </div>
       </div>
       <div class="blog-banner">
@@ -316,8 +325,6 @@ h3 {
   z-index: 10;
   padding: 20px 60px;
   border-radius: 10px;
-  background-color: #11304c41;
-
 }
 
 .slider-overlay h1 {
@@ -445,6 +452,7 @@ display: none;
   max-width: 1100px;
   margin: 100px auto;
   padding: 20px;
+  background: rgb(217, 234, 248);
 }
 
 .product {
@@ -553,7 +561,6 @@ display: none;
 .products-section {
   width: 100%;
   padding: 30px 60px;
-  background-color: rgb(217, 234, 248);
 }
 
 .section-title {
@@ -618,8 +625,8 @@ display: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1000px;
-  margin: 10px auto;
+  max-width: 1500px;
+  margin: 0px auto;
   color: #11304c;
 }
 
@@ -636,27 +643,29 @@ display: none;
 
 .product-images {
   display: grid;
-  gap: 10px;
-  max-width: 1000px;
+  gap: 25px;
+  max-width: 1500px;
   margin: 0px auto;
 }
 
+
 .product-images img {
   width: 100%;
-  height: 260px;
-  border-radius: 8px;
+  height: 500px;
   object-fit: cover;
 }
 
 @media (max-width: 992px) {
   .product-images img {
-    height: 200px;
+    height: 300px;
+
   }
 }
 
 @media (max-width: 600px) {
   .product-images img {
     height: 150px;
+
   }
 }
 .product-category:nth-child(3) .product-images,

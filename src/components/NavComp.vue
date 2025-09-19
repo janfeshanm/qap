@@ -43,27 +43,54 @@
       </li>
     </ul>
     <div class="nav-actions">
-      <button class="lang-btn" @click="toggleLanguage">🌏</button>
-      <div class="menu-toggle" @click="toggleMenu">☰</div>
+<div class="lang-switcher">
+  <button class="lang-btn" @click="toggleLangMenu">
+    <span>{{ currentLangLabel }}</span>
+    <span class="arrow" :class="{ open: isLangMenuOpen }">▼</span>
+  </button>
+
+  <ul v-if="isLangMenuOpen" class="lang-dropdown">
+    <li @click="setLanguage('en-US')">INT</li>
+    <li @click="setLanguage('fa-IR')">فارسی</li>
+  </ul>
+</div>      <div class="menu-toggle" @click="toggleMenu">☰</div>
     </div>
   </nav>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
-import { useI18n } from 'vue-i18n';
-const { locale } = useI18n({ useScope: 'global' });
+import { ref, computed, onMounted } from "vue";
+import { useI18n } from "vue-i18n";
+const { locale } = useI18n({ useScope: "global" });
 
-// تابع تغییر زبان
-const toggleLanguage = () => {
-  locale.value = locale.value === 'en-US' ? 'fa-IR' : 'en-US';
-};
+const isLangMenuOpen = ref(false);
 
 const isMenuOpen = ref(false);
-
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
 };
+
+const currentLangLabel = computed(() =>
+  locale.value === "fa-IR" ? "فارسی" : "INT"
+);
+
+const toggleLangMenu = () => {
+  isLangMenuOpen.value = !isLangMenuOpen.value;
+};
+
+const setLanguage = (lang: string) => {
+  locale.value = lang;
+  localStorage.setItem("site-lang", lang);
+  isLangMenuOpen.value = false;
+};
+
+onMounted(() => {
+  const savedLang = localStorage.getItem("site-lang");
+  if (savedLang) {
+    locale.value = savedLang;
+  }
+});
+
 </script>
 
 <style lang="scss">
@@ -100,11 +127,6 @@ $fontColor: white;
   padding: 4px 10px;
 }
 
-.navbar ul li a:hover {
-  color: #194d7aff;
-  border-radius: 5px;
-  padding: 4px 10px;
-}
 
 .dropbtn {
   color: #11304c;
@@ -194,6 +216,51 @@ $fontColor: white;
     color: #ffffffff;
     background: #11304cbb;
     right: 140px;
+  }
+}
+
+
+.lang-switcher {
+  position: relative;
+}
+
+.lang-btn {
+  background: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+}
+
+.arrow {
+  font-size: 12px;
+  transition: transform 0.2s;
+}
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+.lang-dropdown {
+  position: absolute;
+  top: 110%;
+  right: 0;
+  background: white;
+  color: #242424ff;
+  list-style: none;
+  padding: 5px 0;
+  margin: 0;
+  min-width: 140px;
+  z-index: 1000;
+
+  li {
+    padding: 8px 12px;
+    cursor: pointer;
+    &:hover {
+      background: #cececeff;
+    }
   }
 }
 </style>
