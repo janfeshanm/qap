@@ -9,22 +9,28 @@
         <a class="dropbtn">{{ $t('products') }}</a>
         <ul class="dropdown-content">
           <li>
-            <a href="#/products/container">{{ $t('aluminiumContainers') }}</a>
+            <a href="#/products/container"><img src="assets/2.png" alt="Promo"/>
+{{ $t('aluminiumContainers') }}</a>
           </li>
           <li>
-            <a href="#/products/foil">{{ $t('aluminiumFoil') }}</a>
+            <a href="#/products/foil"><img src="assets/6.png" alt="Promo"/>
+{{ $t('aluminiumFoil') }}</a>
           </li>
           <li>
-            <a href="#/products/lids">{{ $t('aluminiumLids') }}</a>
+            <a href="#/products/lids"><img src="assets/10.png" alt="Promo"/>
+{{ $t('aluminiumLids') }}</a>
           </li>
           <li>
-            <a href="#/products/pizza">{{ $t('pizzaBox') }}</a>
+            <a href="#/products/pizza"><img src="assets/12.png" alt="Promo"/>
+{{ $t('pizzaBox') }}</a>
           </li>
           <li>
-            <a href="#/products/tablecover">{{ $t('plasticTableCover') }}</a>
+            <a href="#/products/tablecover"><img src="assets/15.png" alt="Promo"/>
+{{ $t('plasticTableCover') }}</a>
           </li>
           <li>
-            <a href="#/products/papercup">{{ $t('paperCup') }}</a>
+            <a href="#/products/papercup"><img src="assets/17.png" alt="Promo"/>
+{{ $t('paperCup') }}</a>
           </li>
         </ul>
       </li>
@@ -129,8 +135,6 @@ $fontColor: white;
 
 
 .dropbtn {
-  color: #11304c;
-  padding: 16px;
   font-size: 16px;
   border: none;
 }
@@ -141,32 +145,49 @@ $fontColor: white;
 
 .dropdown-content {
   display: none;
-  position: absolute;
-  background-color: #11304c71;
-  border-radius: 5px;
-
-  min-width: 220px;
+ position: fixed;
+      width: 100%;
+      background-color: #ffffffff;
+  padding: 40px 40px;
+  margin: auto;
 }
 
-.dropdown-content li {
-  display: block;
-  padding: 4px 10px;
+
+
+.dropdown-content a {
+  color: #3d3d3dff !important;
+    font-size: 12px !important;
+  justify-content: center !important;
+
+}
+.dropdown-content li img {
+  width: 200px;   
+  height: 200px;   
+  object-fit: cover; 
+  object-position: center;
 }
 
-.dropdown-content li a {
-  color: #11304c;
-  padding: 4px 10px;
-  text-decoration: none;
-  display: block;
+.dropdown:hover .dropdown-content,
+.dropdown.active .dropdown-content { 
+  display: grid; 
+  gap: 20px;
+  grid-template-columns: repeat(6, 1fr);
 }
 
-.dropdown-content li a:hover {
-  background-color: #ddd;
+@media (max-width: 768px) {
+  .dropdown:hover .dropdown-content,
+  .dropdown.active .dropdown-content {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 12px;
+  }
+
+  .dropdown-content li img {
+    width: 100px;
+    height: 100px;
+  }
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+
 .nav-actions {
   display: flex;
   align-items: center;
@@ -192,7 +213,7 @@ $fontColor: white;
   .navbar > ul {
     display: none;
     flex-direction: column;
-    background: #11304cbb;
+    background: #ffffffff;
     position: fixed;
     top: 60px;
     width: 140px;
@@ -203,19 +224,12 @@ $fontColor: white;
   }
 
   .navbar > ul li a {
-    color: #ffffffff;
+    color: #4b4b4bff;
     font-size: 14px;
   }
 
   .navbar.active > ul {
     display: flex;
-  }
-
-  .dropdown-content {
-    position: fixed;
-    color: #ffffffff;
-    background: #11304cbb;
-    right: 140px;
   }
 }
 
@@ -231,8 +245,8 @@ $fontColor: white;
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 6px;
-  padding: 6px 12px;
+  gap: 4px;
+  padding: 12px 32px;
 }
 
 .arrow {
@@ -248,19 +262,17 @@ $fontColor: white;
   top: 110%;
   right: 0;
   background: white;
-  color: #242424ff;
+  color: #5f5f5fff;
+  font-size: 12px;
   list-style: none;
   padding: 5px 0;
   margin: 0;
-  min-width: 140px;
+  min-width: 60px;
   z-index: 1000;
 
   li {
-    padding: 8px 12px;
+    padding: 8px 10px;
     cursor: pointer;
-    &:hover {
-      background: #cececeff;
-    }
   }
 }
 </style>

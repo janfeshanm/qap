@@ -349,7 +349,7 @@ h3 {
 
 .slider-overlay .btn {
   display: inline-block;
-  padding: 12px 24px;
+  padding: 12px 94px;
   background: #fff;
   color: #11304c;
   font-weight: bold;
@@ -365,14 +365,14 @@ h3 {
 
 
 
-@media (max-width: 1000px) {
+@media (max-width: 820px) {
   .slider-overlay {
     padding: 7px 15px;
     border-radius: 5px;
   }
 
   .slider-overlay h1 {
-    font-size: 18px;
+    font-size: 28px;
   }
 
   .slider-overlay p {
@@ -452,7 +452,6 @@ display: none;
   max-width: 1100px;
   margin: 100px auto;
   padding: 20px;
-  background: rgb(217, 234, 248);
 }
 
 .product {
@@ -561,6 +560,8 @@ display: none;
 .products-section {
   width: 100%;
   padding: 30px 60px;
+    background: rgb(217, 234, 248);
+
 }
 
 .section-title {
