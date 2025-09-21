@@ -583,7 +583,6 @@ display: none;
   margin: 10px auto 100px auto;
   max-width: 1000px;
     min-width: 300px;
-
   justify-content: center;
 }
 
@@ -666,7 +665,6 @@ display: none;
 @media (max-width: 600px) {
   .product-images img {
     height: 150px;
-
   }
 }
 .product-category:nth-child(3) .product-images,

@@ -144,9 +144,13 @@ $fontColor: #830002;
 }
 
 .containeroverlay {
-  left: 30%;
+ position: absolute;  
+  top: 50%;       
+  left: 21%;       
+  transform: translateY(-50%);
   color: #830002;
   z-index: 10;
+  max-width: 60%;      
 }
 
 .containeroverlay h1 {

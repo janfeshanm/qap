@@ -57,9 +57,13 @@ $fontColor: #1e3950;
   padding: 4px 10px;
 }
 .containeroverlay {
-  left: 21%;
+   position: absolute;   
+  top: 50%;    
+  left: 21%;  
+  transform: translateY(-50%);
   color: #11304c;
   z-index: 10;
+  max-width: 60%;      
 }
 
 .containeroverlay h1 {
@@ -78,42 +82,6 @@ $fontColor: #1e3950;
   color: #11304c;
 }
 
-@media (max-width: 768px) {
-  .containeroverlay {
-    top: 10%;
-    left: 10%;
-    color: #11304c;
-    z-index: 10;
-    width: 80%;
-    position: absolute;
-  }
-
-  .containeroverlay h1 {
-    font-size: 26px;
-    line-height: 1.1;
-  }
-
-  .containeroverlay p {
-    font-size: 12px;
-    margin: 8px 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .containeroverlay {
-    top: 8%;
-    left: 5%;
-    width: 90%;
-  }
-
-  .containeroverlay h1 {
-    font-size: 16px;
-  }
-
-  .containeroverlay p {
-    font-size: 12px;
-  }
-}
 
 .search-box {
   display: flex;

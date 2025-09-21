@@ -149,7 +149,8 @@ $fontColor: white;
       width: 100%;
       background-color: #ffffffff;
   padding: 40px 40px;
-  margin: auto;
+  margin: 10px auto;
+   right: 0;
 }
 
 
