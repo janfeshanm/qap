@@ -216,19 +216,4 @@ section.pizza {
   transition: 0.3s ease;
 }
 
-.pagination {
-  text-align: center;
-  margin: 30px 0 10px;
-}
-
-.pagination a {
-  margin: 0 8px;
-  text-decoration: none;
-  color: #552b15;
-  font-weight: bold;
-}
-
-.pagination a:hover {
-  text-decoration: underline;
-}
 </style>

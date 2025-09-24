@@ -1,14 +1,18 @@
 <template>
   <q-page
     ><nav-comp style="background-color: rgb(255, 240, 191); height: 74px" />
-    <div class="containeroverlay">
+    <div class="banner-wrapper">
+
+    <div class="banner">
+    <div>
       <h1><span>ALUM</span> PEYMAN</h1>
-      <p>
-        The First and Largest Aluminum Foil and Disposable <br />
-        Container Manufacturer in Northwest Iran
-      </p>
+      <p> The First and Largest Aluminum Foil and Disposable <br />
+        Container Manufacturer in Northwest Iran </p>
     </div>
-    <img src="assets/foill.png" style="width: 100%; margin-bottom: -3px" />
+    <div><img src="assets/foill.png" style="width: 100%; margin-bottom: -3px" /></div>
+</div>
+</div>
+
 
     <section class="foil">
       <search-product category="foils" />
@@ -44,29 +48,50 @@ $fontColor: #1e3950;
   padding: 4px 10px;
 }
 
-.containeroverlay {
-  position: absolute;
-  left: 20%;
-  color: #11304c;
-  z-index: 10;
-  float: left;
-  top: 200px;
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background-color: rgb(255, 240, 191);
+  gap: 2rem; 
+max-width: 1200px;
+  margin: 0 auto;  
+  padding: 2rem;
 }
-.containeroverlay h1 {
-  font-size: 48px;
-  margin: 0;
-  font-weight: bold;
-  line-height: 1.2;
-}
-
-.containeroverlay h1 span {
-  display: block;
+.banner-wrapper {
+  background-color: rgb(255, 240, 191); 
+  width: 100%;
 }
 
-.containeroverlay p {
-  font-size: 18px;
-  margin: 10px 0;
-  color: #11304c;
+.banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #11304c
+}
+
+.banner p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+    color: #11304c
+
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    grid-template-columns: 1fr;
+    text-align: center; 
+  }
+
+  .banner img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
 }
 
 .search-box {
@@ -154,19 +179,4 @@ section.foil {
   transition: 0.3s ease;
 }
 
-.pagination {
-  text-align: center;
-  margin: 30px 0 10px;
-}
-
-.pagination a {
-  margin: 0 8px;
-  text-decoration: none;
-  color: #1e3a5f;
-  font-weight: bold;
-}
-
-.pagination a:hover {
-  text-decoration: underline;
-}
 </style>
