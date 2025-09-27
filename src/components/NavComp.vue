@@ -5,35 +5,18 @@
     </a>
 
     <ul>
-      <li class="dropdown">
-        <a class="dropbtn">{{ $t('products') }}</a>
-        <ul class="dropdown-content">
-          <li>
-            <a href="#/products/container"><img src="assets/2.png" alt="Promo"/>
-{{ $t('aluminiumContainers') }}</a>
-          </li>
-          <li>
-            <a href="#/products/foil"><img src="assets/6.png" alt="Promo"/>
-{{ $t('aluminiumFoil') }}</a>
-          </li>
-          <li>
-            <a href="#/products/lids"><img src="assets/10.png" alt="Promo"/>
-{{ $t('aluminiumLids') }}</a>
-          </li>
-          <li>
-            <a href="#/products/pizza"><img src="assets/12.png" alt="Promo"/>
-{{ $t('pizzaBox') }}</a>
-          </li>
-          <li>
-            <a href="#/products/tablecover"><img src="assets/15.png" alt="Promo"/>
-{{ $t('plasticTableCover') }}</a>
-          </li>
-          <li>
-            <a href="#/products/papercup"><img src="assets/17.png" alt="Promo"/>
-{{ $t('paperCup') }}</a>
-          </li>
-        </ul>
-      </li>
+<li class="dropdown" :class="{ active: isDropdownOpen }">
+  <a class="dropbtn" @click.prevent="toggleDropdown">{{ $t('products') }}</a>
+  <ul class="dropdown-content">
+    <li><a href="#/products/container"><img src="assets/2.png"/><br /> {{ $t('aluminiumContainers') }}</a></li>
+    <li><a href="#/products/foil"><img src="assets/6.png"/><br /> {{ $t('aluminiumFoil') }}</a></li>
+    <li><a href="#/products/lids"><img src="assets/10.png"/><br /> {{ $t('aluminiumLids') }}</a></li>
+    <li><a href="#/products/pizza"><img src="assets/12.png"/><br /> {{ $t('pizzaBox') }}</a></li>
+    <li><a href="#/products/tablecover"><img src="assets/15.png"/><br /> {{ $t('plasticTableCover') }}</a></li>
+    <li><a href="#/products/papercup"><img src="assets/17.png"/><br /> {{ $t('paperCup') }}</a></li>
+  </ul>
+</li>
+
 
       <li>
         <a href="#/catalog">{{ $t('catalog') }}</a>
@@ -97,6 +80,12 @@ onMounted(() => {
   }
 });
 
+const isDropdownOpen = ref(false);
+const toggleDropdown = () => {
+  isDropdownOpen.value = !isDropdownOpen.value;
+};
+
+
 </script>
 
 <style lang="scss">
@@ -143,23 +132,20 @@ $fontColor: white;
   position: relative;
 }
 
+
 .dropdown-content {
   display: none;
- position: fixed;
-      width: 100%;
-      background-color: #ffffffff;
-  padding: 40px 40px;
-  margin: 10px auto;
-   right: 0;
+  position: absolute;
+ width: 100vw;
+  background-color: #fff;
+  padding: 20px;
+  z-index: 1000;
 }
-
-
 
 .dropdown-content a {
   color: #3d3d3dff !important;
     font-size: 12px !important;
   justify-content: center !important;
-
 }
 .dropdown-content li img {
   width: 200px;   
@@ -168,26 +154,20 @@ $fontColor: white;
   object-position: center;
 }
 
-.dropdown:hover .dropdown-content,
-.dropdown.active .dropdown-content { 
-  display: grid; 
+.dropdown.active .dropdown-content,
+.dropdown:hover .dropdown-content {
+  display: grid;
   gap: 20px;
   grid-template-columns: repeat(6, 1fr);
 }
 
+
 @media (max-width: 768px) {
-  .dropdown:hover .dropdown-content,
   .dropdown.active .dropdown-content {
     grid-template-columns: repeat(2, 1fr);
     padding: 12px;
   }
-
-  .dropdown-content li img {
-    width: 100px;
-    height: 100px;
-  }
 }
-
 
 .nav-actions {
   display: flex;

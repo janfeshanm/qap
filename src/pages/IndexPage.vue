@@ -254,18 +254,17 @@
         <img src="assets/b1.png" alt="Aluminum container" />
         <div class="blog-content">
           <div class="stars">★★★★★</div>
-          <p>Discover why aluminum is the ideal material for keeping your food fresh and safe.</p>
-          <h3>Why Aluminum Containers are Perfect for Food Storage</h3>
+          <p>Discovery of Aluminum and Its Uses</p>
+          <h3>The Rise and Development of Aluminum Disposable Containers</h3>
         </div>
       </div>
       <div class="blog-card reverse">
         <img src="assets/b2.png" alt="Recycling aluminum" />
         <div class="blog-content">
-          <p>
-            Egestas vulputate cras et nisi volutpat lacus metus massa vel. Eget felis augue pretium
-            faucibus convallis aliquam varius nisi commodo.
-          </p>
-          <h3>The Environmental Benefits of Recycling Aluminum</h3>
+          <p>Disposable containers became popular because of their ease of use, simple transport, 
+        and time-saving benefits. Since they do not require washing, they are quick and practical 
+        to use.</p>
+          <h3>History of Disposable Containers in the Industry</h3>
           <a href="#" class="btn">Learn More</a>
         </div>
       </div>
