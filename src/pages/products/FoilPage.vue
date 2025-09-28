@@ -46,6 +46,7 @@ $fontColor: #1e3950;
   color: $fontColor;
   text-decoration: none;
   padding: 4px 10px;
+  list-style: none;
 }
 
 .banner {

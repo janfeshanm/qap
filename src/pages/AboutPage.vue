@@ -55,6 +55,7 @@ $fontColor: white;
   color: $fontColor;
   text-decoration: none;
   padding: 4px 10px;
+  list-style: none;
 }
 
 .about-section {

@@ -23,6 +23,27 @@
         </template>
       </q-carousel>
     </header>
+    
+    <section class="certificates-section">
+  <!-- ISO CERTIFIED -->
+  <div class="certificate-item">
+    <img src="assets/c3.png" alt="ISO Certified">
+    <h3>ISO CERTIFIED</h3>
+  </div>
+
+  <!-- MADE IN IRAN -->
+  <div class="certificate-item">
+    <img src="assets/c2.png" alt="Made in Iran">
+    <h3>MADE IN IRAN</h3>
+  </div>
+
+  <!-- SIB SALAMAT -->
+  <div class="certificate-item">
+    <img src="assets/c1.png" alt="SIB SALAMAT">
+    <h3>SIB SALAMAT</h3>
+  </div>
+</section>
+
     <section class="hero">
       <h4>High-Quality, Food-Grade Aluminum Products for Cooking, Packaging, and Storage</h4>
       <h1>Premium Aluminum Foil & Disposable Containers</h1>
@@ -353,7 +374,6 @@ h3 {
   color: #11304c;
   font-weight: bold;
   text-decoration: none;
-  border-radius: 6px;
   transition: 0.3s;
 }
 
@@ -362,12 +382,9 @@ h3 {
   color: #fff;
 }
 
-
-
 @media (max-width: 820px) {
   .slider-overlay {
     padding: 7px 15px;
-    border-radius: 5px;
   }
 
   .slider-overlay h1 {
@@ -396,12 +413,50 @@ display: none;
   animation-duration: 2.5s;
 }
 
+
+
+.certificates-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 180px;           
+ padding: 60px 0px 60px 0px;
+ background: #f8f8f8ff;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 2px 10px 0 rgba(53, 53, 53, 0.1);
+ }
+
+.certificate-item {
+  text-align: center;
+}
+
+.certificate-item img {
+  width: 80px;         
+  height: auto;
+}
+
+.certificate-item h3 {
+  font-size: 18px;     
+  margin: 0;
+  color: #11304c;
+  font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .certificates-section {
+    display: none;
+  }
+}
+
+
+
+
+
 .hero {
   text-align: center;
   max-width: 800px;
   margin: 50px auto;
   padding: 0 20px;
-  margin-top: 150px;
+  margin-top: 100px;
   font-size: 1rem;
 }
 
@@ -689,7 +744,7 @@ display: none;
   padding: 80px 40px;
   background-color: #11304c;
   color: white;
-  gap: 50px;
+  gap: 200px;
 }
 
 @media (max-width: 1000px) {
@@ -728,7 +783,6 @@ display: none;
   text-decoration: none;
   display: inline-block;
   transition: 0.3s;
-  border: 1px solid white;
 }
 
 .btn.primary {
@@ -1177,125 +1231,6 @@ display: none;
   object-fit: cover;
 }
 
-.containeroverlay {
-  position: absolute;
-  top: 20%;
-  left: 21%;
-  color: #11304c;
-  z-index: 10;
-}
-
-.containeroverlay h1 {
-  font-size: 48px;
-  margin: 0;
-  font-weight: bold;
-  line-height: 1.2;
-}
-
-.containeroverlay h1 span {
-  display: block;
-}
-
-.containeroverlay p {
-  font-size: 18px;
-  margin: 10px 0;
-  color: #11304c;
-}
-
-@media (max-width: 768px) {
-  .containeroverlay {
-    top: auto;
-    bottom: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    text-align: center;
-  }
-}
-
-section.containerr {
-  background-color: rgb(217, 234, 248);
-  padding: 100px 40px;
-}
-
-.container-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-  padding: 40px 20px;
-  max-width: 1100px;
-  margin: auto auto;
-}
-
-.container-card {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  text-align: center;
-  padding: 20px;
-  transition: transform 0.2s ease;
-}
-
-.container-card:hover {
-  transform: translateY(-5px);
-}
-
-.container-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
-
-.container-info {
-  font-size: 14px;
-  color: #333;
-  margin-bottom: 12px;
-  line-height: 1.6;
-}
-
-.containerbtn {
-  display: inline-block;
-  background: #1e3a5f;
-  color: #fff;
-  padding: 10px 18px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-size: 14px;
-  transition: 0.3s ease;
-}
-
-.btn:hover {
-  background: #2d4f80;
-}
-
-.pagination {
-  text-align: center;
-  margin: 30px 0 10px;
-}
-
-.pagination a {
-  margin: 0 8px;
-  text-decoration: none;
-  color: #1e3a5f;
-  font-weight: bold;
-}
-
-.pagination a:hover {
-  text-decoration: underline;
-}
-
-@media (max-width: 992px) {
-  .container-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 600px) {
-  .container-grid {
-    grid-template-columns: 1fr;
-  }
-}
 
 .aboutphoto {
   border-radius: 20px;

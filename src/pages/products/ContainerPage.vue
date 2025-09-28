@@ -1,25 +1,10 @@
 <template>
   <q-page>
-    <header>
-      <q-carousel v-model="slide" ref="carousel">
-        <q-carousel-slide :name="1" img-src="assets/container.png" />
-        <template v-slot:control>
-          <q-carousel-control position="top" class="text-white rounded-borders">
-            <nav-comp />
-          </q-carousel-control>
+    <nav-comp style="background-color: rgb(217, 234, 248); height: 74px" />
+    <div style="  background-color: rgb(217, 234, 248); display: flex; justify-content: center;">
+<img src="assets/container.png" class="smart-img" />
+    </div>
 
-          <q-carousel-control position="bottom" style="max-width: 60%"
-            ><div class="containeroverlay">
-              <h1><span>ALUM</span> PEYMAN</h1>
-              <p>
-                The First and Largest Aluminum Foil and Disposable <br />
-                Container Manufacturer in Northwest Iran
-              </p>
-            </div>
-          </q-carousel-control>
-        </template>
-      </q-carousel>
-    </header>
     <section class="containerr">
       <search-product category="container" />
     </section>
@@ -29,13 +14,12 @@
         <img src="assets/catalog.png" alt="Catalog Preview" />
       </div>
 
-      <div class="catalog-content">
+<div class="catalog-content">
         <h2>CATALOG</h2>
-        <p>
-          To get a comprehensive overview of our products, including detailed specifications, sizes,
+        <p>To get a comprehensive overview of our products, including detailed specifications, sizes,
           and various applications, you can download our digital catalog. It provides all the
-          necessary information to help you choose the right product for your needs.
-        </p>
+          necessary information to help you choose the right product for your needs.</p>
+        
         <a href="public\assets\catalog-en.pdf" class="catalog-btn">DOWNLOAD CATALOG</a>
       </div>
     </section>
@@ -45,41 +29,27 @@
 <script setup lang="ts">
 import NavComp from 'src/components/NavComp.vue';
 import SearchProduct from 'src/components/SearchProduct.vue';
-import { ref } from 'vue';
-const slide = ref(1);
 </script>
 
 <style lang="scss">
 $fontColor: #1e3950;
-.navbar ul li a {
-  color: $fontColor;
-  text-decoration: none;
-  padding: 4px 10px;
-}
-.containeroverlay {
-   position: absolute;   
-  top: 50%;    
-  left: 21%;  
-  transform: translateY(-50%);
-  color: #11304c;
-  z-index: 10;
-  max-width: 60%;      
-}
 
-.containeroverlay h1 {
-  font-size: 34px;
-  margin: 0;
-  font-weight: bold;
-  line-height: 1.2;
-}
-
-.containeroverlay h1 span {
+.smart-img {
+  width: 1000px;        
+  max-width: 100%;       
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(10px, 5%, 100px);   
+  padding-right: clamp(10px, 5%, 100px); 
   display: block;
+  box-sizing: border-box;
 }
 
-.containeroverlay p {
-  margin: 10px 0;
-  color: #11304c;
+@media (max-width: 660px) { 
+  .smart-img {
+    width: 100%;     
+    padding: 0 10px;    
+  }
 }
 
 

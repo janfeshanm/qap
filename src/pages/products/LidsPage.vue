@@ -1,8 +1,8 @@
 <template>
-  <q-page
-    ><nav-comp style="background-color: #fff7ee; height: 74px" />
+  <q-page>
+  <nav-comp style="background-color: #fff7ee; height: 74px" />
     <div style="background-color: #fff7ee; width: 100%; justify-content: center; display: flex">
-      <img src="assets/lid.png" class="lids" />
+      <img src="assets/lid.png" class="smart-img" />
     </div>
 
     <section class="containerr">
@@ -16,11 +16,9 @@
 
       <div class="catalog-content">
         <h2>CATALOG</h2>
-        <p>
-          To get a comprehensive overview of our products, including detailed specifications, sizes,
+        <p> To get a comprehensive overview of our products, including detailed specifications, sizes,
           and various applications, you can download our digital catalog. It provides all the
-          necessary information to help you choose the right product for your needs.
-        </p>
+          necessary information to help you choose the right product for your needs. </p>
         <a href="public\assets\catalog-en.pdf" class="catalog-btn">DOWNLOAD CATALOG</a>
       </div>
     </section>
@@ -33,18 +31,31 @@ import SearchProduct from 'src/components/SearchProduct.vue';
 </script>
 
 <style lang="scss">
+
 $fontColor: #1e3950;
 .navbar ul li a {
   color: $fontColor;
   text-decoration: none;
   padding: 4px 10px;
+  list-style: none;
 }
 
-.lids {
-  border-radius: 20px;
-  max-width: 1000px;
-  align-items: center;
-  padding: 20px 0px 10px 0px;
+.smart-img {
+  width: 1000px;        
+  max-width: 100%;       
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(10px, 5%, 100px);   
+  padding-right: clamp(10px, 5%, 100px); 
+  display: block;
+  box-sizing: border-box;
+}
+
+@media (max-width: 660px) { 
+  .smart-img {
+    width: 100%;     
+    padding: 0 10px;    
+  }
 }
 
 .search-box {

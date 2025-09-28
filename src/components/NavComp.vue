@@ -97,6 +97,11 @@ $fontColor: white;
   font-size: 24px;
   cursor: pointer;
 }
+
+
+*{
+  list-style: none;
+}
 .navbar {
   display: flex;
   justify-content: center;
@@ -114,12 +119,14 @@ $fontColor: white;
   display: flex;
   gap: 30px;
   z-index: 9999;
+  list-style: none;
 }
 
 .navbar ul li a {
   color: $fontColor;
   text-decoration: none;
   padding: 4px 10px;
+  list-style: none;
 }
 
 
@@ -146,12 +153,14 @@ $fontColor: white;
   color: #3d3d3dff !important;
     font-size: 12px !important;
   justify-content: center !important;
+  list-style: none;
 }
 .dropdown-content li img {
   width: 200px;   
   height: 200px;   
   object-fit: cover; 
   object-position: center;
+  list-style: none;
 }
 
 .dropdown.active .dropdown-content,
@@ -207,6 +216,7 @@ $fontColor: white;
   .navbar > ul li a {
     color: #4b4b4bff;
     font-size: 14px;
+    list-style: none;
   }
 
   .navbar.active > ul {

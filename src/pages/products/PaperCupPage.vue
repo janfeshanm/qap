@@ -1,9 +1,8 @@
 <template>
   <q-page>
     <nav-comp style="background-color: #11304c; height: 100px" />
-    <div>
-      <img src="assets/papercup.png" style="width: 100%" /></div
-  ></q-page>
+    <div><img src="assets/papercup.png" style="width: 100%" /></div>
+      </q-page>
 </template>
 
 <script setup lang="ts">
@@ -16,5 +15,6 @@ $fontColor: white;
   color: $fontColor;
   text-decoration: none;
   padding: 4px 10px;
+  list-style: none;
 }
 </style>

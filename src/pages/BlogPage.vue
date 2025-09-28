@@ -7,7 +7,6 @@
       </h2>
       
 
-
 <div class="aluminum-box">
   <div class="aluminum-content">
     <h3 class="aluminum-title">

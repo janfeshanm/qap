@@ -1,18 +1,13 @@
 <template>
-  <q-page
-    ><nav-comp style="background-color: #f1ceb5; height: 74px" />
-    <div>
-      <div class="containeroverlay">
-        <h1><span>ALUM</span> PEYMAN</h1>
-        <p>
-          The First and Largest Aluminum Foil and Disposable <br />
-          Container Manufacturer in Northwest Iran
-        </p>
-      </div>
-      <img src="assets/pizza.png" style="width: 100%" />
+  <q-page>
+    <nav-comp style="background-color: #f1ceb5; height: 74px" />
+    <div style="background: #f1ceb5; display: flex; justify-content: center;">
+      <img src="assets/pizza.png" class="smart-img" />
     </div>
 
-    <section class="pizza"><search-product category="pizza" /></section>
+    <section class="pizza">
+    <search-product category="pizza" />
+    </section>
 
     <section class="catalog-section">
       <div class="catalog-image">
@@ -21,11 +16,10 @@
 
       <div class="catalog-content">
         <h2>CATALOG</h2>
-        <p>
-          To get a comprehensive overview of our products, including detailed specifications, sizes,
+        <p>To get a comprehensive overview of our products, including detailed specifications, sizes,
           and various applications, you can download our digital catalog. It provides all the
-          necessary information to help you choose the right product for your needs.
-        </p>
+          necessary information to help you choose the right product for your needs.</p>
+        
         <a href="public\assets\catalog-en.pdf" class="catalog-btn">DOWNLOAD CATALOG</a>
       </div>
     </section>
@@ -45,12 +39,6 @@ $fontColor: #552b15;
   padding: 4px 10px;
 }
 
-.lids {
-  border-radius: 20px;
-  max-width: 1000px;
-  align-items: center;
-  padding: 20px 0px 10px 0px;
-}
 
 .search-box {
   display: flex;
@@ -215,5 +203,4 @@ section.pizza {
   font-size: 14px;
   transition: 0.3s ease;
 }
-
 </style>
