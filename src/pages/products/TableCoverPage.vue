@@ -1,25 +1,8 @@
 <template>
   <q-page>
-    <header>
-      <q-carousel v-model="slide" ref="carousel">
-        <q-carousel-slide :name="1" img-src="assets/cover.png" />
-        <template v-slot:control>
-          <q-carousel-control position="top" class="text-white rounded-borders">
-            <nav-comp />
-          </q-carousel-control>
-
-          <q-carousel-control position="bottom" style="max-width: 60%"
-            ><div class="containeroverlay">
-              <h1><span>ALUM</span> PEYMAN</h1>
-              <p>
-                The First and Largest Aluminum Foil and Disposable <br />
-                Container Manufacturer in Northwest Iran
-              </p>
-            </div>
-          </q-carousel-control>
-        </template>
-      </q-carousel>
-    </header>
+    <nav-comp style="background-color: #ffdddb; height: 74px" />
+    <div style="  background-color: #ffdddb; display: flex; justify-content: center;">
+<img src="assets/cover.png" class="smart-img" /></div>
 
     <section class="foil">
       <search-product category="tablecover" />
@@ -32,11 +15,10 @@
 
       <div class="catalog-content">
         <h2>CATALOG</h2>
-        <p>
-          To get a comprehensive overview of our products, including detailed specifications, sizes,
+        <p>To get a comprehensive overview of our products, including detailed specifications, sizes,
           and various applications, you can download our digital catalog. It provides all the
-          necessary information to help you choose the right product for your needs.
-        </p>
+          necessary information to help you choose the right product for your needs.</p>
+
         <a href="public\assets\catalog-en.pdf" class="catalog-btn">DOWNLOAD CATALOG</a>
       </div>
     </section>
@@ -46,17 +28,36 @@
 <script setup lang="ts">
 import NavComp from 'src/components/NavComp.vue';
 import SearchProduct from 'src/components/SearchProduct.vue';
-import { ref } from 'vue';
-const slide = ref(1);
 </script>
 
 <style lang="scss">
 $fontColor: #830002;
+
 .navbar ul li a {
   color: $fontColor;
   text-decoration: none;
   padding: 4px 10px;
 }
+
+
+.smart-img {
+  width: 1000px;        
+  max-width: 100%;       
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(10px, 5%, 100px);   
+  padding-right: clamp(10px, 5%, 100px); 
+  display: block;
+  box-sizing: border-box;
+}
+
+@media (max-width: 660px) { 
+  .smart-img {
+    width: 100%;     
+    padding: 0 10px;    
+  }
+}
+
 
 .search-box {
   display: flex;
@@ -141,33 +142,6 @@ $fontColor: #830002;
 
 .catalog-btn:hover {
   background: #a86363;
-}
-
-.containeroverlay {
- position: absolute;  
-  top: 50%;       
-  left: 21%;       
-  transform: translateY(-50%);
-  color: #830002;
-  z-index: 10;
-  max-width: 60%;      
-}
-
-.containeroverlay h1 {
-  font-size: 48px;
-  margin: 0;
-  font-weight: bold;
-  line-height: 1.2;
-}
-
-.containeroverlay h1 span {
-  display: block;
-}
-
-.containeroverlay p {
-  font-size: 18px;
-  margin: 10px 0;
-  color: #830002;
 }
 
 section.foil {

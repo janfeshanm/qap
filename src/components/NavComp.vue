@@ -16,20 +16,10 @@
     <li><a href="#/products/papercup"><img src="assets/17.png"/><br /> {{ $t('paperCup') }}</a></li>
   </ul>
 </li>
-
-
-      <li>
-        <a href="#/catalog">{{ $t('catalog') }}</a>
-      </li>
-      <li>
-        <a href="#/about">{{ $t('about') }}</a>
-      </li>
-      <li>
-        <a href="#/blog">{{ $t('blog') }}</a>
-      </li>
-      <li>
-        <a href="#/contact">{{ $t('contact') }}</a>
-      </li>
+      <li><a href="#/catalog">{{ $t('catalog') }}</a></li>
+      <li><a href="#/about">{{ $t('about') }}</a></li>
+      <li><a href="#/blog">{{ $t('blog') }}</a></li>
+      <li><a href="#/contact">{{ $t('contact') }}</a></li>
     </ul>
     <div class="nav-actions">
 <div class="lang-switcher">
@@ -42,9 +32,10 @@
     <li @click="setLanguage('en-US')">INT</li>
     <li @click="setLanguage('fa-IR')">فارسی</li>
   </ul>
-</div>      <div class="menu-toggle" @click="toggleMenu">☰</div>
-    </div>
-  </nav>
+</div>
+<div class="menu-toggle" @click="toggleMenu">☰</div>
+</div>
+</nav>
 </template>
 
 <script setup lang="ts">
@@ -85,11 +76,11 @@ const toggleDropdown = () => {
   isDropdownOpen.value = !isDropdownOpen.value;
 };
 
-
 </script>
 
 <style lang="scss">
 $fontColor: white;
+
 .lang-btn {
   background: none;
   border: none;
@@ -98,10 +89,10 @@ $fontColor: white;
   cursor: pointer;
 }
 
-
 *{
   list-style: none;
 }
+
 .navbar {
   display: flex;
   justify-content: center;
@@ -113,20 +104,17 @@ $fontColor: white;
 }
 
 .navbar > ul {
-  list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   gap: 30px;
   z-index: 9999;
-  list-style: none;
 }
 
 .navbar ul li a {
   color: $fontColor;
   text-decoration: none;
   padding: 4px 10px;
-  list-style: none;
 }
 
 
@@ -138,7 +126,6 @@ $fontColor: white;
 .dropdown {
   position: relative;
 }
-
 
 .dropdown-content {
   display: none;
@@ -153,18 +140,15 @@ $fontColor: white;
   color: #3d3d3dff !important;
     font-size: 12px !important;
   justify-content: center !important;
-  list-style: none;
 }
 .dropdown-content li img {
   width: 200px;   
   height: 200px;   
   object-fit: cover; 
   object-position: center;
-  list-style: none;
 }
 
-.dropdown.active .dropdown-content,
-.dropdown:hover .dropdown-content {
+.dropdown.active .dropdown-content {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(6, 1fr);
@@ -216,14 +200,12 @@ $fontColor: white;
   .navbar > ul li a {
     color: #4b4b4bff;
     font-size: 14px;
-    list-style: none;
   }
 
   .navbar.active > ul {
     display: flex;
   }
 }
-
 
 .lang-switcher {
   position: relative;
@@ -255,7 +237,6 @@ $fontColor: white;
   background: white;
   color: #5f5f5fff;
   font-size: 12px;
-  list-style: none;
   padding: 5px 0;
   margin: 0;
   min-width: 60px;

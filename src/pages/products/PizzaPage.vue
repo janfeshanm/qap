@@ -11,14 +11,14 @@
 
     <section class="catalog-section">
       <div class="catalog-image">
-        <img src="assets/catalog.png" alt="Catalog Preview" />
+      <img src="assets/catalog.png" alt="Catalog Preview" />
       </div>
 
       <div class="catalog-content">
         <h2>CATALOG</h2>
         <p>To get a comprehensive overview of our products, including detailed specifications, sizes,
-          and various applications, you can download our digital catalog. It provides all the
-          necessary information to help you choose the right product for your needs.</p>
+        and various applications, you can download our digital catalog. It provides all the
+        necessary information to help you choose the right product for your needs.</p>
         
         <a href="public\assets\catalog-en.pdf" class="catalog-btn">DOWNLOAD CATALOG</a>
       </div>
@@ -39,6 +39,24 @@ $fontColor: #552b15;
   padding: 4px 10px;
 }
 
+
+.smart-img {
+  width: 1000px;        
+  max-width: 100%;       
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(10px, 5%, 100px);   
+  padding-right: clamp(10px, 5%, 100px); 
+  display: block;
+  box-sizing: border-box;
+}
+
+@media (max-width: 660px) { 
+  .smart-img {
+    width: 100%;     
+    padding: 0 10px;    
+  }
+}
 
 .search-box {
   display: flex;

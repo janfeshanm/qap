@@ -4,16 +4,14 @@
     <section class="about-section">
       <div class="about-content">
         <h2>ABOUT US</h2>
-        <p>
-          Founded in 2005, Alum Peyman was established to meet the growing market demands in the
+        <p>Founded in 2005, Alum Peyman was established to meet the growing market demands in the
           packaging industry for food, pharmaceuticals, industrial products, bitumen sheets, and
           more. As the first and largest manufacturer of disposable containers and aluminium foil
           using the latest global technologies, the company began its operations in the Shahid
           Salimi Industrial Park in Tabriz, northwest of Iran. From its inception, the strong market
           presence and high customer satisfaction in the region inspired the management team to
           enhance product quality, expand the product range, and grow its target markets. Market
-          research to better respond to industry needs.
-        </p>
+          research to better respond to industry needs.</p>
         <div class="about-buttons">
 <router-link to="/contact" class="btn primary">Learn More</router-link>
           <a href="https://www.aparat.com/v/l49is36" class="btn secondary"> Watch Video <span class="play-icon">▶</span> </a>
@@ -55,7 +53,6 @@ $fontColor: white;
   color: $fontColor;
   text-decoration: none;
   padding: 4px 10px;
-  list-style: none;
 }
 
 .about-section {

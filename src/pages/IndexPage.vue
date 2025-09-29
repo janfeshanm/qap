@@ -420,7 +420,7 @@ display: none;
   justify-content: center;
   align-items: center;
   gap: 180px;           
- padding: 60px 0px 60px 0px;
+ padding: 40px 0px 40px 0px;
  background: #f8f8f8ff;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 2px 10px 0 rgba(53, 53, 53, 0.1);
  }
@@ -744,7 +744,7 @@ display: none;
   padding: 80px 40px;
   background-color: #11304c;
   color: white;
-  gap: 200px;
+  gap: 140px;
 }
 
 @media (max-width: 1000px) {

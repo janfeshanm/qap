@@ -1,13 +1,11 @@
 <template>
-  <q-page
-    ><nav-comp style="background-color: rgb(255, 240, 191); height: 74px" />
+  <q-page>
+  <nav-comp style="background-color: rgb(255, 240, 191); height: 74px" />
     <div class="banner-wrapper">
-
     <div class="banner">
     <div>
       <h1><span>ALUM</span> PEYMAN</h1>
-      <p> The First and Largest Aluminum Foil and Disposable <br />
-        Container Manufacturer in Northwest Iran </p>
+      <p> The First and Largest Aluminum Foil and Disposable <br /> Container Manufacturer in Northwest Iran </p>
     </div>
     <div><img src="assets/foill.png" style="width: 100%; margin-bottom: -3px" /></div>
 </div>
@@ -24,11 +22,9 @@
 
       <div class="catalog-content">
         <h2>CATALOG</h2>
-        <p>
-          To get a comprehensive overview of our products, including detailed specifications, sizes,
+        <p>To get a comprehensive overview of our products, including detailed specifications, sizes,
           and various applications, you can download our digital catalog. It provides all the
-          necessary information to help you choose the right product for your needs.
-        </p>
+          necessary information to help you choose the right product for your needs.</p>
         <a href="public\assets\catalog-en.pdf" class="catalog-btn">DOWNLOAD CATALOG</a>
       </div>
     </section>
@@ -46,7 +42,6 @@ $fontColor: #1e3950;
   color: $fontColor;
   text-decoration: none;
   padding: 4px 10px;
-  list-style: none;
 }
 
 .banner {

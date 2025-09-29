@@ -1,20 +1,44 @@
-// app global css in SCSS form
-
-@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-
-html[lang="fa"] body {
-  font-family: 'Vazirmatn', Tahoma, sans-serif;
+@font-face {
+  font-family: 'IRANSansX';
+  src: url('src/assets/fonts/IRANSansX/IRANSansX-Regular.woff2') format('woff2'),
+       url('src/assets/fonts/IRANSansX/IRANSansX-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
 }
 
-html[lang="en"] body {
-  font-family: 'Roboto', Arial, sans-serif;
+@font-face {
+  font-family: 'IRANSansX';
+  src: url('src/assets/fonts/IRANSansX/IRANSansX-Bold.woff2') format('woff2'),
+       url('src/assets/fonts/IRANSansX/IRANSansX-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
 }
-//----------------------------------------------------------
-body {
-  font-family: Vazirmatn, 'Roboto', Geneva, Tahoma, sans-serif;
-  font-size: 16px;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+html[lang="fa"] {
+  body {
+    font-family: 'IRANSansX', sans-serif;
+    direction: rtl;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  * {
+    font-family: 'IRANSansX', sans-serif !important;
+  }
+}
+
+html[lang="en"] {
+  body {
+    font-family: 'Inter', Arial, sans-serif;
+    letter-spacing: 0.12em;
+    direction: ltr;
+  }
+
+  * {
+    font-family: 'Inter', Arial, sans-serif !important;
+  }
 }
 
 .q-date__calendar-weekdays > div {
