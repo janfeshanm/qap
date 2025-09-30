@@ -43,7 +43,12 @@ $fontColor: #1e3950;
   text-decoration: none;
   padding: 4px 10px;
 }
-
+.menu-toggle {
+     color: $fontColor;
+}
+.lang-btn {
+    color: $fontColor;
+}
 .banner {
   display: grid;
   grid-template-columns: 1fr 1fr;

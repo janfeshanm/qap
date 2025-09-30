@@ -38,7 +38,12 @@ $fontColor: #1e3950;
   text-decoration: none;
   padding: 4px 10px;
 }
-
+.menu-toggle {
+     color: $fontColor;
+}
+.lang-btn {
+    color: $fontColor;
+}
 .smart-img {
   width: 1000px;        
   max-width: 100%;       

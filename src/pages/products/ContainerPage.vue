@@ -32,7 +32,17 @@ import SearchProduct from 'src/components/SearchProduct.vue';
 
 <style lang="scss">
 $fontColor: #1e3950;
-
+.navbar ul li a {
+  color: $fontColor;
+  text-decoration: none;
+  padding: 4px 10px;
+}
+.menu-toggle {
+     color: $fontColor;
+}
+.lang-btn {
+    color: $fontColor;
+}
 .smart-img {
   width: 1000px;        
   max-width: 100%;       

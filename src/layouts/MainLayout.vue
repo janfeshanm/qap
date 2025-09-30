@@ -1,10 +1,10 @@
 <template>
-  <q-layout view="hhh lPr fff">
+  <q-layout  view="hhh lPr fff">
     <q-page-container>
       <router-view />
     </q-page-container>
     <q-footer style="padding-top: 0px">
-      <section class="contact-section">
+      <section :class="routeClass" class="contact-section">
         <h2>CONTACT US</h2>
         <p>
           We are here to help! Whether you have questions about our products, need assistance with
@@ -65,7 +65,31 @@
   </q-layout>
 </template>
 
-<script setup lang="ts"></script>
+
+<script setup lang="ts">
+
+import { useRoute } from "vue-router";
+import { computed } from "vue";
+
+const route = useRoute();
+
+const routeClass = computed(() => {
+  switch (route.name) {
+    case "pizza":
+      return "bg-pizza";  
+    case "foil":
+      return "bg-foil"; 
+    case "lids":
+      return "bg-lids"; 
+      case "tablecover":
+      return "bg-tablecover";
+    default:
+      return "bg-default";
+  }
+});
+
+
+</script>
 
 <style lang="css">
 .contact-section {
@@ -216,4 +240,23 @@ footer {
   margin: 0 5px;
   color: #11304c;
 }
+
+
+
+.bg-pizza {
+  background-color: #f1ceb5; 
+}
+
+.bg-foil {
+  background-color: rgb(255, 240, 191); 
+}
+
+.bg-lids {
+  background-color: #fff7ee; 
+}
+
+.bg-tablecover {
+  background-color: #ffdddb;
+}
+
 </style>

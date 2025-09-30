@@ -1,8 +1,8 @@
 <template>
   <nav :class="{ active: isMenuOpen }" class="navbar">
-    <a href="/" class="logo">
-      <img src="assets/logo1.png" alt="Logo" style="height: 30px" />
-    </a>
+   <a href="/" class="logo">
+  <img :src="logoSrc" alt="Logo" style="height: 30px" />
+</a>
 
     <ul>
 <li class="dropdown" :class="{ active: isDropdownOpen }">
@@ -76,6 +76,29 @@ const toggleDropdown = () => {
   isDropdownOpen.value = !isDropdownOpen.value;
 };
 
+
+
+import { useRoute } from "vue-router";
+
+const route = useRoute();
+
+const logoSrc = computed(() => {
+  switch (route.name) {
+    case "container":
+      return "assets/logo2.png";
+    case "pizza":
+      return "assets/logo3.png";
+    case "foil":
+      return "assets/logo2.png";
+    case "lids":
+      return "assets/logo2.png";
+    case "tablecover":
+      return "assets/logo4.png";
+    default:
+      return "assets/logo1.png";
+  }
+});
+
 </script>
 
 <style lang="scss">
@@ -84,7 +107,6 @@ $fontColor: white;
 .lang-btn {
   background: none;
   border: none;
-  color: white;
   font-size: 24px;
   cursor: pointer;
 }
@@ -182,6 +204,7 @@ $fontColor: white;
 @media (max-width: 768px) {
   .navbar {
     justify-content: space-between;
+    padding: 10px;
   }
 
   .navbar > ul {
@@ -240,7 +263,7 @@ $fontColor: white;
   padding: 5px 0;
   margin: 0;
   min-width: 60px;
-  z-index: 1000;
+  z-index: 9999;
 
   li {
     padding: 8px 10px;

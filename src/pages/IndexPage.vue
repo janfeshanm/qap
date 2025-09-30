@@ -10,8 +10,8 @@
           <q-carousel-control position="top" class="text-white rounded-borders">
             <nav-comp />
           </q-carousel-control>
-          <q-carousel-control position="bottom" style="max-width: 60%"
-            ><div class="slider-overlay">
+          <q-carousel-control position="bottom" style="max-width: 60%">
+          <div class="slider-overlay">
               <h1><span>ALUM</span> PEYMAN</h1>
               <p>
                 The First and Largest Aluminum Foil and Disposable <br />
@@ -396,8 +396,8 @@ display: none;
   }
 
   .slider-overlay .btn {
-    padding: 4px 12px;
-    font-size: 8px;
+ display: none;
+
   }
 }
 
@@ -421,7 +421,6 @@ display: none;
   align-items: center;
   gap: 180px;           
  padding: 40px 0px 40px 0px;
- background: #f8f8f8ff;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 2px 10px 0 rgba(53, 53, 53, 0.1);
  }
 
