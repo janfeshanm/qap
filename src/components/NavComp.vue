@@ -104,14 +104,9 @@ const logoSrc = computed(() => {
 <style lang="scss">
 $fontColor: white;
 
-.lang-btn {
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-}
 
-*{
+
+* {
   list-style: none;
 }
 
@@ -146,13 +141,16 @@ $fontColor: white;
 }
 
 .dropdown {
-  position: relative;
-}
+  position: static;
+  }
 
 .dropdown-content {
   display: none;
   position: absolute;
- width: 100vw;
+  top: 100%;       
+  left: 0;     
+  right: 0; 
+  width: 100vw;     
   background-color: #fff;
   padding: 20px;
   z-index: 1000;
@@ -163,6 +161,7 @@ $fontColor: white;
     font-size: 12px !important;
   justify-content: center !important;
 }
+
 .dropdown-content li img {
   width: 200px;   
   height: 200px;   
@@ -243,6 +242,7 @@ $fontColor: white;
   align-items: center;
   gap: 4px;
   padding: 12px 32px;
+    border: none;
 }
 
 .arrow {

@@ -79,3 +79,4 @@ withDefaults(defineProps<Props>(), {
   product: () => ({}) as ProductInfo,
 });
 </script>
+

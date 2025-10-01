@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Small Pizza Box",
+    "name": "Pizza Box",
     "code": "pizza box 1",
     "size1": " 250 × 250 mm",
     "size2": "-",
@@ -12,7 +12,7 @@
   },
   {
     "id": 2,
-    "name": "Medium Pizza Box",
+    "name": "Pizza Box",
     "code": "pizza box 2",
     "size1": " 300 × 300 mm",
     "size2": "-",
@@ -23,7 +23,7 @@
   },
   {
     "id": 3,
-    "name": "Large Pizza Box",
+    "name": "Pizza Box",
     "code": "pizza box 3",
     "size1": " 500 × 160 mm",
     "size2": "-",
