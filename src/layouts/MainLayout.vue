@@ -4,63 +4,57 @@
       <router-view />
     </q-page-container>
     <q-footer style="padding-top: 0px">
-      <section :class="routeClass" class="contact-section">
-        <h2>CONTACT US</h2>
-        <p>
-          We are here to help! Whether you have questions about our products, need assistance with
-          an order, or want to discuss a business partnership, don’t hesitate to get in touch with
-          us.
-        </p>
+    <section :class="routeClass" class="contact-section">
+  <h2>{{ $t('contactTitle') }}</h2>
+  <p>{{ $t('contactText') }}</p>
 
-        <div class="contact-container">
-          <div class="contact-card">
-            <h3 style="padding-top: 0px; padding-bottom: 0px">Get In Touch</h3>
+  <div class="contact-container">
+    <div class="contact-card">
+      <h3>{{ $t('contactCardTitle') }}</h3>
 
-            <strong>Phone</strong>
-            <p>098 413 366 0393<br />098 413 432 9665</p>
+      <strong>{{ $t('phoneLabel') }}</strong>
+      <p v-html="$t('phoneNumbers').replace(/\n/g, '<br/>')"></p>
 
-            <strong>Email</strong>
-            <p>info@alumpeyman.com</p>
+      <strong>{{ $t('emailLabel') }}</strong>
+      <p>{{ $t('email') }}</p>
 
-            <strong>Address</strong>
-            <p>
-              Office: 16th Floor, Unit 1, World Trade Center Tower, World Trade Street, World Trade
-              Square, Tabriz, Iran
-              <br /><br />
-              Factory: Km 27, Shahid Salami Industrial Zone, Km 30 of Azarshahr – Tabriz Road,
-              Tabriz, Iran
-            </p>
+      <strong>{{ $t('addressLabel') }}</strong>
+      <p>
+        {{ $t('officeAddress') }}<br /><br />
+        {{ $t('factoryAddress') }}
+      </p>
 
-            <div class="social">
-              <a href="https://www.instagram.com/alumpeyman" target="_blank">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a href="#"><i class="fab fa-telegram"></i></a>
-              <a href="#"><i class="fab fa-linkedin"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-            </div>
-          </div>
+      <div class="social">
+        <a href="https://www.instagram.com/alumpeyman" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#"><i class="fab fa-telegram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
 
-          <div class="contact-img">
-            <img src="assets/cc1.png" alt="Office Building" />
-          </div>
-        </div>
-      </section>
+    <div class="contact-img">
+      <img src="assets/cc1.png" alt="Office Building" />
+    </div>
+  </div>
+</section>
 
-      <footer>
-        <div class="footer-logo">
-          <img src="assets/logo2.png" alt="Logo" />
-          <div>
-            <h4>ALUM</h4>
-            <span>PEYMAN</span>
-          </div>
-        </div>
-        <div class="footer-links">
-          <a href="#">Alum Peyman</a> <span>|</span> <a href="#">Privacy Policy</a> <span>|</span>
-          <a href="#">Terms & Conditions</a> <span>|</span>
-          © 2025
-        </div>
-      </footer>
+<footer>
+  <div class="footer-logo">
+    <img src="assets/logo2.png" alt="Logo" />
+    <div>
+      <h4>ALUM</h4>
+      <span>PEYMAN</span>
+    </div>
+  </div>
+  <div class="footer-links">
+    <a href="#">{{ $t('footerAlum') }}</a> <span>|</span>
+    <a href="#">{{ $t('footerPrivacy') }}</a> <span>|</span>
+    <a href="#">{{ $t('footerTerms') }}</a> <span>|</span>
+    © 2025
+  </div>
+</footer>
     </q-footer>
   </q-layout>
 </template>

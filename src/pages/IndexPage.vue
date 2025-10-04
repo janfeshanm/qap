@@ -10,307 +10,281 @@
           <q-carousel-control position="top" class="text-white rounded-borders">
             <nav-comp />
           </q-carousel-control>
-          <q-carousel-control position="bottom" style="max-width: 60%">
-          <div class="slider-overlay">
-              <h1><span>ALUM</span> PEYMAN</h1>
-              <p>
-                The First and Largest Aluminum Foil and Disposable <br />
-                Container Manufacturer in Northwest Iran
-              </p>
-              <a href="#" class="btn">PRODUCTS</a>
-            </div>
-          </q-carousel-control>
+     <q-carousel-control position="bottom" style="max-width: 60%">
+  <div class="slider-overlay">
+    <h1 v-html="$t('heroTitle')"></h1>
+    <p v-html="$t('heroSubtitle')"></p>
+    <a href="#" class="btn">{{ $t('heroButton') }}</a>
+  </div>
+</q-carousel-control>
         </template>
       </q-carousel>
     </header>
     
-    <section class="certificates-section">
+   <section class="certificates-section">
   <!-- ISO CERTIFIED -->
   <div class="certificate-item">
     <img src="assets/c3.png" alt="ISO Certified">
-    <h3>ISO CERTIFIED</h3>
+    <h3>{{ $t('isoCertified') }}</h3>
   </div>
 
   <!-- MADE IN IRAN -->
   <div class="certificate-item">
     <img src="assets/c2.png" alt="Made in Iran">
-    <h3>MADE IN IRAN</h3>
+    <h3>{{ $t('madeInIran') }}</h3>
   </div>
 
   <!-- SIB SALAMAT -->
   <div class="certificate-item">
     <img src="assets/c1.png" alt="SIB SALAMAT">
-    <h3>SIB SALAMAT</h3>
+    <h3>{{ $t('sibSalamat') }}</h3>
   </div>
 </section>
 
-    <section class="hero">
-      <h4>High-Quality, Food-Grade Aluminum Products for Cooking, Packaging, and Storage</h4>
-      <h1>Premium Aluminum Foil & Disposable Containers</h1>
-      <p>
-        Looking for reliable aluminum foil or durable disposable aluminum containers? Our factory
-        specializes in manufacturing food-safe aluminum solutions used in households, restaurants,
-        catering services, and food industries.
-      </p>
-    </section>
+   <section class="hero">
+  <h4>{{ $t('heroIntro') }}</h4>
+  <h1>{{ $t('heroMainTitle') }}</h1>
+  <p>{{ $t('heroDescription') }}</p>
+</section>
 
-    <section class="products">
-      <div class="product">
-        <div><img src="assets/r1.png" alt="Disposable Aluminum Containers" /></div>
-        <div class="text">
-          <h2>Disposable Aluminum Containers</h2>
-          <h3>Oven & Freezer Safe</h3>
-          <p>
-            Our disposable aluminum containers are perfect for hot and cold meals, widely used in
-            catering, takeaway, and ready-meal packaging.
-          </p>
-          <ul>
-            <li>Multiple shapes and sizes: round, rectangular, deep or shallow</li>
-            <li>Optional lids for safe storage and transportation</li>
-            <li>100% recyclable and environmentally friendly</li>
-            <li>Oven-safe, microwave-safe and freezer-compatible</li>
-            <li>Ideal for restaurants, food factories, and event catering</li>
-          </ul>
-          <a href="#" class="link">Explore Disposable Containers Collection</a>
-        </div>
-      </div>
+<section class="products">
+  <!-- Product 1 -->
+  <div class="product">
+    <div><img src="assets/r1.png" alt="Disposable Aluminum Containers" /></div>
+    <div class="text">
+      <h2>{{ $t('disposableTitle') }}</h2>
+      <h3>{{ $t('disposableSubtitle') }}</h3>
+      <p>{{ $t('disposableText') }}</p>
+      <ul>
+        <li>{{ $t('disposableList1') }}</li>
+        <li>{{ $t('disposableList2') }}</li>
+        <li>{{ $t('disposableList3') }}</li>
+        <li>{{ $t('disposableList4') }}</li>
+        <li>{{ $t('disposableList5') }}</li>
+      </ul>
+      <a href="#" class="link">{{ $t('disposableLink') }}</a>
+    </div>
+  </div>
 
-      <div class="product reverse">
-        <div><img src="assets/r2.png" alt="Aluminum Foil Rolls" /></div>
-        <div class="text">
-          <h2>Aluminum Foil Rolls</h2>
-          <h3>Heat-Resistant & Food-Safe</h3>
-          <p>
-            We produce high-quality aluminum foil rolls in various widths and thicknesses, suitable
-            for both home and industrial use.
-          </p>
-          <ul>
-            <li>Food-grade and hygienic</li>
-            <li>Resistant to high temperatures and moisture</li>
-            <li>Keeps food fresh by blocking light, air, and contaminants</li>
-            <li>Ideal for kitchens, bakeries, takeaways, and supermarkets</li>
-            <li>Available in custom sizes and private label options</li>
-          </ul>
-          <a href="#" class="link">View All Aluminum Foil Products</a>
-        </div>
-      </div>
-    </section>
+  <!-- Product 2 -->
+  <div class="product reverse">
+    <div><img src="assets/r2.png" alt="Aluminum Foil Rolls" /></div>
+    <div class="text">
+      <h2>{{ $t('foilTitle') }}</h2>
+      <h3>{{ $t('foilSubtitle') }}</h3>
+      <p>{{ $t('foilText') }}</p>
+      <ul>
+        <li>{{ $t('foilList1') }}</li>
+        <li>{{ $t('foilList2') }}</li>
+        <li>{{ $t('foilList3') }}</li>
+        <li>{{ $t('foilList4') }}</li>
+        <li>{{ $t('foilList5') }}</li>
+      </ul>
+      <a href="#" class="link">{{ $t('foilLink') }}</a>
+    </div>
+  </div>
+</section>
+
 
     <section class="products-section">
-      <h1 class="section-title">OUR PRODUCTS</h1>
+ <h1 class="section-title">{{ $t('ourProducts') }}</h1>
+
 
       <search-product category="all" />
 
       <div class="product-category">
-        <div class="category-header">
-          <h2>Aluminium Containers</h2>
-          <a href="container.html">view all</a>
-        </div>
-        <div class="product-images" style="grid-template-columns: auto auto auto;">
-          <img src="assets/1.png" alt="Aluminium Containers 1"/>
-          <img src="assets/2.png" alt="Aluminium Containers 2" />
-          <img src="assets/3.png" alt="Aluminium Containers 3" />
-        </div>
-      </div>
+  <div class="category-header">
+    <h2>{{ $t('categoryContainers') }}</h2>
+    <a href="container.html">{{ $t('viewAll') }}</a>
+  </div>
+  <div class="product-images" style="grid-template-columns: auto auto auto;">
+    <img src="assets/1.png" alt="Aluminium Containers 1" />
+    <img src="assets/2.png" alt="Aluminium Containers 2" />
+    <img src="assets/3.png" alt="Aluminium Containers 3" />
+  </div>
+</div>
 
-      <div class="product-category">
-        <div class="category-header">
-          <h2>Aluminium Foil</h2>
-          <a href="foil.html">view all</a>
-        </div>
-        <div class="product-images" style="grid-template-columns: auto auto auto auto;">
-          <img src="assets/4.png" alt="Aluminium Foil 1" />
-          <img src="assets/5.png" alt="Aluminium Foil 2" />
-          <img src="assets/6.png" alt="Aluminium Foil 3"/>
-          <img src="assets/7.png" alt="Aluminium Foil 4" />
-        </div>
-      </div>
+<div class="product-category">
+  <div class="category-header">
+    <h2>{{ $t('categoryFoil') }}</h2>
+    <a href="foil.html">{{ $t('viewAll') }}</a>
+  </div>
+  <div class="product-images" style="grid-template-columns: auto auto auto auto;">
+    <img src="assets/4.png" alt="Aluminium Foil 1" />
+    <img src="assets/5.png" alt="Aluminium Foil 2" />
+    <img src="assets/6.png" alt="Aluminium Foil 3" />
+    <img src="assets/7.png" alt="Aluminium Foil 4" />
+  </div>
+</div>
 
-      <div class="product-category">
-        <div class="category-header">
-          <h2>Container Lids</h2>
-          <a href="lids.html">view all</a>
-        </div>
-        <div class="product-images"  style="grid-template-columns: auto auto auto;">
-          <img src="assets/8.png" alt="Lids 1" />
-          <img src="assets/9.png" alt="Lids 2" />
-          <img src="assets/10.png" alt="Lids 3" />
-        </div>
-      </div>
+<div class="product-category">
+  <div class="category-header">
+    <h2>{{ $t('categoryLids') }}</h2>
+    <a href="lids.html">{{ $t('viewAll') }}</a>
+  </div>
+  <div class="product-images" style="grid-template-columns: auto auto auto;">
+    <img src="assets/8.png" alt="Lids 1" />
+    <img src="assets/9.png" alt="Lids 2" />
+    <img src="assets/10.png" alt="Lids 3" />
+  </div>
+</div>
 
-      <div class="product-category">
-        <div class="category-header">
-          <h2>Cardboard Pizza Box</h2>
-          <a href="pizza.html">view all</a>
-        </div>
-        <div class="product-images" style="grid-template-columns: auto auto auto;">
-          <img src="assets/11.png" alt="Pizza Box 1" />
-          <img src="assets/12.png" alt="Pizza Box 2" />
-          <img src="assets/13.png" alt="Pizza Box 3" />
-        </div>
-      </div>
+<div class="product-category">
+  <div class="category-header">
+    <h2>{{ $t('categoryPizza') }}</h2>
+    <a href="pizza.html">{{ $t('viewAll') }}</a>
+  </div>
+  <div class="product-images" style="grid-template-columns: auto auto auto;">
+    <img src="assets/11.png" alt="Pizza Box 1" />
+    <img src="assets/12.png" alt="Pizza Box 2" />
+    <img src="assets/13.png" alt="Pizza Box 3" />
+  </div>
+</div>
 
-      <div class="product-category">
-        <div class="category-header">
-          <h2>Plastic Table Cover</h2>
-          <a href="tablecover.html">view all</a>
-        </div>
-        <div class="product-images" style="grid-template-columns: auto auto auto;">
-          <img src="assets/14.png" alt="Cover 1" />
-          <img src="assets/15.png" alt="Cover 2" />
-          <img src="assets/16.png" alt="Cover 3" />
-        </div>
-      </div>
+<div class="product-category">
+  <div class="category-header">
+    <h2>{{ $t('categoryCover') }}</h2>
+    <a href="tablecover.html">{{ $t('viewAll') }}</a>
+  </div>
+  <div class="product-images" style="grid-template-columns: auto auto auto;">
+    <img src="assets/14.png" alt="Cover 1" />
+    <img src="assets/15.png" alt="Cover 2" />
+    <img src="assets/16.png" alt="Cover 3" />
+  </div>
+</div>
 
-      <div class="product-category">
-        <div class="category-header">
-          <h2>Disposable Paper Cup</h2>
-        </div>
-        <div class="product-images" style="grid-template-columns: auto auto;">
-          <img src="assets/17.png" alt="Cup 1" />
-          <img src="assets/18.png" alt="Cup Coming Soon" />
-        </div>
-      </div>
+<div class="product-category">
+  <div class="category-header">
+    <h2>{{ $t('categoryCup') }}</h2>
+  </div>
+  <div class="product-images" style="grid-template-columns: auto auto;">
+    <img src="assets/17.png" alt="Cup 1" />
+    <img src="assets/18.png" alt="Cup Coming Soon" />
+  </div>
+</div>
+
     </section>
 
-    <section class="about-section">
-      <div class="about-content">
-        <h2>ABOUT US</h2>
-        <p>
-          Founded in 2005, Alum Peyman was established to meet the growing market demands in the
-          packaging industry for food, pharmaceuticals, industrial products, bitumen sheets, and
-          more. As the first and largest manufacturer of disposable containers and aluminium foil
-          using the latest global technologies, the company began its operations in the Shahid
-          Salimi Industrial Park in Tabriz, northwest of Iran. From its inception, the strong market
-          presence and high customer satisfaction in the region inspired the management team to
-          enhance product quality, expand the product range, and grow its target markets. Market
-          research to better respond to industry needs.
-        </p>
-        <div class="about-buttons">
-          <a href="#" class="btn primary">Learn More</a>
-          <a href="#" class="btn secondary"> Watch Video <span class="play-icon">▶</span> </a>
-        </div>
-      </div>
+   <section class="about-section">
+  <div class="about-content">
+    <h2>{{ $t('aboutTitle') }}</h2>
+    <p>{{ $t('aboutText') }}</p>
 
-      <div class="about-stats">
-        <div class="stat-box">
-          <div class="number">20</div>
-          <div class="label">Years of experience</div>
-        </div>
-        <div class="stat-box">
-          <div class="number">+10</div>
-          <div class="label">Our Exports</div>
-        </div>
-        <div class="stat-box">
-          <div class="number">+15</div>
-          <div class="label">Distributors</div>
-        </div>
-        <div class="stat-box">
-          <div class="number">+50</div>
-          <div class="label">Expert Colleagues</div>
-        </div>
-      </div>
-    </section>
+    <div class="about-buttons">
+      <a href="#" class="btn primary">{{ $t('learnMore') }}</a>
+      <a href="#" class="btn secondary">
+        {{ $t('watchVideo') }} <span class="play-icon">▶</span>
+      </a>
+    </div>
+  </div>
 
-    <section class="service-section">
-      <div class="service-content">
-        <div class="service-text">
-          <h2>SERVICE</h2>
-          <h3>CUSTOM PRINTING ON DISPOSABLE TABLEWARE</h3>
-          <p>
-            Elevate your brand with custom-printed disposable tableware. Whether you're running a
-            cafe, restaurant, catering business, or organizing a special event, we offer
-            high-quality printing on cups, plates, bowls, trays, and more.
-            <br /><br />
-            With options like direct printing and heat-transfer labeling, your logo, design, or
-            promotional message will stand out, professionally printed with precision and
-            durability.
-          </p>
-          <p><strong>Let your packaging speak your brand</strong></p>
-          <img src="assets/s1.png" alt="Disposable packaging" />
-        </div>
+  <div class="about-stats">
+    <div class="stat-box">
+      <div class="number">20</div>
+      <div class="label">{{ $t('yearsExperience') }}</div>
+    </div>
+    <div class="stat-box">
+      <div class="number">+10</div>
+      <div class="label">{{ $t('exports') }}</div>
+    </div>
+    <div class="stat-box">
+      <div class="number">+15</div>
+      <div class="label">{{ $t('distributors') }}</div>
+    </div>
+    <div class="stat-box">
+      <div class="number">+50</div>
+      <div class="label">{{ $t('colleagues') }}</div>
+    </div>
+  </div>
+</section>
 
-        <div class="service-details">
-          <img src="assets/s3.png" alt="Custom print" />
-          <ul>
-            <li>High-resolution printing on various disposable items</li>
-            <li>Full-color logo & design support</li>
-            <li>Low minimum order quantities</li>
-            <li>Fast turnaround times</li>
-            <li>Free consultation on print-ready artwork</li>
-          </ul>
-          <p>
-            Perfect for Coffee shops, fast food chains, events, marketing campaigns, and private
-            labels.
-          </p>
-          <a href="#" class="contact-btn">CONTACT</a>
-        </div>
-      </div>
 
-      <div class="coming-soon">
-        <img src="assets/s2.png" alt="Coming Soon" />
-      </div>
-    </section>
+   <section class="service-section">
+  <div class="service-content">
+    <div class="service-text">
+      <h2>{{ $t('serviceTitle') }}</h2>
+      <h3>{{ $t('serviceSubtitle') }}</h3>
+      <p>
+        {{ $t('serviceText1') }}
+        <br /><br />
+        {{ $t('serviceText2') }}
+      </p>
+      <p><strong>{{ $t('serviceTagline') }}</strong></p>
+      <img src="assets/s1.png" alt="Disposable packaging" />
+    </div>
+
+    <div class="service-details">
+      <img src="assets/s3.png" alt="Custom print" />
+      <ul>
+        <li>{{ $t('serviceList1') }}</li>
+        <li>{{ $t('serviceList2') }}</li>
+        <li>{{ $t('serviceList3') }}</li>
+        <li>{{ $t('serviceList4') }}</li>
+        <li>{{ $t('serviceList5') }}</li>
+      </ul>
+      <p>{{ $t('serviceText3') }}</p>
+      <a href="#" class="contact-btn">{{ $t('contact') }}</a>
+    </div>
+  </div>
+
+  <div class="coming-soon">
+    <img src="assets/s2.png" alt="Coming Soon" />
+  </div>
+</section>
+
 
     <section class="catalog-section">
-      <div class="catalog-image">
-        <img src="assets/catalog.png" alt="Catalog Preview" />
-      </div>
+  <div class="catalog-image">
+    <img src="assets/catalog.png" alt="Catalog Preview" />
+  </div>
 
-      <div class="catalog-content">
-        <h2>CATALOG</h2>
-        <p>
-          To get a comprehensive overview of our products, including detailed specifications, sizes,
-          and various applications, you can download our digital catalog. It provides all the
-          necessary information to help you choose the right product for your needs.
-        </p>
-        <a href="#" class="catalog-btn">DOWNLOAD CATALOG</a>
-      </div>
-    </section>
+  <div class="catalog-content">
+    <h2>{{ $t('catalogTitle') }}</h2>
+    <p>{{ $t('catalogText') }}</p>
+    <a href="#" class="catalog-btn">{{ $t('catalogButton') }}</a>
+  </div>
+</section>
 
-    <section class="blog-section">
-      <h2>OUR LATEST ARTICLES & BLOG POSTS</h2>
 
-      <div class="blog-card">
-        <img src="assets/b1.png" alt="Aluminum container" />
-        <div class="blog-content">
-          <div class="stars">★★★★★</div>
-          <p>Discovery of Aluminum and Its Uses</p>
-          <h3>The Rise and Development of Aluminum Disposable Containers</h3>
-        </div>
-      </div>
-      <div class="blog-card reverse">
-        <img src="assets/b2.png" alt="Recycling aluminum" />
-        <div class="blog-content">
-          <p>Disposable containers became popular because of their ease of use, simple transport, 
-        and time-saving benefits. Since they do not require washing, they are quick and practical 
-        to use.</p>
-          <h3>History of Disposable Containers in the Industry</h3>
-          <a href="#" class="btn">Learn More</a>
-        </div>
-      </div>
-      <div class="blog-banner">
-        <img src="assets/b3.png" alt="Aluminum packaging" />
-        <div class="banner-text">
-          <h3>Want to learn more?</h3>
-          <p>Explore our blog for more tips, articles, and industry updates.</p>
-        </div>
-      </div>
-    </section>
+   <section class="blog-section">
+  <h2>{{ $t('blogSectionTitle') }}</h2>
 
-    <section class="export-section">
-      <h2>Export</h2>
-      <p>
-        At Alum Peyman, we specialize in the export of premium-quality aluminum containers and
-        household aluminum foil products. With over 20 years of experience in manufacturing and
-        international trade, our company is a reliable partner for businesses seeking trusted,
-        hygienic, and durable aluminum packaging solutions.
-      </p>
-      <div class="export-images">
-        <img src="assets/ex1.png" alt="Loading aluminum export products" />
-        <img src="assets/ex2.png" alt="Factory worker handling aluminum containers" />
-      </div>
-    </section>
+  <div class="blog-card">
+    <img src="assets/b1.png" alt="Aluminum container" />
+    <div class="blog-content">
+      <div class="stars">★★★★★</div>
+      <p>{{ $t('blogArticle1Title') }}</p>
+      <h3>{{ $t('blogArticle2Title') }}</h3>
+    </div>
+  </div>
+
+  <div class="blog-card reverse">
+    <img src="assets/b2.png" alt="Recycling aluminum" />
+    <div class="blog-content">
+      <p>{{ $t('blogArticle2Text') }}</p>
+      <h3>{{ $t('blogArticle2Title') }}</h3>
+      <a href="#" class="btn">{{ $t('blogBtn') }}</a>
+    </div>
+  </div>
+
+  <div class="blog-banner">
+    <img src="assets/b3.png" alt="Aluminum packaging" />
+    <div class="banner-text">
+      <h3>{{ $t('blogLearnMoreTitle') }}</h3>
+      <p>{{ $t('blogLearnMoreText') }}</p>
+    </div>
+  </div>
+</section>
+
+
+   <section class="export-section">
+  <h2>{{ $t('exportTitle') }}</h2>
+  <p>{{ $t('exportText') }}</p>
+  <div class="export-images">
+    <img src="assets/ex1.png" alt="Loading aluminum export products" />
+    <img src="assets/ex2.png" alt="Factory worker handling aluminum containers" />
+  </div>
+</section>
   </q-page>
 </template>
 
@@ -327,11 +301,23 @@ const autoplay = ref(true);
   box-sizing: border-box;
 }
 
-h1,
-h2,
-h3 {
-  font-family: 'Vazirmatn', sans-serif;
-  font-weight: 600;
+html[lang="fa"] body,
+html[lang="fa"] .q-page {
+  font-family: 'IRANSansX', Tahoma, sans-serif;
+  direction: rtl;
+}
+
+html[lang="fa"] body {
+  font-family: 'IRANSansX', sans-serif;
+  direction: rtl;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+
+html[lang="en"] body {
+  font-family: 'Roboto', Arial, sans-serif;
+  direction: ltr;
 }
 
 .q-carousel {

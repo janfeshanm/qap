@@ -2,6 +2,8 @@
 // so you can safely delete all default props below
 
 export default {
+
+  //menu
   products: 'Products',
   aluminiumContainers: 'Aluminium Containers',
   aluminiumFoil: 'Aluminium Foil',
@@ -14,6 +16,134 @@ export default {
   blog: 'Blog',
   contact: 'Contact Us',
 
+
+
+  //index
+  heroTitle: '<span>ALUM</span> PEYMAN',
+  heroSubtitle: 'The First and Largest Aluminum Foil and Disposable Container Manufacturer in Northwest Iran',
+  heroButton: 'PRODUCTS',
+
+  isoCertified: 'ISO CERTIFIED',
+  madeInIran: 'MADE IN IRAN',
+  sibSalamat: 'SIB SALAMAT',
+
+
+   // Hero Section
+  heroIntro: 'High-Quality, Food-Grade Aluminum Products for Cooking, Packaging, and Storage',
+  heroMainTitle: 'Premium Aluminum Foil & Disposable Containers',
+  heroDescription: `Looking for reliable aluminum foil or durable disposable aluminum containers?
+  Our factory specializes in manufacturing food-safe aluminum solutions used in households,
+  restaurants, catering services, and food industries.`,
+
+  // Products Section
+  disposableTitle: 'Disposable Aluminum Containers',
+  disposableSubtitle: 'Oven & Freezer Safe',
+  disposableText: `Our disposable aluminum containers are perfect for hot and cold meals,
+  extensively used in catering, takeout, and ready-meal packaging.`,
+  disposableList1: 'Multiple shapes and sizes: round, rectangular, deep or shallow',
+  disposableList2: 'Optional lids for safe storage and transportation',
+  disposableList3: '100% recyclable and environmentally friendly',
+  disposableList4: 'Oven-safe, microwave-safe and freezer-compatible',
+  disposableList5: 'Ideal for restaurants, food factories, and event catering',
+  disposableLink: 'Explore our Disposable Containers Collection',
+
+  foilTitle: 'Aluminum Foil Rolls',
+  foilSubtitle: 'Heat-Resistant & Food-Safe',
+  foilText: `We produce high-quality aluminum foil rolls in various widths and thicknesses,
+  suitable for both home and industrial use.`,
+  foilList1: 'Food-grade and hygienic',
+  foilList2: 'Resistant to high temperatures and moisture',
+  foilList3: 'Keeps food fresh by blocking light, air, and environmentel issues',
+  foilList4: 'Ideal for kitchens, bakeries, takeouts, and supermarkets',
+  foilList5: 'offered in tailored dimensions and private label options',
+  foilLink: 'View All Aluminum Foil Products',
+
+
+  // Section Titles
+  ourProducts: 'OUR PRODUCTS',
+    // Product Categories
+  categoryContainers: 'Aluminium Containers',
+  categoryFoil: 'Aluminium Foil',
+  categoryLids: 'Container Lids',
+  categoryPizza: 'Cardboard Pizza Box',
+  categoryCover: 'Plastic Table Cover',
+  categoryCup: 'Disposable Paper Cup',
+  viewAll: 'view all',
+
+  // About Section
+  aboutTitle: 'ABOUT US',
+  aboutText: `Founded in 2005, Alum Peyman was established to meet the growing market demands in the
+  packaging industry for food, pharmaceuticals, industrial products, bitumen sheets, and more.
+  As the first and largest manufacturer of disposable containers and aluminium foil using the
+  latest global technologies, the company began its operations in the Shahid Salimi Industrial
+  Park in Tabriz, northwest of Iran. From its inception, the strong market presence and high
+  customer satisfaction in the region inspired the management team to enhance product quality,
+  expand the product range, and grow its target markets. Market research has been scheduled to better respond to industry needs.`,
+  learnMore: 'Learn More',
+  watchVideo: 'Watch Video',
+  yearsExperience: 'Years of experience',
+  exports: 'Our Exports',
+  distributors: 'Distributors',
+  colleagues: 'Expert Colleagues',
+
+
+    // Service Section
+  serviceTitle: 'SERVICE',
+  serviceSubtitle: 'CUSTOM PRINTING ON DISPOSABLE TABLEWARE',
+  serviceText1: `Elevate your brand with custom-printed disposable tableware. Whether you're running a cafe, restaurant, catering business, or organizing a special event, we offer high-quality printing on cups, plates, bowls, trays, and more.`,
+  serviceText2: `With options like direct printing and heat-transfer labeling, your logo, design, or promotional message will stand out, professionally printed with precision and durability.`,
+  serviceTagline: 'Let your packaging speak your brand',
+  serviceList1: 'High-resolution printing on various disposable items',
+  serviceList2: 'Full-color logo & design support',
+  serviceList3: 'Low minimum order quantities',
+  serviceList4: 'Fast turnaround times',
+  serviceList5: 'Free consultation on print-ready artwork',
+  serviceText3: 'Perfect for Coffee shops, fast food chains, events, marketing campaigns, and private labels.',
+  
+
+    // Catalog Section
+  catalogTitle: 'CATALOG',
+  catalogText: `To get a comprehensive overview of our products, including detailed specifications, sizes, and various applications, you can download our digital catalog. It provides all the necessary information to help you choose the right product for your needs.`,
+  catalogButton: 'DOWNLOAD CATALOG',
+
+   // Blog Section
+  blogSectionTitle: 'OUR LATEST ARTICLES & BLOG POSTS',
+  blogArticle1Title: 'Discovery of Aluminum and Its Uses',
+  blogArticle1Text: `Aluminum was first discovered in 1825 by Danish chemist Hans Christian Ørsted. 
+He managed to obtain the metal using a chemical process, but it was not practical for large-scale use.`,
+
+  blogArticle2Title: 'The Rise and Development of Aluminum Disposable Containers',
+  blogArticle2Text: `Disposable containers became popular because of their ease of use, simple transport, and time-saving benefits. 
+Since they do not require washing, they are quick and practical to use.`,
+
+
+  blogBtn: 'Learn More',
+
+    // Export Section
+  exportTitle: 'Export',
+  exportText: `At Alum Peyman, we specialize in the export of premium-quality aluminum containers and
+household aluminum foil products. With over 20 years of experience in manufacturing and
+international trade, our company is a reliable partner for businesses seeking trusted,
+hygienic, and durable aluminum packaging solutions.`,
+
+
+  // Contact Section
+  contactTitle: 'CONTACT US',
+  contactText: `We are here to help! Whether you have questions about our products, need assistance with an order, or want to discuss a business partnership, don’t hesitate to get in touch with us.`,
+  contactCardTitle: 'Get In Touch',
+  phoneLabel: 'Phone',
+  phoneNumbers: '098 413 366 0393\n098 413 432 9665',
+  emailLabel: 'Email',
+  email: 'info@alumpeyman.com',
+  addressLabel: 'Address',
+  officeAddress: 'Office: 16th Floor, Unit 1, World Trade Center Tower, World Trade Street, World Trade Square, Tabriz, Iran',
+  factoryAddress: 'Factory: Km 27, Shahid Salimi Industrial Zone, Km 30 of Azarshahr – Tabriz Road, Tabriz, Iran',
+  socialFollow: 'Follow Us',
+  footerAlum: 'Alum Peyman',
+  footerPrivacy: 'Privacy Policy',
+  footerTerms: 'Terms & Conditions',
+
+//blog
     blogPageTitle: 'OUR LATEST ARTICLES & BLOG POSTS',
 
   // Article 1

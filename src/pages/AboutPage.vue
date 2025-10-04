@@ -1,42 +1,38 @@
 <template>
   <q-page>
     <nav-comp style="background-color: #11304c; height: 100px" />
-    <section class="about-section">
-      <div class="about-content">
-        <h2>ABOUT US</h2>
-        <p>Founded in 2005, Alum Peyman was established to meet the growing market demands in the
-          packaging industry for food, pharmaceuticals, industrial products, bitumen sheets, and
-          more. As the first and largest manufacturer of disposable containers and aluminium foil
-          using the latest global technologies, the company began its operations in the Shahid
-          Salimi Industrial Park in Tabriz, northwest of Iran. From its inception, the strong market
-          presence and high customer satisfaction in the region inspired the management team to
-          enhance product quality, expand the product range, and grow its target markets. Market
-          research to better respond to industry needs.</p>
-        <div class="about-buttons">
-<router-link to="/contact" class="btn primary">Learn More</router-link>
-          <a href="https://www.aparat.com/v/l49is36" class="btn secondary"> Watch Video <span class="play-icon">▶</span> </a>
-        </div>
-      </div>
-      
-      <div class="about-stats">
-        <div class="stat-box">
-          <div class="number">20</div>
-          <div class="label">Years of experience</div>
-        </div>
-        <div class="stat-box">
-          <div class="number">+10</div>
-          <div class="label">Our Exports</div>
-        </div>
-        <div class="stat-box">
-          <div class="number">+15</div>
-          <div class="label">Distributors</div>
-        </div>
-        <div class="stat-box">
-          <div class="number">+50</div>
-          <div class="label">Expert Colleagues</div>
-        </div>
-      </div>
-    </section>
+       <section class="about-section">
+  <div class="about-content">
+    <h2>{{ $t('aboutTitle') }}</h2>
+    <p>{{ $t('aboutText') }}</p>
+
+    <div class="about-buttons">
+      <a href="#" class="btn primary">{{ $t('learnMore') }}</a>
+      <a href="#" class="btn secondary">
+        {{ $t('watchVideo') }} <span class="play-icon">▶</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="about-stats">
+    <div class="stat-box">
+      <div class="number">20</div>
+      <div class="label">{{ $t('yearsExperience') }}</div>
+    </div>
+    <div class="stat-box">
+      <div class="number">+10</div>
+      <div class="label">{{ $t('exports') }}</div>
+    </div>
+    <div class="stat-box">
+      <div class="number">+15</div>
+      <div class="label">{{ $t('distributors') }}</div>
+    </div>
+    <div class="stat-box">
+      <div class="number">+50</div>
+      <div class="label">{{ $t('colleagues') }}</div>
+    </div>
+  </div>
+</section>
     <div style="background-color: #11304c; width: 100%; justify-content: center; display: flex">
       <img src="assets/about.png" alt="Office Building" class="aboutphoto" />
     </div>

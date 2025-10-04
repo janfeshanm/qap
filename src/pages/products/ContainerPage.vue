@@ -8,20 +8,17 @@
       <search-product category="container" />
     </section>
 
-    <section class="catalog-section">
-      <div class="catalog-image">
-        <img src="assets/catalog.png" alt="Catalog Preview" />
-      </div>
+     <section class="catalog-section">
+  <div class="catalog-image">
+    <img src="assets/catalog.png" alt="Catalog Preview" />
+  </div>
 
-<div class="catalog-content">
-        <h2>CATALOG</h2>
-        <p>To get a comprehensive overview of our products, including detailed specifications, sizes,
-          and various applications, you can download our digital catalog. It provides all the
-          necessary information to help you choose the right product for your needs.</p>
-        
-        <a href="public\assets\catalog-en.pdf" class="catalog-btn">DOWNLOAD CATALOG</a>
-      </div>
-    </section>
+  <div class="catalog-content">
+    <h2>{{ $t('catalogTitle') }}</h2>
+    <p>{{ $t('catalogText') }}</p>
+    <a href="#" class="catalog-btn">{{ $t('catalogButton') }}</a>
+  </div>
+</section>
   </q-page>
 </template>
 
