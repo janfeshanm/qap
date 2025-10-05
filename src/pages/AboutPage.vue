@@ -45,6 +45,23 @@ import NavComp from 'src/components/NavComp.vue';
 
 <style lang="scss">
 $fontColor: white;
+
+html[dir="rtl"] body,
+html[dir="rtl"] .q-page {
+  font-family: 'IRANSansX', Tahoma, sans-serif;
+  direction: rtl;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+html[dir="ltr"] body,
+html[dir="ltr"] .q-page {
+  font-family: 'Roboto', Arial, sans-serif;
+  direction: ltr;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
 .navbar ul li a {
   color: $fontColor;
   text-decoration: none;

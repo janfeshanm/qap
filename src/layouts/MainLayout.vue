@@ -177,7 +177,7 @@ const routeClass = computed(() => {
 
 footer {
   background: #fff;
-  padding: 20px 0;
+  padding: 40px 0px 0px 0px;
   text-align: center;
   border-top: 1px solid #eee;
 }

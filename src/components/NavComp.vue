@@ -118,6 +118,8 @@ $fontColor: white;
 
 .navbar a img {
   margin-right: 40px;
+    margin-left: 40px;
+
 }
 
 .navbar > ul {

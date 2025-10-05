@@ -184,15 +184,15 @@
       <div class="label">{{ $t('yearsExperience') }}</div>
     </div>
     <div class="stat-box">
-      <div class="number">+10</div>
+      <div class="number">+ 10</div>
       <div class="label">{{ $t('exports') }}</div>
     </div>
     <div class="stat-box">
-      <div class="number">+15</div>
+      <div class="number">+ 15</div>
       <div class="label">{{ $t('distributors') }}</div>
     </div>
     <div class="stat-box">
-      <div class="number">+50</div>
+      <div class="number">+ 50</div>
       <div class="label">{{ $t('colleagues') }}</div>
     </div>
   </div>
@@ -301,25 +301,21 @@ const autoplay = ref(true);
   box-sizing: border-box;
 }
 
-html[lang="fa"] body,
-html[lang="fa"] .q-page {
+html[dir="rtl"] body,
+html[dir="rtl"] .q-page {
   font-family: 'IRANSansX', Tahoma, sans-serif;
-  direction: rtl;
-}
-
-html[lang="fa"] body {
-  font-family: 'IRANSansX', sans-serif;
   direction: rtl;
   font-size: 16px;
   line-height: 1.6;
 }
 
-
-html[lang="en"] body {
+html[dir="ltr"] body,
+html[dir="ltr"] .q-page {
   font-family: 'Roboto', Arial, sans-serif;
   direction: ltr;
+  font-size: 16px;
+  line-height: 1.6;
 }
-
 .q-carousel {
   width: 100%;
   aspect-ratio: 192 / 90;
@@ -330,7 +326,6 @@ html[lang="en"] body {
   color: #fff;
   z-index: 10;
   padding: 20px 60px;
-  border-radius: 10px;
 }
 
 .slider-overlay h1 {
@@ -338,15 +333,26 @@ html[lang="en"] body {
   margin: 0;
   line-height: 1.2;
   font-weight: 50;
-  letter-spacing: 4px;
 }
 
 .slider-overlay h1 span {
   display: block;
   font-weight: 400;
+  letter-spacing: 0;
+}
+html[dir="ltr"] .slider-overlay h1 {
+  letter-spacing: 6px;
+}
+html[dir="ltr"] .slider-overlay h1 span {
   letter-spacing: 0px;
 }
+html[dir="rtl"] .slider-overlay h1 {
+  font-weight: lighter;
+}
 
+html[dir="rtl"] .slider-overlay h1 span {
+  font-weight: 400;
+}
 .slider-overlay p {
   font-size: 18px;
   margin: 10px 0;
@@ -399,14 +405,12 @@ display: none;
   animation-duration: 2.5s;
 }
 
-
-
 .certificates-section {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 180px;           
- padding: 40px 0px 40px 0px;
+ padding: 60px 0px 60px 0px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 2px 10px 0 rgba(53, 53, 53, 0.1);
  }
 
@@ -432,16 +436,12 @@ display: none;
   }
 }
 
-
-
-
-
 .hero {
   text-align: center;
   max-width: 800px;
   margin: 50px auto;
   padding: 0 20px;
-  margin-top: 100px;
+  margin-top: 200px;
   font-size: 1rem;
 }
 
@@ -643,6 +643,9 @@ display: none;
 .search-box img {
   width: 16px;
   height: 16px;
+  margin-left: 10px;
+    margin-right: 10px;
+
 }
 
 @media (max-width: 600px) {
@@ -845,7 +848,7 @@ display: none;
 }
 
 .service-text h2 {
-  font-size: 20px;
+  font-size: 40px;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -856,12 +859,13 @@ display: none;
   margin-bottom: 20px;
 }
 
-.service-text p {
-  font-size: 14px;
+  .service-text p,
+  .service-details ul,
+  .service-details p {
+  font-size: 16px;
   line-height: 1.7;
   margin-bottom: 20px;
-}
-
+  }
 .service-text img {
   width: 100%;
   max-width: 500px;
@@ -926,19 +930,6 @@ display: none;
     padding: 0;
   }
 
-  .service-text h2 {
-    font-size: 18px;
-  }
-
-  .service-text h3 {
-    font-size: 15px;
-  }
-
-  .service-text p,
-  .service-details ul,
-  .service-details p {
-    font-size: 16px;
-  }
 
   .contact-btn {
     font-size: 13px;
@@ -984,6 +975,8 @@ display: none;
   font-size: 28px;
   margin-bottom: 20px;
   color: #11304c;
+    font-weight: bold;
+
 }
 
 .catalog-content p {
@@ -1017,7 +1010,8 @@ display: none;
   }
 
   .catalog-content h2 {
-    font-size: 24px;
+    font-size: 45px;
+
     text-align: center;
   }
 

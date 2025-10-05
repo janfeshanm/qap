@@ -52,6 +52,22 @@ import NavComp from 'src/components/NavComp.vue';
 
 <style lang="scss">
 
+html[dir="rtl"] body,
+html[dir="rtl"] .q-page {
+  font-family: 'IRANSansX', Tahoma, sans-serif;
+  direction: rtl;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+html[dir="ltr"] body,
+html[dir="ltr"] .q-page {
+  font-family: 'Roboto', Arial, sans-serif;
+  direction: ltr;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
 .aluminum-box {
   max-width: 1000px;
   color: #ffffffff;
