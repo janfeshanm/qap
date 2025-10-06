@@ -101,7 +101,25 @@ $fontColor: #1e3950;
   justify-content: center;
   gap: 60px;
 }
+@media (max-width: 768px) {
+  .catalog-section {
+    flex-direction: column;
+    padding: 80px 20px;
+    gap: 40px;
+  }
 
+  .catalog-content h2 {
+    font-size: 45px;
+
+    text-align: center;
+  }
+
+  .catalog-content p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+}
 .catalog-image {
   flex: 1;
 }

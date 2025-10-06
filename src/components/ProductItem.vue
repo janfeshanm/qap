@@ -12,9 +12,7 @@
       <p v-if="product.Width">width: {{ product.Width }}</p>
       <p v-if="product.Weight">weight: {{ product.Weight }}</p>
     </div>
-    <q-btn class="containerbtn" label="Explore More" push
-      ><q-popup-proxy cover :breakpoint="600"
-        ><q-card class="my-card">
+    <q-btn class="containerbtn" label="Explore More" push><q-popup-proxy cover :breakpoint="600"><q-card class="my-card">
           <q-item>
             <q-item-section>
               <q-img :src="product.image">
@@ -29,9 +27,7 @@
             {{ product.description_long }}
           </q-card-section>
           <q-card-section horizontal>
-            <q-card-section>
-              {{ product.description_short }}
-            </q-card-section>
+     
 
             <q-separator vertical />
 
@@ -47,8 +43,7 @@
             </q-card-section>
           </q-card-section>
         </q-card>
-      </q-popup-proxy></q-btn
-    >
+      </q-popup-proxy></q-btn>
   </div>
 </template>
 

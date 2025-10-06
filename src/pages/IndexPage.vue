@@ -513,10 +513,6 @@ display: none;
 }
 
 
-.product .text {
-  flex: 1;
-}
-
 .product h2 {
   font-size: 1.5rem;
   color: #296097;
@@ -551,7 +547,6 @@ display: none;
     padding: 0 10px;
     margin-left: 10px;
    margin-right: 10px;
-
   }
 
   .hero h1 {
@@ -580,6 +575,7 @@ display: none;
   .product .text {
     padding-top: 20px;
     text-align: left;
+      flex: 1;
     padding: auto;
   }
 
