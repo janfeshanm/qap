@@ -6,11 +6,17 @@
     <h2>{{ $t('aboutTitle') }}</h2>
     <p>{{ $t('aboutText') }}</p>
 
-    <div class="about-buttons">
-      <a href="#" class="btn primary">{{ $t('learnMore') }}</a>
-      <a href="#" class="btn secondary">
-        {{ $t('watchVideo') }} <span class="play-icon">▶</span>
-      </a>
+   <div class="about-buttons">
+
+     <a 
+  href="https://www.aparat.com/v/l49is36" 
+  class="btn secondary" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  {{ $t('watchVideo') }} <span class="play-icon">▶</span>
+</a>
+
     </div>
   </div>
 

@@ -11,7 +11,6 @@
 </div>
 </div>
 
-
     <section class="foil">
       <search-product category="foils" />
     </section>

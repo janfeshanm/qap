@@ -23,7 +23,7 @@ export default {
 
 
 
- isoCertified: ' ISO دارای گواهی ',
+ isoCertified: '  دارای گواهی ISO',
   madeInIran: 'ساخت ایران',
   sibSalamat: 'نشان سیب سلامت',
 

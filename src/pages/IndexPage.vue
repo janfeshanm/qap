@@ -14,13 +14,13 @@
   <div class="slider-overlay">
     <h1 v-html="$t('heroTitle')"></h1>
     <p v-html="$t('heroSubtitle')"></p>
-    <a href="#" class="btn">{{ $t('heroButton') }}</a>
+  <q-btn color="primary" unelevated rounded :label="$t('heroButton')" to="/products/container" class="btn"/>
   </div>
 </q-carousel-control>
         </template>
       </q-carousel>
     </header>
-    
+  
    <section class="certificates-section">
   <!-- ISO CERTIFIED -->
   <div class="certificate-item">
@@ -62,8 +62,8 @@
         <li>{{ $t('disposableList4') }}</li>
         <li>{{ $t('disposableList5') }}</li>
       </ul>
-      <a href="#" class="link">{{ $t('disposableLink') }}</a>
-    </div>
+<router-link to="/products/container" class="link"> {{ $t('disposableLink') }}
+</router-link> </div>
   </div>
 
   <!-- Product 2 -->
@@ -80,23 +80,19 @@
         <li>{{ $t('foilList4') }}</li>
         <li>{{ $t('foilList5') }}</li>
       </ul>
-      <a href="#" class="link">{{ $t('foilLink') }}</a>
-    </div>
+<router-link to="/products/foil" class="link">  {{ $t('foilLink') }}
+</router-link></div>
   </div>
 </section>
 
 
     <section class="products-section">
  <h1 class="section-title">{{ $t('ourProducts') }}</h1>
-
-
       <search-product category="all" />
-
       <div class="product-category">
   <div class="category-header">
     <h2>{{ $t('categoryContainers') }}</h2>
-    <a href="container.html">{{ $t('viewAll') }}</a>
-  </div>
+<router-link to="/products/container" class="link"> {{ $t('viewAll') }} </router-link>  </div>
   <div class="product-images" style="grid-template-columns: auto auto auto;">
     <img src="assets/1.png" alt="Aluminium Containers 1" />
     <img src="assets/2.png" alt="Aluminium Containers 2" />
@@ -107,8 +103,7 @@
 <div class="product-category">
   <div class="category-header">
     <h2>{{ $t('categoryFoil') }}</h2>
-    <a href="foil.html">{{ $t('viewAll') }}</a>
-  </div>
+<router-link to="/products/foil" class="link"> {{ $t('viewAll') }} </router-link>  </div>
   <div class="product-images" style="grid-template-columns: auto auto auto auto;">
     <img src="assets/4.png" alt="Aluminium Foil 1" />
     <img src="assets/5.png" alt="Aluminium Foil 2" />
@@ -120,8 +115,7 @@
 <div class="product-category">
   <div class="category-header">
     <h2>{{ $t('categoryLids') }}</h2>
-    <a href="lids.html">{{ $t('viewAll') }}</a>
-  </div>
+<router-link to="/products/lids" class="link"> {{ $t('viewAll') }} </router-link>  </div>
   <div class="product-images" style="grid-template-columns: auto auto auto;">
     <img src="assets/8.png" alt="Lids 1" />
     <img src="assets/9.png" alt="Lids 2" />
@@ -132,8 +126,7 @@
 <div class="product-category">
   <div class="category-header">
     <h2>{{ $t('categoryPizza') }}</h2>
-    <a href="pizza.html">{{ $t('viewAll') }}</a>
-  </div>
+<router-link to="/products/pizza" class="link"> {{ $t('viewAll') }} </router-link>  </div>
   <div class="product-images" style="grid-template-columns: auto auto auto;">
     <img src="assets/11.png" alt="Pizza Box 1" />
     <img src="assets/12.png" alt="Pizza Box 2" />
@@ -144,8 +137,7 @@
 <div class="product-category">
   <div class="category-header">
     <h2>{{ $t('categoryCover') }}</h2>
-    <a href="tablecover.html">{{ $t('viewAll') }}</a>
-  </div>
+<router-link to="/products/tablecover" class="link"> {{ $t('viewAll') }} </router-link>  </div>
   <div class="product-images" style="grid-template-columns: auto auto auto;">
     <img src="assets/14.png" alt="Cover 1" />
     <img src="assets/15.png" alt="Cover 2" />
@@ -162,7 +154,6 @@
     <img src="assets/18.png" alt="Cup Coming Soon" />
   </div>
 </div>
-
     </section>
 
    <section class="about-section">
@@ -171,10 +162,11 @@
     <p>{{ $t('aboutText') }}</p>
 
     <div class="about-buttons">
-      <a href="#" class="btn primary">{{ $t('learnMore') }}</a>
-      <a href="#" class="btn secondary">
-        {{ $t('watchVideo') }} <span class="play-icon">▶</span>
-      </a>
+<router-link to="/about" class="btn primary">
+  {{ $t('learnMore') }}
+</router-link>
+     <a href="https://www.aparat.com/v/l49is36" class="btn secondary" target="_blank" rel="noopener noreferrer">
+  {{ $t('watchVideo') }} <span class="play-icon">▶</span></a>
     </div>
   </div>
 
@@ -212,7 +204,6 @@
       <p><strong>{{ $t('serviceTagline') }}</strong></p>
       <img src="assets/s1.png" alt="Disposable packaging" />
     </div>
-
     <div class="service-details">
       <img src="assets/s3.png" alt="Custom print" />
       <ul>
@@ -223,10 +214,11 @@
         <li>{{ $t('serviceList5') }}</li>
       </ul>
       <p>{{ $t('serviceText3') }}</p>
-      <a href="#" class="contact-btn">{{ $t('contact') }}</a>
+<router-link to="/contact" class="contact-btn">
+  {{ $t('contact') }}
+</router-link>
     </div>
   </div>
-
   <div class="coming-soon">
     <img src="assets/s2.png" alt="Coming Soon" />
   </div>
@@ -241,10 +233,9 @@
   <div class="catalog-content">
     <h2>{{ $t('catalogTitle') }}</h2>
     <p>{{ $t('catalogText') }}</p>
-    <a href="#" class="catalog-btn">{{ $t('catalogButton') }}</a>
+<a href="/assets/catalog-en.pdf" class="catalog-btn" target="_blank" rel="noopener noreferrer" > {{ $t('catalogButton') }} </a>
   </div>
 </section>
-
 
    <section class="blog-section">
   <h2>{{ $t('blogSectionTitle') }}</h2>
@@ -263,7 +254,7 @@
     <div class="blog-content">
       <p>{{ $t('blogArticle2Text') }}</p>
       <h3>{{ $t('blogArticle2Title') }}</h3>
-      <a href="#" class="btn">{{ $t('blogBtn') }}</a>
+<router-link to="/blog" class="btn"> {{ $t('blogBtn') }} </router-link>
     </div>
   </div>
 
@@ -767,6 +758,8 @@ display: none;
   text-decoration: none;
   display: inline-block;
   transition: 0.3s;
+    color: #11304c;
+
 }
 
 .btn.primary {

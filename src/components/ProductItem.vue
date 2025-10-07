@@ -12,38 +12,48 @@
       <p v-if="product.Width">width: {{ product.Width }}</p>
       <p v-if="product.Weight">weight: {{ product.Weight }}</p>
     </div>
-    <q-btn class="containerbtn" label="Explore More" push><q-popup-proxy cover :breakpoint="600"><q-card class="my-card">
-          <q-item>
-            <q-item-section>
-              <q-img :src="product.image">
-                <div class="absolute-bottom text-h6">
-                  {{ product.name }}
-                </div>
-              </q-img>
-            </q-item-section>
-          </q-item>
-          <q-separator />
-          <q-card-section>
-            {{ product.description_long }}
-          </q-card-section>
-          <q-card-section horizontal>
-     
+  <q-btn
+  class="containerbtn"
+  label="Explore More"
+  push
+  :style="{ backgroundColor: buttonColor, color: 'white' }"
+>
+  <q-popup-proxy cover :breakpoint="600">
+    <q-card class="my-card">
+      <q-item>
+        <q-item-section>
+          <q-img :src="product.image">
+            <div class="absolute-bottom text-h6">
+              {{ product.name }}
+            </div>
+          </q-img>
+        </q-item-section>
+      </q-item>
 
-            <q-separator vertical />
+      <q-separator />
 
-            <q-card-section class="col-4">
-              <p>Code: {{ product.code }}</p>
-              <p v-if="product.Topout">Top out: {{ product.Topout }}</p>
-              <p v-if="product.Topin">Top in: {{ product.Topin }}</p>
-              <p v-if="product.size1">Size: {{ product.size1 }}</p>
-              <p v-if="product.thickness">Thickness: {{ product.thickness }}</p>
-              <p v-if="product.depth">depth: {{ product.depth }}</p>
-              <p v-if="product.Width">width: {{ product.Width }}</p>
-              <p v-if="product.Weight">weight: {{ product.Weight }}</p>
-            </q-card-section>
-          </q-card-section>
-        </q-card>
-      </q-popup-proxy></q-btn>
+      <q-card-section>
+        {{ product.description_long }}
+      </q-card-section>
+
+      <q-card-section horizontal>
+        <q-separator vertical />
+
+        <q-card-section class="col-4">
+          <p>Code: {{ product.code }}</p>
+          <p v-if="product.Topout">Top out: {{ product.Topout }}</p>
+          <p v-if="product.Topin">Top in: {{ product.Topin }}</p>
+          <p v-if="product.size1">Size: {{ product.size1 }}</p>
+          <p v-if="product.thickness">Thickness: {{ product.thickness }}</p>
+          <p v-if="product.depth">Depth: {{ product.depth }}</p>
+          <p v-if="product.Width">Width: {{ product.Width }}</p>
+          <p v-if="product.Weight">Weight: {{ product.Weight }}</p>
+        </q-card-section>
+      </q-card-section>
+    </q-card>
+  </q-popup-proxy>
+</q-btn>
+
   </div>
 </template>
 
@@ -73,5 +83,26 @@ interface Props {
 withDefaults(defineProps<Props>(), {
   product: () => ({}) as ProductInfo,
 });
+
+import { useRoute } from "vue-router";
+import { computed } from "vue";
+
+const route = useRoute();
+
+const buttonColor = computed(() => {
+  switch (route.name) {
+    case "pizza":
+      return "#552b15";
+    case "foil":
+      return "#11304c";
+    case "lids":
+      return "#11304c";
+    default:
+      return "#11304c";
+  case "tablecover":
+      return "#830002";
+  }
+});
+
 </script>
 

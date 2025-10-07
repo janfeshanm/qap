@@ -30,8 +30,9 @@
         </a>
         <a href="#"><i class="fab fa-telegram"></i></a>
         <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-      </div>
+<a href="https://x.com/alumpeyman" target="_blank" rel="noopener noreferrer">
+  <i class="fab fa-twitter"></i>
+</a>      </div>
     </div>
 
     <div class="contact-img">
@@ -49,9 +50,9 @@
     </div>
   </div>
   <div class="footer-links">
-    <a href="#">{{ $t('footerAlum') }}</a> <span>|</span>
-    <a href="#">{{ $t('footerPrivacy') }}</a> <span>|</span>
-    <a href="#">{{ $t('footerTerms') }}</a> <span>|</span>
+    {{ $t('footerAlum') }} <span>|</span>
+   {{ $t('footerPrivacy') }} <span>|</span>
+   {{ $t('footerTerms') }} <span>|</span>
     © 2025
   </div>
 </footer>
@@ -177,7 +178,7 @@ const routeClass = computed(() => {
 
 footer {
   background: #fff;
-  padding: 40px 0px 0px 0px;
+  padding: 40px 0px 10px 0px;
   text-align: center;
   border-top: 1px solid #eee;
 }
@@ -233,6 +234,9 @@ footer {
 .footer-links span {
   margin: 0 5px;
   color: #11304c;
+}
+.q-footer {
+  background: #fff !important;
 }
 
 
