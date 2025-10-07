@@ -1,62 +1,61 @@
 <template>
   <nav :class="{ active: isMenuOpen }" class="navbar">
-   <a href="/" class="logo">
-  <img :src="logoSrc" alt="Logo" style="height: 30px" />
-</a>
+    <a href="/" class="logo">
+      <img :src="logoSrc" alt="Logo" style="height: 30px" />
+    </a>
 
     <ul>
-<li class="dropdown" :class="{ active: isDropdownOpen }">
-  <a class="dropbtn" @click.prevent="toggleDropdown">{{ $t('products') }}</a>
-  <ul class="dropdown-content">
-    <li><a href="#/products/container"><img src="assets/2.png"/><br /> {{ $t('aluminiumContainers') }}</a></li>
-    <li><a href="#/products/foil"><img src="assets/6.png"/><br /> {{ $t('aluminiumFoil') }}</a></li>
-    <li><a href="#/products/lids"><img src="assets/10.png"/><br /> {{ $t('aluminiumLids') }}</a></li>
-    <li><a href="#/products/pizza"><img src="assets/12.png"/><br /> {{ $t('pizzaBox') }}</a></li>
-    <li><a href="#/products/tablecover"><img src="assets/15.png"/><br /> {{ $t('plasticTableCover') }}</a></li>
-    <li><a href="#/products/papercup"><img src="assets/17.png"/><br /> {{ $t('paperCup') }}</a></li>
-  </ul>
-</li>
-      <li><a href="#/catalog">{{ $t('catalog') }}</a></li>
-      <li><a href="#/about">{{ $t('about') }}</a></li>
-      <li><a href="#/blog">{{ $t('blog') }}</a></li>
-      <li><a href="#/contact">{{ $t('contact') }}</a></li>
+      <li class="dropdown" :class="{ active: isDropdownOpen }">
+        <a class="dropbtn" @click.prevent="toggleDropdown">{{ $t("products") }} ▼</a>
+        <ul class="dropdown-content">
+          <li><a href="#/products/container"><img src="assets/2.png" />{{ $t("aluminiumContainers") }}</a></li>
+          <li><a href="#/products/foil"><img src="assets/6.png" />{{ $t("aluminiumFoil") }}</a></li>
+          <li><a href="#/products/lids"><img src="assets/10.png" />{{ $t("aluminiumLids") }}</a></li>
+          <li><a href="#/products/pizza"><img src="assets/12.png" />{{ $t("pizzaBox") }}</a></li>
+          <li><a href="#/products/tablecover"><img src="assets/15.png" />{{ $t("plasticTableCover") }}</a></li>
+          <li><a href="#/products/papercup"><img src="assets/17.png" />{{ $t("paperCup") }}</a></li>
+        </ul>
+      </li>
+      <li><a href="#/catalog">{{ $t("catalog") }}</a></li>
+      <li><a href="#/about">{{ $t("about") }}</a></li>
+      <li><a href="#/blog">{{ $t("blog") }}</a></li>
+      <li><a href="#/contact">{{ $t("contact") }}</a></li>
     </ul>
     <div class="nav-actions">
-<div class="lang-switcher">
-  <button class="lang-btn" @click="toggleLangMenu">
-    <span>{{ currentLangLabel }}</span>
-    <span class="arrow" :class="{ open: isLangMenuOpen }">▼</span>
-  </button>
-
-  <ul v-if="isLangMenuOpen" class="lang-dropdown">
-    <li @click="setLanguage('en-US')">INT</li>
-    <li @click="setLanguage('fa-IR')">فارسی</li>
-  </ul>
-</div>
-<div class="menu-toggle" @click="toggleMenu">☰</div>
-</div>
-</nav>
+      <div class="lang-switcher">
+        <button class="lang-btn" @click="toggleLangMenu">
+          <span>{{ currentLangLabel }}</span>
+          <span class="arrow" :class="{ open: isLangMenuOpen }">▼</span>
+        </button>
+        <ul v-if="isLangMenuOpen" class="lang-dropdown">
+          <li @click="setLanguage('en-US')">INT</li>
+          <li @click="setLanguage('fa-IR')">فارسی</li>
+        </ul>
+      </div>
+      <div class="menu-toggle" @click="toggleMenu">☰</div>
+    </div>
+  </nav>
 </template>
 
 <script setup lang="ts">
 import { ref, computed, onMounted } from "vue";
 import { useI18n } from "vue-i18n";
+import { useRoute } from "vue-router";
+
 const { locale } = useI18n({ useScope: "global" });
+const route = useRoute();
 
 const isLangMenuOpen = ref(false);
-
 const isMenuOpen = ref(false);
-const toggleMenu = () => {
-  isMenuOpen.value = !isMenuOpen.value;
-};
+const isDropdownOpen = ref(false);
+
+const toggleMenu = () => (isMenuOpen.value = !isMenuOpen.value);
+const toggleDropdown = () => (isDropdownOpen.value = !isDropdownOpen.value);
+const toggleLangMenu = () => (isLangMenuOpen.value = !isLangMenuOpen.value);
 
 const currentLangLabel = computed(() =>
   locale.value === "fa-IR" ? "فارسی" : "INT"
 );
-
-const toggleLangMenu = () => {
-  isLangMenuOpen.value = !isLangMenuOpen.value;
-};
 
 const setLanguage = (lang: string) => {
   locale.value = lang;
@@ -66,32 +65,17 @@ const setLanguage = (lang: string) => {
 
 onMounted(() => {
   const savedLang = localStorage.getItem("site-lang");
-  if (savedLang) {
-    locale.value = savedLang;
-  }
+  if (savedLang) locale.value = savedLang;
 });
-
-const isDropdownOpen = ref(false);
-const toggleDropdown = () => {
-  isDropdownOpen.value = !isDropdownOpen.value;
-};
-
-
-
-import { useRoute } from "vue-router";
-
-const route = useRoute();
 
 const logoSrc = computed(() => {
   switch (route.name) {
     case "container":
+    case "foil":
+    case "lids":
       return "assets/logo2.png";
     case "pizza":
       return "assets/logo3.png";
-    case "foil":
-      return "assets/logo2.png";
-    case "lids":
-      return "assets/logo2.png";
     case "tablecover":
       return "assets/logo4.png";
     default:
@@ -99,12 +83,20 @@ const logoSrc = computed(() => {
   }
 });
 
+
+onMounted(() => {
+  const savedLang = localStorage.getItem("site-lang");
+  if (savedLang) locale.value = savedLang;
+  window.addEventListener("scroll", () => {
+    isMenuOpen.value = false;
+    isDropdownOpen.value = false;
+    isLangMenuOpen.value = false;
+  });
+});
 </script>
 
 <style lang="scss">
 $fontColor: white;
-
-
 
 * {
   list-style: none;
@@ -117,9 +109,7 @@ $fontColor: white;
 }
 
 .navbar a img {
-  margin-right: 40px;
-    margin-left: 40px;
-
+  margin: 0 40px;
 }
 
 .navbar > ul {
@@ -136,7 +126,6 @@ $fontColor: white;
   padding: 4px 10px;
 }
 
-
 .dropbtn {
   font-size: 16px;
   border: none;
@@ -144,46 +133,61 @@ $fontColor: white;
 
 .dropdown {
   position: static;
-  }
+}
 
 .dropdown-content {
   display: none;
-  position: absolute;
-  top: 100%;       
-  left: 0;     
-  right: 0; 
-  width: 100vw;     
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 100vw;
   background-color: #fff;
-  padding: 20px;
-  z-index: 1000;
-}
-
-.dropdown-content a {
-  color: #3d3d3dff !important;
-    font-size: 12px !important;
-  justify-content: center !important;
-}
-
-.dropdown-content li img {
-  width: 200px;   
-  height: 200px;   
-  object-fit: cover; 
-  object-position: center;
+  z-index: 10000 !important;
+  padding: 40px 80px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-align: center;
 }
 
 .dropdown.active .dropdown-content {
   display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  justify-items: center;
+  align-items: center;
+  gap: clamp(12px, 2vw, 20px);
+  padding: clamp(20px, 5vw, 60px);
+  position: fixed;
+  width: 100vw;
+  top: 60px;
+  left: 0;
+  z-index: 10000;
 }
 
 
-@media (max-width: 768px) {
-  .dropdown.active .dropdown-content {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 12px;
-  }
+.dropdown-content li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
+
+.dropdown-content li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #3d3d3dff !important;
+  font-size: 12px !important;
+  text-decoration: none;
+}
+
+.dropdown-content li img {
+  width: clamp(120px, 18vw, 250px);
+  height: clamp(120px, 18vw, 250px);
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+
 
 .nav-actions {
   display: flex;
@@ -197,12 +201,12 @@ $fontColor: white;
   color: white;
   cursor: pointer;
 }
+
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
   }
-}
-@media (max-width: 768px) {
+
   .navbar {
     justify-content: space-between;
     padding: 10px;
@@ -211,14 +215,14 @@ $fontColor: white;
   .navbar > ul {
     display: none;
     flex-direction: column;
-    background: #ffffffff;
+    background: #ffffff;
     position: fixed;
     top: 60px;
     width: 140px;
     padding: 20px 0;
     gap: 15px;
     text-align: center;
-    right: 0px;
+    right: 0;
   }
 
   .navbar > ul li a {
@@ -244,7 +248,7 @@ $fontColor: white;
   align-items: center;
   gap: 4px;
   padding: 12px 32px;
-    border: none;
+  border: none;
 }
 
 .arrow {

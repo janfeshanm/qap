@@ -13,11 +13,7 @@
       <p v-if="product.Weight">weight: {{ product.Weight }}</p>
     </div>
   <q-btn
-  class="containerbtn"
-  label="Explore More"
-  push
-  :style="{ backgroundColor: buttonColor, color: 'white' }"
->
+  class="containerbtn" label="Explore More" push :style="{ backgroundColor: buttonColor, color: 'white' }">
   <q-popup-proxy cover :breakpoint="600">
     <q-card class="my-card">
       <q-item>
@@ -29,16 +25,12 @@
           </q-img>
         </q-item-section>
       </q-item>
-
       <q-separator />
-
       <q-card-section>
         {{ product.description_long }}
       </q-card-section>
-
       <q-card-section horizontal>
         <q-separator vertical />
-
         <q-card-section class="col-4">
           <p>Code: {{ product.code }}</p>
           <p v-if="product.Topout">Top out: {{ product.Topout }}</p>
@@ -53,12 +45,8 @@
     </q-card>
   </q-popup-proxy>
 </q-btn>
-
   </div>
 </template>
-
-
-
 <script setup lang="ts">
 export interface ProductInfo {
   id: number;
@@ -79,16 +67,12 @@ export interface ProductInfo {
 interface Props {
   product: ProductInfo;
 }
-
 withDefaults(defineProps<Props>(), {
   product: () => ({}) as ProductInfo,
 });
-
 import { useRoute } from "vue-router";
 import { computed } from "vue";
-
 const route = useRoute();
-
 const buttonColor = computed(() => {
   switch (route.name) {
     case "pizza":
@@ -103,6 +87,5 @@ const buttonColor = computed(() => {
       return "#830002";
   }
 });
-
 </script>
 

@@ -14,7 +14,7 @@
   <div class="slider-overlay">
     <h1 v-html="$t('heroTitle')"></h1>
     <p v-html="$t('heroSubtitle')"></p>
-  <q-btn color="primary" unelevated rounded :label="$t('heroButton')" to="/products/container" class="btn"/>
+<q-btn class="btn" :label="$t('heroButton')" to="/products/container"/>
   </div>
 </q-carousel-control>
         </template>
@@ -608,7 +608,7 @@ display: none;
   border-radius: 10px;
   margin: 10px auto 100px auto;
   max-width: 1000px;
-    min-width: 300px;
+    min-width: 400px;
   justify-content: center;
 }
 
@@ -654,7 +654,7 @@ display: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1500px;
+  max-width: 1250px;
   margin: 0px auto;
   color: #11304c;
 }
@@ -673,7 +673,7 @@ display: none;
 .product-images {
   display: grid;
   gap: 25px;
-  max-width: 1500px;
+  max-width: 1250px;
   margin: 0px auto;
 }
 

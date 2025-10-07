@@ -54,7 +54,7 @@ export default {
   foilList1: 'Food-grade and hygienic',
   foilList2: 'Resistant to high temperatures and moisture',
   foilList3: 'Keeps food fresh by blocking light, air, and environmentel issues',
-  foilList4: 'Ideal for kitchens, bakeries, takeouts, and supermarkets',
+  foilList4: 'Ideal for kitchens, barber shops, takeouts, and supermarkets',
   foilList5: 'offered in tailored dimensions and private label options',
   foilLink: 'View All Aluminum Foil Products',
 
@@ -90,7 +90,7 @@ export default {
     // Service Section
   serviceTitle: 'SERVICE',
   serviceSubtitle: 'CUSTOM PRINTING ON DISPOSABLE TABLEWARE',
-  serviceText1: `Elevate your brand with custom-printed disposable tableware. Whether you're running a cafe, restaurant, catering business, or organizing a special event, we offer high-quality printing on cups, plates, bowls, trays, and more.`,
+  serviceText1: `Elevate your brand with custom-printed disposable tableware. Whether you're running a cafe, restaurant, catering business, or organizing a special event, we offer high-quality printing on cups, plates, bowls, lids, and more.`,
   serviceText2: `With options like direct printing and heat-transfer labeling, your logo, design, or promotional message will stand out, professionally printed with precision and durability.`,
   serviceTagline: 'Let your packaging speak your brand',
   serviceList1: 'High-resolution printing on various disposable items',
