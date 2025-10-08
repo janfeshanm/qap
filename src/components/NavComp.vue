@@ -6,7 +6,7 @@
 
     <ul>
       <li class="dropdown" :class="{ active: isDropdownOpen }">
-        <a class="dropbtn" @click.prevent="toggleDropdown">{{ $t("products") }} ▼</a>
+        <a class="dropbtn" @click.prevent="toggleDropdown">{{ $t("products") }} </a>
         <ul class="dropdown-content">
           <li><a href="#/products/container"><img src="assets/2.png" />{{ $t("aluminiumContainers") }}</a></li>
           <li><a href="#/products/foil"><img src="assets/6.png" />{{ $t("aluminiumFoil") }}</a></li>

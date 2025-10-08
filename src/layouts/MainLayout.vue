@@ -90,7 +90,7 @@ const routeClass = computed(() => {
 .contact-section {
   width: 100%;
   margin: 0 auto;
-  padding: 60px 20px;
+  padding: 50px 40px;
   text-align: center;
   background-color: rgb(217, 234, 248);
 }
@@ -99,13 +99,12 @@ const routeClass = computed(() => {
   font-size: 32px;
   font-weight: bold;
   color: #11304c;
-  margin-bottom: 10px;
+  padding-bottom: 30px;
 }
 
 .contact-section p {
   font-size: 15px;
   color: #3a4a5a;
-  margin-bottom: 40px;
   max-width: 1000px;
   margin: 40px auto;
 }
@@ -118,6 +117,7 @@ const routeClass = computed(() => {
   flex-wrap: wrap;
   max-width: 1000px;
   margin: 0 auto;
+  padding: 25px;
 }
 
 .contact-card {
