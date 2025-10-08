@@ -22,7 +22,7 @@
   <div class="catalog-content">
     <h2>{{ $t('catalogTitle') }}</h2>
     <p>{{ $t('catalogText') }}</p>
-    <a href="#" class="catalog-btn">{{ $t('catalogButton') }}</a>
+<a href="/assets/catalog-en.pdf" class="catalog-btn" target="_blank" rel="noopener noreferrer" > {{ $t('catalogButton') }} </a>
   </div>
 </section>
   </q-page>

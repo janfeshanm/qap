@@ -17,8 +17,8 @@
   <div class="catalog-content">
     <h2>{{ $t('catalogTitle') }}</h2>
     <p>{{ $t('catalogText') }}</p>
-    <a href="#" class="catalog-btn">{{ $t('catalogButton') }}</a>
-  </div>
+<a href="/assets/catalog-en.pdf" class="catalog-btn" target="_blank" rel="noopener noreferrer" > {{ $t('catalogButton') }} </a>
+</div>
 </section>
   </q-page>
 </template>
@@ -36,12 +36,15 @@ $fontColor: #1e3950;
   text-decoration: none;
   padding: 4px 10px;
 }
+
 .menu-toggle {
      color: $fontColor;
 }
+
 .lang-btn {
     color: $fontColor;
 }
+
 .smart-img {
   width: 1000px;        
   max-width: 100%;       
@@ -119,8 +122,8 @@ $fontColor: #1e3950;
     font-size: 14px;
     text-align: center;
   }
-
 }
+
 .catalog-image {
   flex: 1;
 }

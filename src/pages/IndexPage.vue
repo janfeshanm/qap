@@ -21,7 +21,7 @@
       </q-carousel>
     </header>
   
-   <section class="certificates-section">
+   <section id="certificates" class="certificates-section">
   <!-- ISO CERTIFIED -->
   <div class="certificate-item">
     <img src="assets/c3.png" alt="ISO Certified">
@@ -41,13 +41,13 @@
   </div>
 </section>
 
-   <section class="hero">
+   <section id="hero" class="hero">
   <h4>{{ $t('heroIntro') }}</h4>
   <h1>{{ $t('heroMainTitle') }}</h1>
   <p>{{ $t('heroDescription') }}</p>
 </section>
 
-<section class="products">
+<section id="products" class="products">
   <!-- Product 1 -->
   <div class="product">
     <div><img src="assets/r1.png" alt="Disposable Aluminum Containers" /></div>
@@ -55,6 +55,7 @@
       <h2>{{ $t('disposableTitle') }}</h2>
       <h3>{{ $t('disposableSubtitle') }}</h3>
       <p>{{ $t('disposableText') }}</p>
+
       <ul>
         <li>{{ $t('disposableList1') }}</li>
         <li>{{ $t('disposableList2') }}</li>
@@ -86,9 +87,10 @@
 </section>
 
 
-    <section class="products-section">
+
+    <section id="product" class="products-section">
  <h1 class="section-title">{{ $t('ourProducts') }}</h1>
-      <search-product category="all" />
+      <search-product category="all"/>
       <div class="product-category">
   <div class="category-header">
     <h2>{{ $t('categoryContainers') }}</h2>
@@ -100,7 +102,7 @@
   </div>
 </div>
 
-<div class="product-category">
+<div id="category" class="product-category">
   <div class="category-header">
     <h2>{{ $t('categoryFoil') }}</h2>
 <router-link to="/products/foil" class="link"> {{ $t('viewAll') }} </router-link>  </div>
@@ -156,7 +158,7 @@
 </div>
     </section>
 
-   <section class="about-section">
+   <section id="about" class="about-section">
   <div class="about-content">
     <h2>{{ $t('aboutTitle') }}</h2>
     <p>{{ $t('aboutText') }}</p>
@@ -191,7 +193,7 @@
 </section>
 
 
-   <section class="service-section">
+   <section id="service" class="service-section">
   <div class="service-content">
     <div class="service-text">
       <h2>{{ $t('serviceTitle') }}</h2>
@@ -225,7 +227,7 @@
 </section>
 
 
-    <section class="catalog-section">
+    <section id="catalog" class="catalog-section">
   <div class="catalog-image">
     <img src="assets/catalog.png" alt="Catalog Preview" />
   </div>
@@ -237,7 +239,7 @@
   </div>
 </section>
 
-   <section class="blog-section">
+   <section id="blog" class="blog-section">
   <h2>{{ $t('blogSectionTitle') }}</h2>
 
   <div class="blog-card">
@@ -268,7 +270,7 @@
 </section>
 
 
-   <section class="export-section">
+   <section id="export" class="export-section">
   <h2>{{ $t('exportTitle') }}</h2>
   <p>{{ $t('exportText') }}</p>
   <div class="export-images">
