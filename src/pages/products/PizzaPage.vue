@@ -43,20 +43,20 @@ $fontColor: #552b15;
 }
 
 .smart-img {
-  width: 1000px;        
-  max-width: 100%;       
+  width: 1000px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: clamp(10px, 5%, 100px);   
-  padding-right: clamp(10px, 5%, 100px); 
+  padding-left: clamp(10px, 5%, 100px);
+  padding-right: clamp(10px, 5%, 100px);
   display: block;
   box-sizing: border-box;
 }
 
-@media (max-width: 660px) { 
+@media (max-width: 660px) {
   .smart-img {
-    width: 100%;     
-    padding: 0 10px;    
+    width: 100%;
+    padding: 0 10px;
   }
 }
 
@@ -241,5 +241,25 @@ section.pizza {
   text-decoration: none;
   font-size: 14px;
   transition: 0.3s ease;
+}
+
+.container-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.2s ease;
+}
+
+.container-card:hover {
+  transform: translateY(-5px);
+}
+
+.container-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 </style>

@@ -58,21 +58,21 @@ watch(text, (newValue) => {
 
 <style scoped>
 
-.custom-search-input {
+ .custom-search-input {
   height: 60px;
   font-size: 16px;
-  
+
 }
 
 .cards-wrapper {
   display: flex;
-  flex-wrap: wrap;             
+  flex-wrap: wrap;
   justify-content: flex-start;
-  max-width: 1200px;           
+  max-width: 1200px;
  gap: 20px;
-   margin: 0 auto;              
+   margin: 0 auto;
 }
-
+/*
 .container-card {
   flex: 0 0 calc((100% - 40px) / 3);
   margin-bottom: 20px;
@@ -88,17 +88,17 @@ watch(text, (newValue) => {
   .container-card {
     flex: 0 0 100%;
   }
-}
+}*/
 
 @media (min-width: 768px) {
   .cards-wrapper {
-    padding: 0 40px; 
+    padding: 0 40px;
   }
 }
 
 @media (min-width: 1200px) {
   .cards-wrapper {
-    padding: 0 40px; 
+    padding: 0 40px;
   }
 }
 </style>

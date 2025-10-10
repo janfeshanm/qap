@@ -51,13 +51,13 @@ $fontColor: #1e3950;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   background-color: rgb(255, 240, 191);
-  gap: 2rem; 
+  gap: 2rem;
 max-width: 1200px;
-  margin: 0 auto;  
+  margin: 0 auto;
   padding: 2rem;
 }
 .banner-wrapper {
-  background-color: rgb(255, 240, 191); 
+  background-color: rgb(255, 240, 191);
   width: 100%;
 }
 
@@ -83,7 +83,7 @@ max-width: 1200px;
 @media (max-width: 768px) {
   .banner {
     grid-template-columns: 1fr;
-    text-align: center; 
+    text-align: center;
   }
 
   .banner img {
@@ -175,6 +175,26 @@ section.foil {
   text-decoration: none;
   font-size: 14px;
   transition: 0.3s ease;
+}
+
+.container-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.2s ease;
+}
+
+.container-card:hover {
+  transform: translateY(-5px);
+}
+
+.container-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 
 </style>
