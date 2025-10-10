@@ -3,7 +3,7 @@
     <a href="/" class="logo">
       <img :src="logoSrc" alt="Logo" style="height: 30px" />
     </a>
-
+{{ props.textColor?props.textColor:'red' }}
     <ul>
       <li class="dropdown" :class="{ active: isDropdownOpen }">
         <a class="dropbtn" @click.prevent="toggleDropdown">{{ $t("products") }} </a>
@@ -62,6 +62,8 @@ const setLanguage = (lang: string) => {
   localStorage.setItem("site-lang", lang);
   isLangMenuOpen.value = false;
 };
+
+const props = defineProps<{ textColor?: string}>();
 
 onMounted(() => {
   const savedLang = localStorage.getItem("site-lang");
