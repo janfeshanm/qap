@@ -12,7 +12,7 @@
           </q-carousel-control>
      <q-carousel-control position="bottom" style="max-width: 60%">
   <div class="slider-overlay">
-    <h1 v-html="$t('heroTitle')"></h1>
+    <h1><span>{{$t('heroTitle1')}}</span>{{$t('heroTitle2')}}</h1>
     <p v-html="$t('heroSubtitle')"></p>
 <q-btn class="btn" :label="$t('heroButton')" to="/products/container"/>
   </div>
@@ -20,7 +20,7 @@
         </template>
       </q-carousel>
     </header>
-  
+
    <section id="certificates" class="certificates-section">
   <!-- ISO CERTIFIED -->
   <div class="certificate-item">
@@ -402,7 +402,7 @@ display: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 180px;           
+  gap: 180px;
  padding: 60px 0px 60px 0px;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 2px 10px 0 rgba(53, 53, 53, 0.1);
  }
@@ -412,12 +412,12 @@ display: none;
 }
 
 .certificate-item img {
-  width: 80px;         
+  width: 80px;
   height: auto;
 }
 
 .certificate-item h3 {
-  font-size: 18px;     
+  font-size: 18px;
   margin: 0;
   color: #11304c;
   font-weight: 600;
@@ -454,23 +454,23 @@ display: none;
 
 @media (max-width: 600px) {
   .hero {
-    margin-top: 60px; 
-    padding: 0 15px; 
-    text-align: center; 
+    margin-top: 60px;
+    padding: 0 15px;
+    text-align: center;
   }
 
   .hero h1 {
     font-size: 1.5rem;
-    line-height: 1.3; 
+    line-height: 1.3;
   }
 
   .hero h4 {
-    font-size: 1rem; 
+    font-size: 1rem;
     line-height: 1.8;
   }
 
   .hero p {
-    font-size: 0.9rem; 
+    font-size: 0.9rem;
     line-height: 1.6;
     margin-top: 10px;
   }
@@ -640,7 +640,7 @@ display: none;
 @media (max-width: 600px) {
   .search-box {
     margin-bottom: 30px;
-    padding: 15px;   
+    padding: 15px;
   }
 
   .search-box input {

@@ -16,7 +16,7 @@
       <p v-html="$t('phoneNumbers').replace(/\n/g, '<br/>')"></p>
 
       <strong>{{ $t('emailLabel') }}</strong>
-      <p>{{ $t('email') }}</p>
+      <p>info@alumpeyman.com</p>
 
       <strong>{{ $t('addressLabel') }}</strong>
       <p>
@@ -71,11 +71,11 @@ const route = useRoute();
 const routeClass = computed(() => {
   switch (route.name) {
     case "pizza":
-      return "bg-pizza";  
+      return "bg-pizza";
     case "foil":
-      return "bg-foil"; 
+      return "bg-foil";
     case "lids":
-      return "bg-lids"; 
+      return "bg-lids";
       case "tablecover":
       return "bg-tablecover";
     default:
@@ -242,15 +242,15 @@ footer {
 
 
 .bg-pizza {
-  background-color: #f1ceb5; 
+  background-color: #f1ceb5;
 }
 
 .bg-foil {
-  background-color: rgb(255, 240, 191); 
+  background-color: rgb(255, 240, 191);
 }
 
 .bg-lids {
-  background-color: #fff7ee; 
+  background-color: #fff7ee;
 }
 
 .bg-tablecover {
