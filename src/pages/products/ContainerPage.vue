@@ -5,7 +5,7 @@
 <img src="assets/container.png" class="smart-img" /></div>
 
     <section class="containerr">
-      <search-product category="container" />
+      <search-product category="container" button-color="red" />
     </section>
 
      <section class="catalog-section">
@@ -41,20 +41,20 @@ $fontColor: #1e3950;
     color: $fontColor;
 }
 .smart-img {
-  width: 1000px;        
-  max-width: 100%;       
+  width: 1000px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: clamp(10px, 5%, 100px);   
-  padding-right: clamp(10px, 5%, 100px); 
+  padding-left: clamp(10px, 5%, 100px);
+  padding-right: clamp(10px, 5%, 100px);
   display: block;
   box-sizing: border-box;
 }
 
-@media (max-width: 660px) { 
+@media (max-width: 660px) {
   .smart-img {
-    width: 100%;     
-    padding: 0 10px;    
+    width: 100%;
+    padding: 0 10px;
   }
 }
 

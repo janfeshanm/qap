@@ -13,7 +13,7 @@
       <p v-if="product.Weight">weight: {{ product.Weight }}</p>
     </div>
   <q-btn
-  class="containerbtn" label="Explore More" push >
+  class="containerbtn" label="Explore More" push :style="{backgroundColor: props.buttonColor ? props.buttonColor : '#1e3950', color: 'white'}">
   <q-popup-proxy cover :breakpoint="600">
     <q-card class="my-card">
       <q-item>
@@ -68,8 +68,9 @@ export interface ProductInfo {
 }
 interface Props {
   product: ProductInfo;
+  buttonColor?: string;
 }
-withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<Props>(), {
   product: () => ({}) as ProductInfo,
 });
 </script>

@@ -6,7 +6,7 @@
     </div>
   </div>
   <div class="row row cards-wrapper">
-    <product-item v-for="pr in list" :key="pr.image + pr.id" :product="pr" />
+    <product-item v-for="pr in list" :key="pr.image + pr.id" :product="pr" :buttonColor="props.buttonColor?props.buttonColor:'primary'" />
   </div>
 </template>
 <script lang="ts" setup>
@@ -29,6 +29,7 @@ const text = ref('');
 
 interface Props {
   category: string;
+  buttonColor?: string;
 }
 
 const props = defineProps<Props>();
