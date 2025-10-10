@@ -1,6 +1,6 @@
 <template>
- <div class="container-card col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 q-pa-md">
-
+ <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 q-pa-md">
+<div  class="container-card">
     <img :src="product.image" alt="Product" />
     <div class="container-info">
       <p>Code: {{ product.code }}</p>
@@ -13,7 +13,7 @@
       <p v-if="product.Weight">weight: {{ product.Weight }}</p>
     </div>
   <q-btn
-  class="containerbtn" label="Explore More" push :style="{ backgroundColor: buttonColor, color: 'white' }">
+  class="containerbtn" label="Explore More" push >
   <q-popup-proxy cover :breakpoint="600">
     <q-card class="my-card">
       <q-item>
@@ -45,6 +45,8 @@
     </q-card>
   </q-popup-proxy>
 </q-btn>
+</div>
+
   </div>
 </template>
 <script setup lang="ts">
@@ -69,23 +71,6 @@ interface Props {
 }
 withDefaults(defineProps<Props>(), {
   product: () => ({}) as ProductInfo,
-});
-import { useRoute } from "vue-router";
-import { computed } from "vue";
-const route = useRoute();
-const buttonColor = computed(() => {
-  switch (route.name) {
-    case "pizza":
-      return "#552b15";
-    case "foil":
-      return "#11304c";
-    case "lids":
-      return "#11304c";
-    default:
-      return "#11304c";
-  case "tablecover":
-      return "#830002";
-  }
 });
 </script>
 

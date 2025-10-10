@@ -69,7 +69,6 @@ watch(text, (newValue) => {
   flex-wrap: wrap;
   justify-content: flex-start;
   max-width: 1200px;
- gap: 20px;
    margin: 0 auto;
 }
 /*
