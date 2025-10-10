@@ -1,6 +1,6 @@
 <template>
   <q-page>
-    <nav-comp style="background-color: rgb(217, 234, 248); height: 74px" />
+    <nav-comp style="background-color: rgb(217, 234, 248); height: 74px" textColor="blue" />
     <div style="  background-color: rgb(217, 234, 248); display: flex; justify-content: center;">
 <img src="assets/container.png" class="smart-img" /></div>
 

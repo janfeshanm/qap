@@ -3,8 +3,7 @@
     <a href="/" class="logo">
       <img :src="logoSrc" alt="Logo" style="height: 30px" />
     </a>
-{{ props.textColor?props.textColor:'red' }}
-    <ul>
+    <ul :style="{ color: props.textColor ? props.textColor : 'inherit' }">
       <li class="dropdown" :class="{ active: isDropdownOpen }">
         <a class="dropbtn" @click.prevent="toggleDropdown">{{ $t("products") }} </a>
         <ul class="dropdown-content">
@@ -16,7 +15,7 @@
           <li><a href="#/products/papercup"><img src="assets/17.png" />{{ $t("paperCup") }}</a></li>
         </ul>
       </li>
-      <li><a href="#/catalog">{{ $t("catalog") }}</a></li>
+      <li><a :style="{ color: props.textColor ? props.textColor : 'inherit' }" href="#/catalog">{{ $t("catalog") }}</a></li>
       <li><a href="#/about">{{ $t("about") }}</a></li>
       <li><a href="#/blog">{{ $t("blog") }}</a></li>
       <li><a href="#/contact">{{ $t("contact") }}</a></li>
