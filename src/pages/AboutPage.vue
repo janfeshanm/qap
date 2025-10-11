@@ -152,4 +152,9 @@ html[dir="ltr"] .q-page {
 .stat-box .label {
   font-size: 13px;
 }
+
+.aboutphoto{
+   width: 100%;
+  object-fit: cover;
+}
 </style>

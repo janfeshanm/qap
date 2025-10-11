@@ -246,8 +246,10 @@ hygienic, and durable aluminum packaging solutions.`,
 
 
   //foil
-  "alum": "ALUM",
-  "peyman": "PEYMAN",
-  "herooDescription": "Leading Manufacturer of Premium Aluminum Foils and Disposable Containers for Every Kitchen and Industry in Northwest Iran"
+  alum: "ALUM",
+  peyman: "PEYMAN",
+  herooDescription: "Leading Manufacturer of Premium Aluminum Foils and Disposable Containers for Every Kitchen and Industry in Northwest Iran",
+  
+  exploreMoree: 'Explore More',
 }
 
