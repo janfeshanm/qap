@@ -90,7 +90,7 @@
 
     <section id="product" class="products-section">
  <h1 class="section-title">{{ $t('ourProducts') }}</h1>
-      <search-product category="all"/>
+      <search-product category="all" button-color="#11304c" />
       <div class="product-category">
   <div class="category-header">
     <h2>{{ $t('categoryContainers') }}</h2>

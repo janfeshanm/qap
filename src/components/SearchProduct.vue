@@ -65,9 +65,14 @@ producs.set('tablecover', TableCoverPFA);
         producs.get('tablecover') as ProductInfo[],
       );
     origList = temList as ProductInfo[];
-  } else origList = producs.get(props.category) as ProductInfo[];
+    if (text.value != '') {
+    list.value = origList.filter((prd) => JSON.stringify(prd).toLowerCase().includes(text.value));
+  }
+  } else {
+    origList = producs.get(props.category) as ProductInfo[];
+    list.value = origList;
+  }
 
-  list.value = origList;
 }
 
 initializeList();
