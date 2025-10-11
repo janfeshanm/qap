@@ -11,9 +11,4 @@ import NavComp from 'src/components/NavComp.vue';
 
 <style lang="scss">
 $fontColor: white;
-.navbar ul li a {
-  color: $fontColor;
-  text-decoration: none;
-  padding: 4px 10px;
-}
 </style>

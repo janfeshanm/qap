@@ -30,11 +30,6 @@ import SearchProduct from 'src/components/SearchProduct.vue';
 
 <style lang="scss">
 $fontColor: #552b15;
-.navbar ul li a {
-  color: $fontColor;
-  text-decoration: none;
-  padding: 4px 10px;
-}
 .menu-toggle {
      color: $fontColor;
 }
@@ -132,102 +127,9 @@ $fontColor: #552b15;
   background: #552b15;
 }
 
-.containeroverlay {
-  position: absolute;
-  left: 26%;
-  color: #552b15;
-  z-index: 10;
-  float: left;
-  top: 400px;
-}
-
-.containeroverlay h1 {
-  font-size: 48px;
-  margin: 0;
-  font-weight: bold;
-  line-height: 1.2;
-}
-
-.containeroverlay h1 span {
-  display: block;
-}
-
-.containeroverlay p {
-  font-size: 18px;
-  margin: 10px 0;
-  color: #552b15;
-}
-
 section.pizza {
   background-color: #f1ceb5;
   padding: 100px 40px;
   margin-top: -6.5px;
-}
-
-.pizza-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-  padding: 40px 20px;
-  max-width: 1100px;
-  margin: auto auto;
-}
-
-.pizza-card {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  text-align: center;
-  padding: 20px;
-  transition: transform 0.2s ease;
-}
-
-.pizza-card:hover {
-  transform: translateY(-5px);
-}
-
-.pizza-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
-
-.pizza-info {
-  font-size: 14px;
-  color: #333;
-  margin-bottom: 12px;
-  line-height: 1.6;
-}
-
-.pizzabtn {
-  display: inline-block;
-  background: #552b15;
-  color: #fff;
-  padding: 10px 18px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-size: 14px;
-  transition: 0.3s ease;
-}
-
-.container-card {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  text-align: center;
-  padding: 20px;
-  transition: transform 0.2s ease;
-}
-
-.container-card:hover {
-  transform: translateY(-5px);
-}
-
-.container-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 15px;
 }
 </style>

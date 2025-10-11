@@ -74,4 +74,33 @@ const props = withDefaults(defineProps<Props>(), {
   product: () => ({}) as ProductInfo,
 });
 </script>
+<style scoped>
+
+.container-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.2s ease;
+}
+
+.container-card:hover {
+  transform: translateY(-5px);
+}
+
+.container-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.container-info {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+</style>
 

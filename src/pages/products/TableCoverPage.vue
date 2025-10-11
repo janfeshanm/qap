@@ -19,7 +19,6 @@
         <p>To get a comprehensive overview of our products, including detailed specifications, sizes,
           and various applications, you can download our digital catalog. It provides all the
           necessary information to help you choose the right product for your needs.</p>
-
         <a href="public\assets\catalog-en.pdf" class="catalog-btn">DOWNLOAD CATALOG</a>
       </div>
     </section>
@@ -33,12 +32,6 @@ import SearchProduct from 'src/components/SearchProduct.vue';
 
 <style lang="scss">
 $fontColor: #830002;
-
-.navbar ul li a {
-  color: $fontColor;
-  text-decoration: none;
-  padding: 4px 10px;
-}
 .menu-toggle {
      color: $fontColor;
 }
@@ -141,70 +134,4 @@ section.foil {
   margin-top: -4px;
 }
 
-.foil-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-  padding: 40px 20px;
-  max-width: 1100px;
-  margin: auto auto;
-}
-
-.foil-card {
-  background: #830002;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  text-align: center;
-  padding: 20px;
-  transition: transform 0.2s ease;
-}
-
-.foil-card:hover {
-  transform: translateY(-5px);
-}
-
-.foil-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
-
-.foil-info {
-  font-size: 14px;
-  color: #ffffff;
-  margin-bottom: 12px;
-  line-height: 1.6;
-}
-
-.foilbtn {
-  display: inline-block;
-  background: #ffffff;
-  color: #830002;
-  padding: 10px 18px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-size: 14px;
-  transition: 0.3s ease;
-}
-
-.container-card {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  text-align: center;
-  padding: 20px;
-  transition: transform 0.2s ease;
-}
-
-.container-card:hover {
-  transform: translateY(-5px);
-}
-
-.container-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
 </style>

@@ -60,12 +60,6 @@ html[dir="ltr"] .q-page {
   line-height: 1.6;
 }
 
-.navbar ul li a {
-  color: $fontColor;
-  text-decoration: none;
-  padding: 4px 10px;
-}
-
 .about-section {
   display: grid;
   grid-template-columns: auto auto;
