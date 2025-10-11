@@ -12,8 +12,9 @@
       <p v-if="product.Width">{{$t('piWidth')}}: {{ product.Width }}</p>
       <p v-if="product.Weight">{{$t('piWeight')}}: {{ product.Weight }}</p>
     </div>
-  <q-btn
-  class="containerbtn" label="Explore More" push :style="{backgroundColor: props.buttonColor ? props.buttonColor : '#11304c', color: 'white'}">
+<q-btn
+  class="containerbtn"
+  :label="$t('exploreMoree')" push :style="{ backgroundColor: props.buttonColor ? props.buttonColor : '#11304c', color: 'white'}">
   <q-popup-proxy cover :breakpoint="600">
     <q-card class="my-card">
       <q-item>
