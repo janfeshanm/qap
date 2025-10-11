@@ -8,7 +8,7 @@
         <q-carousel-slide :name="4" img-src="assets/slider4.png" />
         <template v-slot:control>
           <q-carousel-control position="top" class="text-white rounded-borders">
-            <nav-comp />
+            <nav-comp  textColor="#ffffffff" />
           </q-carousel-control>
      <q-carousel-control position="bottom" style="max-width: 60%">
   <div class="slider-overlay">

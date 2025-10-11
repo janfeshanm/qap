@@ -3,7 +3,7 @@
     <a href="/" class="logo">
       <img :src="logoSrc" alt="Logo" style="height: 30px" />
     </a>
-    <ul>
+    <ul style="color: black;">
       <li class="dropdown" :class="{ active: isDropdownOpen }" style="cursor: pointer;">
         <a class="dropbtn" @click.prevent="toggleDropdown"
         :style="{ color: !isMenuOpen && props.textColor ? props.textColor : 'inherit' }">{{ $t("products") }} </a>
@@ -99,7 +99,6 @@ onMounted(() => {
 </script>
 
 <style lang="scss">
-$fontColor: white;
 
 * {
   list-style: none;
@@ -124,7 +123,6 @@ $fontColor: white;
 }
 
 .navbar ul li a {
-  color: $fontColor;
   text-decoration: none;
   padding: 4px 10px;
 }
@@ -139,6 +137,7 @@ $fontColor: white;
 }
 
 .dropdown-content {
+  color: black;
   display: none;
   position: fixed;
   top: 80px;
@@ -153,6 +152,7 @@ $fontColor: white;
 }
 
 .dropdown.active .dropdown-content {
+
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   justify-items: center;
