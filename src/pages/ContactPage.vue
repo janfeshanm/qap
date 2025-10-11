@@ -1,6 +1,6 @@
 <template>
   <q-page>
-    <nav-comp style="background-color: #11304c; height: 100px" />
+    <nav-comp style="background-color: #11304c; height: 100px"  textColor="#ffffffff"/>
   </q-page>
 </template>
 
@@ -25,4 +25,5 @@ html[dir="ltr"] .q-page {
   font-size: 16px;
   line-height: 1.6;
 }
+
 </style>

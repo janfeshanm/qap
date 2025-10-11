@@ -1,6 +1,6 @@
 <template>
   <div class="row">
-    <div class="search-box" style="width: 50%">
+    <div class="search-box" :style="{ backgroundColor: props.bgColor ? props.bgColor : '#11304c' }">
       <q-input outlined type="text" dark debounce="10" v-model="text" style="width: 80%"> </q-input>
       <button><img src="assets/search.png" alt="Search" /></button>
     </div>
@@ -30,6 +30,7 @@ const text = ref('');
 interface Props {
   category: string;
   buttonColor?: string;
+  bgColor?: string;
 }
 
 const props = defineProps<Props>();
@@ -58,6 +59,56 @@ watch(text, (newValue) => {
 </script>
 
 <style scoped>
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #11304c;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px auto 100px auto;
+  max-width: 1000px;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+.search-box input {
+  flex-grow: 1;
+  min-width: 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.search-box button {
+  background: none;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+
+.search-box img {
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+@media (max-width: 600px) {
+  .search-box {
+    margin-bottom: 30px;
+    padding: 15px;
+  }
+
+  .search-box input {
+    width: 100%;
+  }
+}
 
  .custom-search-input {
   height: 60px;

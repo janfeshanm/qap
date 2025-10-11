@@ -1,6 +1,6 @@
 <template>
   <q-page>
-  <nav-comp style="background-color: #fff7ee; height: 74px" />
+  <nav-comp style="background-color: #fff7ee; height: 74px" textColor="#11304c" />
     <div style="background-color: #fff7ee; width: 100%; justify-content: center; display: flex">
       <img src="assets/lid.png" class="smart-img" />
     </div>
@@ -61,38 +61,6 @@ $fontColor: #1e3950;
     width: 100%;     
     padding: 0 10px;    
   }
-}
-
-.search-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #11304c;
-  padding: 25px;
-  border-radius: 10px;
-  margin: 10px auto 100px auto;
-  max-width: 1000px;
-  justify-content: center;
-}
-
-.search-box input {
-  width: 80%;
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-}
-
-.search-box button {
-  background: none;
-  border: none;
-  margin-left: 10px;
-  cursor: pointer;
-}
-
-.search-box img {
-  width: 16px;
-  height: 16px;
 }
 
 .catalog-section {

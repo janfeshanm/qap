@@ -3,12 +3,13 @@
     <a href="/" class="logo">
       <img :src="logoSrc" alt="Logo" style="height: 30px" />
     </a>
-    <ul :style="{ color: props.textColor ? props.textColor : 'inherit' }">
+    <ul>
       <li class="dropdown" :class="{ active: isDropdownOpen }">
-        <a class="dropbtn" @click.prevent="toggleDropdown">{{ $t("products") }} </a>
+        <a class="dropbtn" @click.prevent="toggleDropdown"
+        :style="{ color: props.textColor ? props.textColor : 'inherit' }">{{ $t("products") }} </a>
         <ul class="dropdown-content">
           <li><a href="#/products/container"><img src="assets/2.png" />{{ $t("aluminiumContainers") }}</a></li>
-          <li><a href="#/products/foil"><img src="assets/6.png" />{{ $t("aluminiumFoil") }}</a></li>
+          <li><a href="#/products/foil"><img src="assets/66.png" />{{ $t("aluminiumFoil") }}</a></li>
           <li><a href="#/products/lids"><img src="assets/10.png" />{{ $t("aluminiumLids") }}</a></li>
           <li><a href="#/products/pizza"><img src="assets/12.png" />{{ $t("pizzaBox") }}</a></li>
           <li><a href="#/products/tablecover"><img src="assets/15.png" />{{ $t("plasticTableCover") }}</a></li>
@@ -16,13 +17,14 @@
         </ul>
       </li>
       <li><a :style="{ color: props.textColor ? props.textColor : 'inherit' }" href="#/catalog">{{ $t("catalog") }}</a></li>
-      <li><a href="#/about">{{ $t("about") }}</a></li>
-      <li><a href="#/blog">{{ $t("blog") }}</a></li>
-      <li><a href="#/contact">{{ $t("contact") }}</a></li>
+      <li><a :style="{ color: props.textColor ? props.textColor : 'inherit' }" href="#/about">{{ $t("about") }}</a></li>
+      <li><a :style="{ color: props.textColor ? props.textColor : 'inherit' }" href="#/blog">{{ $t("blog") }}</a></li>
+      <li><a :style="{ color: props.textColor ? props.textColor : 'inherit' }" href="#/contact">{{ $t("contact") }}</a></li>
     </ul>
     <div class="nav-actions">
       <div class="lang-switcher">
-        <button class="lang-btn" @click="toggleLangMenu">
+        <button class="lang-btn" @click="toggleLangMenu"
+        :style="{ color: props.textColor ? props.textColor : 'inherit' }" >
           <span>{{ currentLangLabel }}</span>
           <span class="arrow" :class="{ open: isLangMenuOpen }">▼</span>
         </button>
@@ -182,7 +184,7 @@ $fontColor: white;
 }
 
 .dropdown-content li img {
-  width: clamp(120px, 18vw, 250px);
+  width: 100%;
   height: clamp(120px, 18vw, 250px);
   object-fit: cover;
   margin-bottom: 8px;

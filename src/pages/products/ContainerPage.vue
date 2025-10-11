@@ -1,11 +1,11 @@
 <template>
   <q-page>
-    <nav-comp style="background-color: rgb(217, 234, 248); height: 74px" textColor="blue" />
+    <nav-comp style="background-color: rgb(217, 234, 248); height: 74px" textColor="#11304c" />
     <div style="  background-color: rgb(217, 234, 248); display: flex; justify-content: center;">
 <img src="assets/container.png" class="smart-img" /></div>
 
     <section class="containerr">
-      <search-product category="container" button-color="red" />
+      <search-product category="container" button-color="#11304c" />
     </section>
 
      <section class="catalog-section">
@@ -56,40 +56,6 @@ $fontColor: #1e3950;
     width: 100%;
     padding: 0 10px;
   }
-}
-
-
-.search-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #11304c;
-  padding: 25px;
-  border-radius: 10px;
-  margin: 10px auto 100px auto;
-  max-width: 1000px;
-  min-width: 400px;
-  justify-content: center;
-}
-
-.search-box input {
-  width: 80%;
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-}
-
-.search-box button {
-  background: none;
-  border: none;
-  margin-left: 10px;
-  cursor: pointer;
-}
-
-.search-box img {
-  width: 16px;
-  height: 16px;
 }
 
 .catalog-section {

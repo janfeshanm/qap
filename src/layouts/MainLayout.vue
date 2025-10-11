@@ -90,7 +90,7 @@ const routeClass = computed(() => {
 .contact-section {
   width: 100%;
   margin: 0 auto;
-  padding: 50px 40px;
+  padding: 110px 40px;
   text-align: center;
   background-color: rgb(217, 234, 248);
 }
@@ -174,6 +174,7 @@ const routeClass = computed(() => {
   display: block;
   border-radius: 6px;
   height: 420px;
+  object-fit: cover;
 }
 
 footer {

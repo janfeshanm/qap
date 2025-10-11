@@ -1,22 +1,14 @@
 <template>
   <q-page>
-    <nav-comp style="background-color: #11304c; height: 100px" />
+    <nav-comp style="background-color: #11304c; height: 100px" textColor="#ffffffff" />
        <section class="about-section">
   <div class="about-content">
     <h2>{{ $t('aboutTitle') }}</h2>
     <p>{{ $t('aboutText') }}</p>
 
    <div class="about-buttons">
-
-     <a 
-  href="https://www.aparat.com/v/l49is36" 
-  class="btn secondary" 
-  target="_blank" 
-  rel="noopener noreferrer"
->
-  {{ $t('watchVideo') }} <span class="play-icon">▶</span>
-</a>
-
+     <a href="https://www.aparat.com/v/l49is36" class="btn secondary" target="_blank" rel="noopener noreferrer">
+  {{ $t('watchVideo') }} <span class="play-icon">▶</span> </a>
     </div>
   </div>
 

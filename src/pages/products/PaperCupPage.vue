@@ -1,6 +1,6 @@
 <template>
   <q-page>
-    <nav-comp style="background-color: #11304c; height: 100px" />
+    <nav-comp style="background-color: #11304c; height: 100px" textColor="#ffffffff"/>
     <div><img src="assets/papercup.png" style="width: 100%" /></div>
       </q-page>
 </template>

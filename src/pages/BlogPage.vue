@@ -1,6 +1,6 @@
 <template>
   <q-page>
-    <nav-comp style="background-color: #11304c; height: 100px" />
+    <nav-comp style="background-color: #11304c; height: 100px"  textColor="#ffffffff"/>
     <div style="width: 100%; margin: 0 auto; padding: 10px 20px; background-color: #11304c; color: #fff;">
       <h2 style="text-align: center; font-size: 26px; font-weight: bold"> {{ $t('blogPageTitle') }} </h2>
 

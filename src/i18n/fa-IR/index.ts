@@ -67,8 +67,8 @@ export default {
   // دسته‌بندی محصولات
   categoryContainers: 'ظروف آلومینیومی',
   categoryFoil: 'فویل آلومینیومی',
-  categoryLids: 'درب ظروف آلومینیومی',
-  categoryPizza: 'جعبه پیتزای مقوایی',
+  categoryLids: 'درب ظروف',
+  categoryPizza: 'جعبه پیتزا ',
   categoryCover: 'رول سفره پلاستیکی',
   categoryCup: 'لیوان کاغذی یکبار مصرف',
   viewAll: 'مشاهده همه',

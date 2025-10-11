@@ -1,12 +1,13 @@
 <template>
   <q-page>
-    <nav-comp style="background-color: #ffdddb; height: 74px" />
+    <nav-comp style="background-color: #ffdddb; height: 74px" textColor="#830002"/>
     <div style="  background-color: #ffdddb; display: flex; justify-content: center;">
 <img src="assets/cover.png" class="smart-img" /></div>
 
-    <section class="foil">
-      <search-product category="tablecover" />
-    </section>
+ <section class="foil">
+  <search-product category="tablecover" button-color="#830002" bg-color="#830002" />
+</section>
+
 
     <section class="catalog-section">
       <div class="catalog-image">
@@ -60,39 +61,6 @@ $fontColor: #830002;
     width: 100%;
     padding: 0 10px;
   }
-}
-
-
-.search-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #830002;
-  padding: 25px;
-  border-radius: 10px;
-  margin: 10px auto 100px auto;
-  max-width: 1000px;
-  justify-content: center;
-}
-
-.search-box input {
-  width: 80%;
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-}
-
-.search-box button {
-  background: none;
-  border: none;
-  margin-left: 10px;
-  cursor: pointer;
-}
-
-.search-box img {
-  width: 16px;
-  height: 16px;
 }
 
 .catalog-section {
