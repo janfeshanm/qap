@@ -3,6 +3,16 @@
 
 export default {
 
+  //product item
+  piCode: 'Code',
+  piTopOut: 'Top out',
+  piTopIn: 'Top in',
+  piSize: 'Size',
+  piThickness: 'Thickness',
+  piDepth: 'Depth',
+  piWidth: 'Width',
+  piWeight: 'Weight',
+
   //menu
   products: 'Products',
   aluminiumContainers: 'Aluminium Containers',
@@ -238,6 +248,6 @@ hygienic, and durable aluminum packaging solutions.`,
   //foil
   "alum": "ALUM",
   "peyman": "PEYMAN",
-  "herooDescription":"Leading Manufacturer of Premium Aluminum Foils and Disposable Containers for Every Kitchen and Industry in Northwest Iran"
+  "herooDescription": "Leading Manufacturer of Premium Aluminum Foils and Disposable Containers for Every Kitchen and Industry in Northwest Iran"
 }
 

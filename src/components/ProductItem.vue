@@ -3,14 +3,14 @@
 <div  class="container-card">
     <img :src="product.image" alt="Product" />
     <div class="container-info">
-      <p>Code: {{ product.code }}</p>
-      <p v-if="product.Topout">Top out: {{ product.Topout }}</p>
-      <p v-if="product.Topin">Top in: {{ product.Topin }}</p>
-      <p v-if="product.size1">Size: {{ product.size1 }}</p>
-      <p v-if="product.thickness">Thickness: {{ product.thickness }}</p>
-      <p v-if="product.depth">depth: {{ product.depth }}</p>
-      <p v-if="product.Width">width: {{ product.Width }}</p>
-      <p v-if="product.Weight">weight: {{ product.Weight }}</p>
+      <p>{{$t('piCode')}}: {{ product.code }}</p>
+      <p v-if="product.Topout">{{$t('piTopOut')}}: {{ product.Topout }}</p>
+      <p v-if="product.Topin">{{$t('piTopIn')}}: {{ product.Topin }}</p>
+      <p v-if="product.size1">{{$t('piSize')}}: {{ product.size1 }}</p>
+      <p v-if="product.thickness">{{$t('piThickness')}}: {{ product.thickness }}</p>
+      <p v-if="product.depth">{{$t('piDepth')}}: {{ product.depth }}</p>
+      <p v-if="product.Width">{{$t('piWidth')}}: {{ product.Width }}</p>
+      <p v-if="product.Weight">{{$t('piWeight')}}: {{ product.Weight }}</p>
     </div>
   <q-btn
   class="containerbtn" label="Explore More" push :style="{backgroundColor: props.buttonColor ? props.buttonColor : '#11304c', color: 'white'}">
@@ -31,16 +31,16 @@
       </q-card-section>
       <q-card-section horizontal>
         <q-separator vertical />
-        <q-card-section class="col-4">
-          <p>Code: {{ product.code }}</p>
-          <p v-if="product.Topout">Top out: {{ product.Topout }}</p>
-          <p v-if="product.Topin">Top in: {{ product.Topin }}</p>
-          <p v-if="product.size1">Size: {{ product.size1 }}</p>
-          <p v-if="product.thickness">Thickness: {{ product.thickness }}</p>
-          <p v-if="product.depth">Depth: {{ product.depth }}</p>
-          <p v-if="product.Width">Width: {{ product.Width }}</p>
-          <p v-if="product.Weight">Weight: {{ product.Weight }}</p>
-        </q-card-section>
+        <q-card-section class="col-4" style="width: 90%;">
+      <p>{{$t('piCode')}}: {{ product.code }}</p>
+      <p v-if="product.Topout">{{$t('piTopOut')}}: {{ product.Topout }}</p>
+      <p v-if="product.Topin">{{$t('piTopIn')}}: {{ product.Topin }}</p>
+      <p v-if="product.size1">{{$t('piSize')}}: {{ product.size1 }}</p>
+      <p v-if="product.thickness">{{$t('piThickness')}}: {{ product.thickness }}</p>
+      <p v-if="product.depth">{{$t('piDepth')}}: {{ product.depth }}</p>
+      <p v-if="product.Width">{{$t('piWidth')}}: {{ product.Width }}</p>
+      <p v-if="product.Weight">{{$t('piWeight')}}: {{ product.Weight }}</p>
+    </q-card-section>
       </q-card-section>
     </q-card>
   </q-popup-proxy>

@@ -18,12 +18,16 @@ import FoilP from 'src/assets/foil.json';
 import LidsP from 'src/assets/lids.json';
 import PizzaP from 'src/assets/pizza.json';
 import TableCoverP from 'src/assets/tablecover.json';
+import ContainerPFA from 'src/assets/containerFA.json';
+import FoilPFA from 'src/assets/foilFA.json';
+import LidsPFA from 'src/assets/lidsFA.json';
+import PizzaPFA from 'src/assets/pizzaFA.json';
+import TableCoverPFA from 'src/assets/tablecoverFA.json';
+import { useI18n } from 'vue-i18n';
+const { locale } = useI18n({ useScope: "global" });
 const producs: Map<string, ProductInfo[]> = new Map(); // {};
-producs.set('container', ContainerP);
-producs.set('foils', FoilP);
-producs.set('lids', LidsP);
-producs.set('pizza', PizzaP);
-producs.set('tablecover', TableCoverP);
+
+
 
 const text = ref('');
 
@@ -36,25 +40,47 @@ interface Props {
 const props = defineProps<Props>();
 let origList: ProductInfo[] = [];
 const list = ref(<ProductInfo[]>[]);
-if (props.category == 'all') {
-  const temList = producs
-    .get('container')
-    ?.concat(
-      producs.get('foils') as ProductInfo[],
-      producs.get('lids') as ProductInfo[],
-      producs.get('pizza') as ProductInfo[],
-      producs.get('tablecover') as ProductInfo[],
-    );
-  origList = temList as ProductInfo[];
-} else origList = producs.get(props.category) as ProductInfo[];
+function initializeList() {
+  console.log(locale.value);
+producs.set('container', ContainerP);
+producs.set('foils', FoilP);
+producs.set('lids', LidsP);
+producs.set('pizza', PizzaP);
+producs.set('tablecover', TableCoverP);
+  if (locale.value == 'fa-IR'){
+producs.set('container', ContainerPFA);
+producs.set('foils', FoilPFA);
+producs.set('lids', LidsPFA);
+producs.set('pizza', PizzaPFA);
+producs.set('tablecover', TableCoverPFA);
+}
+  origList = [];
+  if (props.category == 'all') {
+    const temList = producs
+      .get('container')
+      ?.concat(
+        producs.get('foils') as ProductInfo[],
+        producs.get('lids') as ProductInfo[],
+        producs.get('pizza') as ProductInfo[],
+        producs.get('tablecover') as ProductInfo[],
+      );
+    origList = temList as ProductInfo[];
+  } else origList = producs.get(props.category) as ProductInfo[];
 
-if (props.category != 'all') list.value = origList;
+  list.value = origList;
+}
+
+initializeList();
 
 watch(text, (newValue) => {
   list.value = [];
   if (newValue != '') {
     list.value = origList.filter((prd) => JSON.stringify(prd).toLowerCase().includes(newValue));
   }
+});
+
+watch(locale, () => {
+  initializeList();
 });
 </script>
 

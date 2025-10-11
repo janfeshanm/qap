@@ -2,6 +2,17 @@
 // so you can safely delete all default props below
 
 export default {
+
+  //product item
+  piCode: 'کد',
+  piTopOut: 'Top out',
+  piTopIn: 'Top in',
+  piSize: 'اندازه',
+  piThickness: 'ضخامت',
+  piDepth: 'عمق',
+  piWidth: 'طول',
+  piWeight: 'وزن',
+
   //menu
   products: 'محصولات',
   aluminiumContainers: 'ظروف آلومینیومی',
@@ -232,9 +243,9 @@ export default {
   blogLearnMoreTitle: 'می‌خواهید بیشتر بدانید؟',
   blogLearnMoreText: 'وبلاگ ما را برای مقالات، نکات و تازه‌های صنعت دنبال کنید.',
   //فویل
-    "alum": "آلوم",
+  "alum": "آلوم",
   "peyman": "پیمان",
-  "herooDescription":  "تولیدکننده پیشرو فویل‌های آلومینیومی با کیفیت و ظروف یکبار مصرف برای مصارف خانگی و صنعتی در شمال‌غرب ایران"
+  "herooDescription": "تولیدکننده پیشرو فویل‌های آلومینیومی با کیفیت و ظروف یکبار مصرف برای مصارف خانگی و صنعتی در شمال‌غرب ایران"
 
 }
 
