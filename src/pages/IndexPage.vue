@@ -8,280 +8,276 @@
         <q-carousel-slide :name="4" img-src="assets/slider4.png" />
         <template v-slot:control>
           <q-carousel-control position="top" class="text-white rounded-borders">
-            <nav-comp />
+            <nav-comp  textColor="#ffffffff" />
           </q-carousel-control>
-          <q-carousel-control position="bottom" style="max-width: 60%">
-          <div class="slider-overlay">
-              <h1><span>ALUM</span> PEYMAN</h1>
-              <p>The First and Largest Aluminum Foil and Disposable <br />
-                Container Manufacturer in Northwest Iran</p>
-<router-link to="/products/container" class="btn">PRODUCTS</router-link>
-            </div>
-          </q-carousel-control>
+     <q-carousel-control position="bottom" style="max-width: 60%">
+  <div class="slider-overlay">
+    <h1><span>{{$t('heroTitle1')}}</span>{{$t('heroTitle2')}}</h1>
+    <p v-html="$t('heroSubtitle')"></p>
+<q-btn class="btn" :label="$t('heroButton')" to="/products/container"/>
+  </div>
+</q-carousel-control>
         </template>
       </q-carousel>
     </header>
-    <section class="hero">
-      <h4>High-Quality, Food-Grade Aluminum Products for Cooking, Packaging, and Storage</h4>
-      <h1>Premium Aluminum Foil & Disposable Containers</h1>
-      <p>Looking for reliable aluminum foil or durable disposable aluminum containers? Our factory
-        specializes in manufacturing food-safe aluminum solutions used in households, restaurants,
-        catering services, and food industries.</p>
-    </section>
 
-    <section class="products">
-      <div class="product">
-        <div><img src="assets/r1.png" alt="Disposable Aluminum Containers" /></div>
-        <div class="text">
-          <h2>Disposable Aluminum Containers</h2>
-          <h3>Oven & Freezer Safe</h3>
-          <p>Our disposable aluminum containers are perfect for hot and cold meals, widely used in catering, takeaway, and ready-meal packaging.</p>
-          <ul>
-            <li>Multiple shapes and sizes: round, rectangular, deep or shallow</li>
-            <li>Optional lids for safe storage and transportation</li>
-            <li>100% recyclable and environmentally friendly</li>
-            <li>Oven-safe, microwave-safe and freezer-compatible</li>
-            <li>Ideal for restaurants, food factories, and event catering</li>
-          </ul>
-<router-link to="/products/container" class="link">Explore Disposable Containers Collection</router-link>
-        </div>
-      </div>
+   <section id="certificates" class="certificates-section">
+  <!-- ISO CERTIFIED -->
+  <div class="certificate-item">
+    <img src="assets/c3.png" alt="ISO Certified">
+    <h3>{{ $t('isoCertified') }}</h3>
+  </div>
 
-      <div class="product reverse">
-        <div><img src="assets/r2.png" alt="Aluminum Foil Rolls" /></div>
-        <div class="text">
-          <h2>Aluminum Foil Rolls</h2>
-          <h3>Heat-Resistant & Food-Safe</h3>
-          <p>We produce high-quality aluminum foil rolls in various widths and thicknesses, suitable
-            for both home and industrial use.</p>
-          <ul>
-            <li>Food-grade and hygienic</li>
-            <li>Resistant to high temperatures and moisture</li>
-            <li>Keeps food fresh by blocking light, air, and contaminants</li>
-            <li>Ideal for kitchens, bakeries, takeaways, and supermarkets</li>
-            <li>Available in custom sizes and private label options</li>
-          </ul>
-          <router-link to="/products/foil" class="link">View All Aluminum Foil Products</router-link>
-        </div>
-      </div>
-    </section>
+  <!-- MADE IN IRAN -->
+  <div class="certificate-item">
+    <img src="assets/c2.png" alt="Made in Iran">
+    <h3>{{ $t('madeInIran') }}</h3>
+  </div>
 
-    <section class="products-section">
-      <h1 class="section-title">OUR PRODUCTS</h1>
+  <!-- SIB SALAMAT -->
+  <div class="certificate-item">
+    <img src="assets/c1.png" alt="SIB SALAMAT">
+    <h3>{{ $t('sibSalamat') }}</h3>
+  </div>
+</section>
 
-      <search-product category="all" />
+   <section id="hero" class="hero">
+  <h4>{{ $t('heroIntro') }}</h4>
+  <h1>{{ $t('heroMainTitle') }}</h1>
+  <p>{{ $t('heroDescription') }}</p>
+</section>
 
+<section id="products" class="products">
+  <!-- Product 1 -->
+  <div class="product">
+    <div><img src="assets/r1.png" alt="Disposable Aluminum Containers" /></div>
+    <div class="text">
+      <h2>{{ $t('disposableTitle') }}</h2>
+      <h3>{{ $t('disposableSubtitle') }}</h3>
+      <p>{{ $t('disposableText') }}</p>
+
+      <ul>
+        <li>{{ $t('disposableList1') }}</li>
+        <li>{{ $t('disposableList2') }}</li>
+        <li>{{ $t('disposableList3') }}</li>
+        <li>{{ $t('disposableList4') }}</li>
+        <li>{{ $t('disposableList5') }}</li>
+      </ul>
+<router-link to="/products/container" class="link"> {{ $t('disposableLink') }}
+</router-link> </div>
+  </div>
+
+  <!-- Product 2 -->
+  <div class="product reverse">
+    <div><img src="assets/r2.png" alt="Aluminum Foil Rolls" /></div>
+    <div class="text">
+      <h2>{{ $t('foilTitle') }}</h2>
+      <h3>{{ $t('foilSubtitle') }}</h3>
+      <p>{{ $t('foilText') }}</p>
+      <ul>
+        <li>{{ $t('foilList1') }}</li>
+        <li>{{ $t('foilList2') }}</li>
+        <li>{{ $t('foilList3') }}</li>
+        <li>{{ $t('foilList4') }}</li>
+        <li>{{ $t('foilList5') }}</li>
+      </ul>
+<router-link to="/products/foil" class="link">  {{ $t('foilLink') }}
+</router-link></div>
+  </div>
+</section>
+
+
+
+    <section id="product" class="products-section">
+ <h1 class="section-title">{{ $t('ourProducts') }}</h1>
+      <search-product category="all" button-color="#11304c" />
       <div class="product-category">
-        <div class="category-header">
-          <h2>Aluminium Containers</h2>
-         <router-link to="/products/container">view all</router-link>
-        </div>
-        <div class="product-images" style="grid-template-columns: auto auto auto;">
-          <img src="assets/1.png" alt="Aluminium Containers 1"/>
-          <img src="assets/2.png" alt="Aluminium Containers 2" />
-          <img src="assets/3.png" alt="Aluminium Containers 3" />
-        </div>
-      </div>
+  <div class="category-header">
+    <h2>{{ $t('categoryContainers') }}</h2>
+<router-link to="/products/container" class="link"> {{ $t('viewAll') }} </router-link>  </div>
+  <div class="product-images" style="grid-template-columns: auto auto auto;">
+    <img src="assets/1.png" alt="Aluminium Containers 1" />
+    <img src="assets/2.png" alt="Aluminium Containers 2" />
+    <img src="assets/3.png" alt="Aluminium Containers 3" />
+  </div>
+</div>
 
-      <div class="product-category">
-        <div class="category-header">
-          <h2>Aluminium Foil</h2>
-         <router-link to="/products/foil">view all</router-link>
-        </div>
-        <div class="product-images" style="grid-template-columns: auto auto auto auto;">
-          <img src="assets/4.png" alt="Aluminium Foil 1" />
-          <img src="assets/5.png" alt="Aluminium Foil 2" />
-          <img src="assets/6.png" alt="Aluminium Foil 3"/>
-          <img src="assets/7.png" alt="Aluminium Foil 4" />
-        </div>
-      </div>
+<div id="category" class="product-category">
+  <div class="category-header">
+    <h2>{{ $t('categoryFoil') }}</h2>
+<router-link to="/products/foil" class="link"> {{ $t('viewAll') }} </router-link>  </div>
+  <div class="product-images" style="grid-template-columns: auto auto auto auto;">
+    <img src="assets/4.png" alt="Aluminium Foil 1" />
+    <img src="assets/5.png" alt="Aluminium Foil 2" />
+    <img src="assets/6.png" alt="Aluminium Foil 3" />
+    <img src="assets/7.png" alt="Aluminium Foil 4" />
+  </div>
+</div>
 
-      <div class="product-category">
-        <div class="category-header">
-          <h2>Container Lids</h2>
-         <router-link to="/products/lids">view all</router-link>
-        </div>
-        <div class="product-images"  style="grid-template-columns: auto auto auto;">
-          <img src="assets/8.png" alt="Lids 1" />
-          <img src="assets/9.png" alt="Lids 2" />
-          <img src="assets/10.png" alt="Lids 3" />
-        </div>
-      </div>
+<div class="product-category">
+  <div class="category-header">
+    <h2>{{ $t('categoryLids') }}</h2>
+<router-link to="/products/lids" class="link"> {{ $t('viewAll') }} </router-link>  </div>
+  <div class="product-images" style="grid-template-columns: auto auto auto;">
+    <img src="assets/8.png" alt="Lids 1" />
+    <img src="assets/9.png" alt="Lids 2" />
+    <img src="assets/10.png" alt="Lids 3" />
+  </div>
+</div>
 
-      <div class="product-category">
-        <div class="category-header">
-          <h2>Cardboard Pizza Box</h2>
-         <router-link to="/products/pizza">view all</router-link>
-        </div>
-        <div class="product-images" style="grid-template-columns: auto auto auto;">
-          <img src="assets/11.png" alt="Pizza Box 1" />
-          <img src="assets/12.png" alt="Pizza Box 2" />
-          <img src="assets/13.png" alt="Pizza Box 3" />
-        </div>
-      </div>
+<div class="product-category">
+  <div class="category-header">
+    <h2>{{ $t('categoryPizza') }}</h2>
+<router-link to="/products/pizza" class="link"> {{ $t('viewAll') }} </router-link>  </div>
+  <div class="product-images" style="grid-template-columns: auto auto auto;">
+    <img src="assets/11.png" alt="Pizza Box 1" />
+    <img src="assets/12.png" alt="Pizza Box 2" />
+    <img src="assets/13.png" alt="Pizza Box 3" />
+  </div>
+</div>
 
-      <div class="product-category">
-        <div class="category-header">
-          <h2>Plastic Table Cover</h2>
-         <router-link to="/products/tablecover">view all</router-link>
-        </div>
-        <div class="product-images" style="grid-template-columns: auto auto auto;">
-          <img src="assets/14.png" alt="Cover 1" />
-          <img src="assets/15.png" alt="Cover 2" />
-          <img src="assets/16.png" alt="Cover 3" />
-        </div>
-      </div>
+<div class="product-category">
+  <div class="category-header">
+    <h2>{{ $t('categoryCover') }}</h2>
+<router-link to="/products/tablecover" class="link"> {{ $t('viewAll') }} </router-link>  </div>
+  <div class="product-images" style="grid-template-columns: auto auto auto;">
+    <img src="assets/14.png" alt="Cover 1" />
+    <img src="assets/15.png" alt="Cover 2" />
+    <img src="assets/16.png" alt="Cover 3" />
+  </div>
+</div>
 
-      <div class="product-category">
-        <div class="category-header">
-          <h2>Disposable Paper Cup</h2>
-        </div>
-        <div class="product-images" style="grid-template-columns: auto auto;">
-          <img src="assets/17.png" alt="Cup 1" />
-          <img src="assets/18.png" alt="Cup Coming Soon" />
-        </div>
-      </div>
+<div class="product-category">
+  <div class="category-header">
+    <h2>{{ $t('categoryCup') }}</h2>
+  </div>
+  <div class="product-images" style="grid-template-columns: auto auto;">
+    <img src="assets/17.png" alt="Cup 1" />
+    <img src="assets/18.png" alt="Cup Coming Soon" />
+  </div>
+</div>
     </section>
 
-    <section class="about-section">
-      <div class="about-content">
-        <h2>ABOUT US</h2>
-        <p>
-          Founded in 2005, Alum Peyman was established to meet the growing market demands in the
-          packaging industry for food, pharmaceuticals, industrial products, bitumen sheets, and
-          more. As the first and largest manufacturer of disposable containers and aluminium foil
-          using the latest global technologies, the company began its operations in the Shahid
-          Salimi Industrial Park in Tabriz, northwest of Iran. From its inception, the strong market
-          presence and high customer satisfaction in the region inspired the management team to
-          enhance product quality, expand the product range, and grow its target markets. Market
-          research to better respond to industry needs.
-        </p>
-        <div class="about-buttons">
-<router-link to="/about" class="btn primary">Learn More</router-link>
-          <a href="https://www.aparat.com/v/l49is36" class="btn secondary"> Watch Video <span class="play-icon">▶</span> </a>
-        </div>
-      </div>
+   <section id="about" class="about-section">
+  <div class="about-content">
+    <h2>{{ $t('aboutTitle') }}</h2>
+    <p>{{ $t('aboutText') }}</p>
 
-      <div class="about-stats">
-        <div class="stat-box">
-          <div class="number">20</div>
-          <div class="label">Years of experience</div>
-        </div>
-        <div class="stat-box">
-          <div class="number">+10</div>
-          <div class="label">Our Exports</div>
-        </div>
-        <div class="stat-box">
-          <div class="number">+15</div>
-          <div class="label">Distributors</div>
-        </div>
-        <div class="stat-box">
-          <div class="number">+50</div>
-          <div class="label">Expert Colleagues</div>
-        </div>
-      </div>
-    </section>
+    <div class="about-buttons">
+<router-link to="/about" class="btn primary">
+  {{ $t('learnMore') }}
+</router-link>
+     <a href="https://www.aparat.com/v/l49is36" class="btn secondary" target="_blank" rel="noopener noreferrer">
+  {{ $t('watchVideo') }} <span class="play-icon">▶</span></a>
+    </div>
+  </div>
 
-    <section class="service-section">
-      <div class="service-content">
-        <div class="service-text">
-          <h2>SERVICE</h2>
-          <h3>CUSTOM PRINTING ON DISPOSABLE TABLEWARE</h3>
-          <p>
-            Elevate your brand with custom-printed disposable tableware. Whether you're running a
-            cafe, restaurant, catering business, or organizing a special event, we offer
-            high-quality printing on cups, plates, bowls, trays, and more.
-            <br /><br />
-            With options like direct printing and heat-transfer labeling, your logo, design, or
-            promotional message will stand out, professionally printed with precision and
-            durability.
-          </p>
-          <p><strong>Let your packaging speak your brand</strong></p>
-          <img src="assets/s1.png" alt="Disposable packaging" />
-        </div>
+  <div class="about-stats">
+    <div class="stat-box">
+      <div class="number">20</div>
+      <div class="label">{{ $t('yearsExperience') }}</div>
+    </div>
+    <div class="stat-box">
+      <div class="number">+ 10</div>
+      <div class="label">{{ $t('exports') }}</div>
+    </div>
+    <div class="stat-box">
+      <div class="number">+ 15</div>
+      <div class="label">{{ $t('distributors') }}</div>
+    </div>
+    <div class="stat-box">
+      <div class="number">+ 50</div>
+      <div class="label">{{ $t('colleagues') }}</div>
+    </div>
+  </div>
+</section>
 
-        <div class="service-details">
-          <img src="assets/s3.png" alt="Custom print" />
-          <ul>
-            <li>High-resolution printing on various disposable items</li>
-            <li>Full-color logo & design support</li>
-            <li>Low minimum order quantities</li>
-            <li>Fast turnaround times</li>
-            <li>Free consultation on print-ready artwork</li>
-          </ul>
-          <p>
-            Perfect for Coffee shops, fast food chains, events, marketing campaigns, and private
-            labels.
-          </p>
-<router-link to="/contact" class="contact-btn">CONTACT</router-link>
-        </div>
-      </div>
 
-      <div class="coming-soon">
-        <img src="assets/s2.png" alt="Coming Soon" />
-      </div>
-    </section>
-
-    <section class="catalog-section">
-      <div class="catalog-image">
-        <img src="assets/catalog.png" alt="Catalog Preview" />
-      </div>
-
-      <div class="catalog-content">
-        <h2>CATALOG</h2>
-        <p>
-          To get a comprehensive overview of our products, including detailed specifications, sizes,
-          and various applications, you can download our digital catalog. It provides all the
-          necessary information to help you choose the right product for your needs.
-        </p>
-        <a href="public\assets\catalog-en.pdf" class="catalog-btn">DOWNLOAD CATALOG</a>
-      </div>
-    </section>
-
-    <section class="blog-section">
-      <h2>OUR LATEST ARTICLES & BLOG POSTS</h2>
-
-      <div class="blog-card">
-        <img src="assets/b1.png" alt="Aluminum container" />
-        <div class="blog-content">
-          <div class="stars">★★★★★</div>
-          <p>Discover why aluminum is the ideal material for keeping your food fresh and safe.</p>
-          <h3>Why Aluminum Containers are Perfect for Food Storage</h3>
-        </div>
-      </div>
-      <div class="blog-card reverse">
-        <img src="assets/b2.png" alt="Recycling aluminum" />
-        <div class="blog-content">
-          <p>
-            Egestas vulputate cras et nisi volutpat lacus metus massa vel. Eget felis augue pretium
-            faucibus convallis aliquam varius nisi commodo.
-          </p>
-          <h3>The Environmental Benefits of Recycling Aluminum</h3>
-<router-link to="/blog" class="btn">Learn More</router-link>
-        </div>
-      </div>
-      <div class="blog-banner">
-        <img src="assets/b3.png" alt="Aluminum packaging" />
-        <div class="banner-text">
-          <h3>Want to learn more?</h3>
-          <p>Explore our blog for more tips, articles, and industry updates.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="export-section">
-      <h2>Export</h2>
+   <section id="service" class="service-section">
+  <div class="service-content">
+    <div class="service-text">
+      <h2>{{ $t('serviceTitle') }}</h2>
+      <h3>{{ $t('serviceSubtitle') }}</h3>
       <p>
-        At Alum Peyman, we specialize in the export of premium-quality aluminum containers and
-        household aluminum foil products. With over 20 years of experience in manufacturing and
-        international trade, our company is a reliable partner for businesses seeking trusted,
-        hygienic, and durable aluminum packaging solutions.
+        {{ $t('serviceText1') }}
+        <br /><br />
+        {{ $t('serviceText2') }}
       </p>
-      <div class="export-images">
-        <img src="assets/ex1.png" alt="Loading aluminum export products" />
-        <img src="assets/ex2.png" alt="Factory worker handling aluminum containers" />
-      </div>
-    </section>
+      <p><strong>{{ $t('serviceTagline') }}</strong></p>
+      <img src="assets/s1.png" alt="Disposable packaging" />
+    </div>
+    <div class="service-details">
+      <img src="assets/s3.png" alt="Custom print" />
+      <ul>
+        <li>{{ $t('serviceList1') }}</li>
+        <li>{{ $t('serviceList2') }}</li>
+        <li>{{ $t('serviceList3') }}</li>
+        <li>{{ $t('serviceList4') }}</li>
+        <li>{{ $t('serviceList5') }}</li>
+      </ul>
+      <p>{{ $t('serviceText3') }}</p>
+<router-link to="/contact" class="contact-btn">
+  {{ $t('contact') }}
+</router-link>
+    </div>
+  </div>
+  <div class="coming-soon">
+    <img src="assets/s2.png" alt="Coming Soon" />
+  </div>
+</section>
+
+
+    <section id="catalog" class="catalog-section">
+  <div class="catalog-image">
+    <img src="assets/catalog.png" alt="Catalog Preview" />
+  </div>
+
+  <div class="catalog-content">
+    <h2>{{ $t('catalogTitle') }}</h2>
+    <p>{{ $t('catalogText') }}</p>
+<a href="/assets/catalog-en.pdf" class="catalog-btn" target="_blank" rel="noopener noreferrer" > {{ $t('catalogButton') }} </a>
+  </div>
+</section>
+
+   <section id="blog" class="blog-section">
+  <h2>{{ $t('blogSectionTitle') }}</h2>
+
+  <div class="blog-card">
+    <img src="assets/b1.png" alt="Aluminum container" />
+    <div class="blog-content">
+      <div class="stars">★★★★★</div>
+      <p>{{ $t('blogArticle1Title') }}</p>
+      <h3>{{ $t('blogArticle2Title') }}</h3>
+    </div>
+  </div>
+
+  <div class="blog-card reverse">
+    <img src="assets/b2.png" alt="Recycling aluminum" />
+    <div class="blog-content">
+      <p>{{ $t('blogArticle2Text') }}</p>
+      <h3>{{ $t('blogArticle2Title') }}</h3>
+<router-link to="/blog" class="btn"> {{ $t('blogBtn') }} </router-link>
+    </div>
+  </div>
+
+  <div class="blog-banner">
+    <img src="assets/b3.png" alt="Aluminum packaging" />
+    <div class="banner-text">
+      <h3>{{ $t('blogLearnMoreTitle') }}</h3>
+      <p>{{ $t('blogLearnMoreText') }}</p>
+    </div>
+  </div>
+</section>
+
+
+   <section id="export" class="export-section">
+  <h2>{{ $t('exportTitle') }}</h2>
+  <p>{{ $t('exportText') }}</p>
+  <div class="export-images">
+    <img src="assets/ex1.png" alt="Loading aluminum export products" />
+    <img src="assets/ex2.png" alt="Factory worker handling aluminum containers" />
+  </div>
+</section>
   </q-page>
 </template>
 
@@ -298,13 +294,21 @@ const autoplay = ref(true);
   box-sizing: border-box;
 }
 
-h1,
-h2,
-h3 {
-  font-family: 'Vazirmatn', sans-serif;
-  font-weight: 600;
+html[dir="rtl"] body,
+html[dir="rtl"] .q-page {
+  font-family: 'IRANSansX', Tahoma, sans-serif;
+  direction: rtl;
+  font-size: 16px;
+  line-height: 1.6;
 }
 
+html[dir="ltr"] body,
+html[dir="ltr"] .q-page {
+  font-family: 'Roboto', Arial, sans-serif;
+  direction: ltr;
+  font-size: 16px;
+  line-height: 1.6;
+}
 .q-carousel {
   width: 100%;
   aspect-ratio: 192 / 90;
@@ -315,9 +319,6 @@ h3 {
   color: #fff;
   z-index: 10;
   padding: 20px 60px;
-  border-radius: 10px;
-  background-color: #11304c41;
-
 }
 
 .slider-overlay h1 {
@@ -325,15 +326,26 @@ h3 {
   margin: 0;
   line-height: 1.2;
   font-weight: 50;
-  letter-spacing: 4px;
 }
 
 .slider-overlay h1 span {
   display: block;
   font-weight: 400;
+  letter-spacing: 0;
+}
+html[dir="ltr"] .slider-overlay h1 {
+  letter-spacing: 6px;
+}
+html[dir="ltr"] .slider-overlay h1 span {
   letter-spacing: 0px;
 }
+html[dir="rtl"] .slider-overlay h1 {
+  font-weight: lighter;
+}
 
+html[dir="rtl"] .slider-overlay h1 span {
+  font-weight: 400;
+}
 .slider-overlay p {
   font-size: 18px;
   margin: 10px 0;
@@ -342,12 +354,11 @@ h3 {
 
 .slider-overlay .btn {
   display: inline-block;
-  padding: 12px 24px;
+  padding: 12px 94px;
   background: #fff;
   color: #11304c;
   font-weight: bold;
   text-decoration: none;
-  border-radius: 6px;
   transition: 0.3s;
 }
 
@@ -356,16 +367,13 @@ h3 {
   color: #fff;
 }
 
-
-
-@media (max-width: 1000px) {
+@media (max-width: 820px) {
   .slider-overlay {
     padding: 7px 15px;
-    border-radius: 5px;
   }
 
   .slider-overlay h1 {
-    font-size: 18px;
+    font-size: 28px;
   }
 
   .slider-overlay p {
@@ -373,8 +381,8 @@ display: none;
   }
 
   .slider-overlay .btn {
-    padding: 4px 12px;
-    font-size: 8px;
+ display: none;
+
   }
 }
 
@@ -390,12 +398,43 @@ display: none;
   animation-duration: 2.5s;
 }
 
+.certificates-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 180px;
+ padding: 60px 0px 60px 0px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 2px 10px 0 rgba(53, 53, 53, 0.1);
+ }
+
+.certificate-item {
+  text-align: center;
+}
+
+.certificate-item img {
+  width: 80px;
+  height: auto;
+}
+
+.certificate-item h3 {
+  font-size: 18px;
+  margin: 0;
+  color: #11304c;
+  font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .certificates-section {
+    display: none;
+  }
+}
+
 .hero {
   text-align: center;
   max-width: 800px;
   margin: 50px auto;
   padding: 0 20px;
-  margin-top: 150px;
+  margin-top: 200px;
   font-size: 1rem;
 }
 
@@ -415,23 +454,23 @@ display: none;
 
 @media (max-width: 600px) {
   .hero {
-    margin-top: 60px; 
-    padding: 0 15px; 
-    text-align: center; 
+    margin-top: 60px;
+    padding: 0 15px;
+    text-align: center;
   }
 
   .hero h1 {
     font-size: 1.5rem;
-    line-height: 1.3; 
+    line-height: 1.3;
   }
 
   .hero h4 {
-    font-size: 1rem; 
+    font-size: 1rem;
     line-height: 1.8;
   }
 
   .hero p {
-    font-size: 0.9rem; 
+    font-size: 0.9rem;
     line-height: 1.6;
     margin-top: 10px;
   }
@@ -467,10 +506,6 @@ display: none;
 }
 
 
-.product .text {
-  flex: 1;
-}
-
 .product h2 {
   font-size: 1.5rem;
   color: #296097;
@@ -505,7 +540,6 @@ display: none;
     padding: 0 10px;
     margin-left: 10px;
    margin-right: 10px;
-
   }
 
   .hero h1 {
@@ -534,6 +568,7 @@ display: none;
   .product .text {
     padding-top: 20px;
     text-align: left;
+      flex: 1;
     padding: auto;
   }
 
@@ -553,7 +588,8 @@ display: none;
 .products-section {
   width: 100%;
   padding: 30px 60px;
-  background-color: rgb(217, 234, 248);
+    background: rgb(217, 234, 248);
+
 }
 
 .section-title {
@@ -565,51 +601,6 @@ display: none;
   color: #11304c;
 }
 
-.search-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #11304c;
-  padding: 25px;
-  border-radius: 10px;
-  margin: 10px auto 100px auto;
-  max-width: 1000px;
-    min-width: 300px;
-
-  justify-content: center;
-}
-
-.search-box input {
-  width: 80%;
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-}
-
-.search-box button {
-  background: none;
-  border: none;
-  margin-left: 10px;
-  cursor: pointer;
-}
-
-.search-box img {
-  width: 16px;
-  height: 16px;
-}
-
-@media (max-width: 600px) {
-  .search-box {
-    margin-bottom: 30px;
-    padding: 15px;   
-  }
-
-  .search-box input {
-    width: 100%;
-  }
-}
-
 .product-category {
   margin-bottom: 100px;
 }
@@ -618,8 +609,8 @@ display: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1000px;
-  margin: 10px auto;
+  max-width: 1250px;
+  margin: 0px auto;
   color: #11304c;
 }
 
@@ -634,29 +625,49 @@ display: none;
   text-decoration: none;
 }
 
+@media (max-width: 600px) {
+  .category-header {
+    gap: 8px;
+
+    h2 {
+      font-size: 18px;
+    }
+
+    a {
+      font-size: 14px;
+    }
+  }
+}
+
 .product-images {
   display: grid;
-  gap: 10px;
-  max-width: 1000px;
+  gap: 25px;
+  max-width: 1250px;
   margin: 0px auto;
 }
 
+
 .product-images img {
   width: 100%;
-  height: 260px;
-  border-radius: 8px;
+  height: 500px;
   object-fit: cover;
 }
 
 @media (max-width: 992px) {
+   .product-images {
+      gap: 15px;
+  }
   .product-images img {
-    height: 200px;
+    height: 300px;
   }
 }
 
 @media (max-width: 600px) {
+  .product-images {
+      gap: 8px;
+  }
   .product-images img {
-    height: 150px;
+    height: 100px;
   }
 }
 .product-category:nth-child(3) .product-images,
@@ -682,7 +693,7 @@ display: none;
   padding: 80px 40px;
   background-color: #11304c;
   color: white;
-  gap: 50px;
+  gap: 140px;
 }
 
 @media (max-width: 1000px) {
@@ -721,7 +732,8 @@ display: none;
   text-decoration: none;
   display: inline-block;
   transition: 0.3s;
-  border: 1px solid white;
+    color: #11304c;
+
 }
 
 .btn.primary {
@@ -799,7 +811,7 @@ display: none;
 }
 
 .service-text h2 {
-  font-size: 20px;
+  font-size: 40px;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -810,12 +822,13 @@ display: none;
   margin-bottom: 20px;
 }
 
-.service-text p {
-  font-size: 14px;
+  .service-text p,
+  .service-details ul,
+  .service-details p {
+  font-size: 16px;
   line-height: 1.7;
   margin-bottom: 20px;
-}
-
+  }
 .service-text img {
   width: 100%;
   max-width: 500px;
@@ -880,19 +893,6 @@ display: none;
     padding: 0;
   }
 
-  .service-text h2 {
-    font-size: 18px;
-  }
-
-  .service-text h3 {
-    font-size: 15px;
-  }
-
-  .service-text p,
-  .service-details ul,
-  .service-details p {
-    font-size: 16px;
-  }
 
   .contact-btn {
     font-size: 13px;
@@ -938,6 +938,8 @@ display: none;
   font-size: 28px;
   margin-bottom: 20px;
   color: #11304c;
+    font-weight: bold;
+
 }
 
 .catalog-content p {
@@ -971,7 +973,8 @@ display: none;
   }
 
   .catalog-content h2 {
-    font-size: 24px;
+    font-size: 45px;
+
     text-align: center;
   }
 
@@ -1170,125 +1173,6 @@ display: none;
   object-fit: cover;
 }
 
-.containeroverlay {
-  position: absolute;
-  top: 20%;
-  left: 21%;
-  color: #11304c;
-  z-index: 10;
-}
-
-.containeroverlay h1 {
-  font-size: 48px;
-  margin: 0;
-  font-weight: bold;
-  line-height: 1.2;
-}
-
-.containeroverlay h1 span {
-  display: block;
-}
-
-.containeroverlay p {
-  font-size: 18px;
-  margin: 10px 0;
-  color: #11304c;
-}
-
-@media (max-width: 768px) {
-  .containeroverlay {
-    top: auto;
-    bottom: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    text-align: center;
-  }
-}
-
-section.containerr {
-  background-color: rgb(217, 234, 248);
-  padding: 100px 40px;
-}
-
-.container-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-  padding: 40px 20px;
-  max-width: 1100px;
-  margin: auto auto;
-}
-
-.container-card {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  text-align: center;
-  padding: 20px;
-  transition: transform 0.2s ease;
-}
-
-.container-card:hover {
-  transform: translateY(-5px);
-}
-
-.container-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
-
-.container-info {
-  font-size: 14px;
-  color: #333;
-  margin-bottom: 12px;
-  line-height: 1.6;
-}
-
-.containerbtn {
-  display: inline-block;
-  background: #1e3a5f;
-  color: #fff;
-  padding: 10px 18px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-size: 14px;
-  transition: 0.3s ease;
-}
-
-.btn:hover {
-  background: #2d4f80;
-}
-
-.pagination {
-  text-align: center;
-  margin: 30px 0 10px;
-}
-
-.pagination a {
-  margin: 0 8px;
-  text-decoration: none;
-  color: #1e3a5f;
-  font-weight: bold;
-}
-
-.pagination a:hover {
-  text-decoration: underline;
-}
-
-@media (max-width: 992px) {
-  .container-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 600px) {
-  .container-grid {
-    grid-template-columns: 1fr;
-  }
-}
 
 .aboutphoto {
   border-radius: 20px;
