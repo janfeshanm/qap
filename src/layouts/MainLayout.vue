@@ -28,15 +28,18 @@
         <a href="https://www.instagram.com/alumpeyman" target="_blank">
           <i class="fab fa-instagram"></i>
         </a>
-        <a href="#"><i class="fab fa-telegram"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-<a href="https://x.com/alumpeyman" target="_blank" rel="noopener noreferrer">
+<a href="https://t.me/alumpeyman" target="_blank" rel="noopener noreferrer" aria-label="Telegram: @alumpeyman">
+  <i class="fab fa-telegram"></i>
+</a>
+<a href="https://www.linkedin.com/in/alumpeyman" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn: alumpeyman">
+  <i class="fab fa-linkedin"></i>
+</a><a href="https://x.com/alumpeyman" target="_blank" rel="noopener noreferrer">
   <i class="fab fa-twitter"></i>
 </a>      </div>
     </div>
 
     <div class="contact-img">
-      <img src="assets/cc1.png" alt="Office Building" />
+      <img src="assets/cc1.webp" alt="Office Building" />
     </div>
   </div>
 </section>
@@ -112,7 +115,7 @@ const routeClass = computed(() => {
 .contact-container {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: stretch;
   gap: 30px;
   flex-wrap: wrap;
   max-width: 1000px;
@@ -173,7 +176,7 @@ const routeClass = computed(() => {
   width: 100%;
   display: block;
   border-radius: 6px;
-  height: 420px;
+  height: 100%;
   object-fit: cover;
 }
 

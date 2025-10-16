@@ -1,10 +1,10 @@
 <template>
   <q-page>
     <q-carousel swipeable animated v-model="slide" :autoplay="autoplay" ref="carousel" infinite>
-      <q-carousel-slide :name="1" img-src="assets/slider1.png" />
-      <q-carousel-slide :name="2" img-src="assets/slider2.png" />
-      <q-carousel-slide :name="3" img-src="assets/slider3.png" />
-      <q-carousel-slide :name="4" img-src="assets/slider4.png" />
+      <q-carousel-slide :name="1" img-src="assets/slider1.webp" />
+      <q-carousel-slide :name="2" img-src="assets/slider2.webp" />
+      <q-carousel-slide :name="3" img-src="assets/slider3.webp" />
+      <q-carousel-slide :name="4" img-src="assets/slider4.webp" />
       <template v-slot:control>
         <q-carousel-control position="top" class="text-white rounded-borders"
           >bbbbbb

@@ -7,7 +7,7 @@
     "size1": "115 × 142 mm",
     "description_short": "Product with code 40",
     "description_long": "Suitable for various uses in packaging and industry.",
-    "image": "assets/40l.png"
+    "image": "assets/40l.webp"
   },
   {
     "id": 2,
@@ -16,7 +16,7 @@
     "size1": "119 × 146 mm",
     "description_short": "Product with code 50",
     "description_long": "Suitable for various uses in packaging and industry.",
-    "image": "assets/50l.png"
+    "image": "assets/50l.webp"
   },
   {
     "id": 3,
@@ -25,7 +25,7 @@
     "size1": "106 × 196 mm",
     "description_short": "Product with code 30",
     "description_long": "Suitable for various uses in packaging and industry.",
-    "image": "assets/30l.png"
+    "image": "assets/30l.webp"
   },
   {
     "id": 4,
@@ -34,7 +34,7 @@
     "size1": "106 × 196 mm",
     "description_short": "Product with code 30.1",
     "description_long": "Suitable for various uses in packaging and industry.",
-    "image": "assets/301l.png"
+    "image": "assets/301l.webp"
   },
   {
     "id": 5,
@@ -43,7 +43,7 @@
        "size1": "134 × 183 mm",
     "description_short": "Product with code 111",
     "description_long": "Suitable for various uses in packaging and industry.",
-    "image": "assets/111l.png"
+    "image": "assets/111l.webp"
   },
   {
     "id": 6,
@@ -52,7 +52,7 @@
        "size1": "140 × 203 mm",
     "description_short": "Product with code 711",
     "description_long": "Suitable for various uses in packaging and industry.",
-    "image": "assets/711l.png"
+    "image": "assets/711l.webp"
   },
   {
     "id": 7,
@@ -61,7 +61,7 @@
        "size1": "144 × 208 mm",
     "description_short": "Product with code 105t",
     "description_long": "Suitable for various uses in packaging and industry.",
-    "image": "assets/105tl.png"
+    "image": "assets/105tl.webp"
   },
   {
     "id": 8,
@@ -70,7 +70,7 @@
        "size1": "144 × 208 mm",
     "description_short": "Product with code 105s",
     "description_long": "Suitable for various uses in packaging and industry.",
-    "image": "assets/105sl.png"
+    "image": "assets/105sl.webp"
   },
   {
     "id": 9,
@@ -79,7 +79,7 @@
      "size1": "212 × 147 mm",
     "description_short": "Product with code 109",
     "description_long": "Suitable for various uses in packaging and industry.",
-    "image": "assets/109l.png"
+    "image": "assets/109l.webp"
   },
   {
     "id": 10,
@@ -88,7 +88,7 @@
      "size1": "149 × 210 mm",
     "description_short": "Product with code 106",
     "description_long": "Suitable for various uses in packaging and industry.",
-    "image": "assets/106l.png"
+    "image": "assets/106l.webp"
   },
   {
     "id": 11,
@@ -97,7 +97,7 @@
     "size1": "220 × 169 mm",
     "description_short": "Product with code 729",
     "description_long": "Suitable for various uses in packaging and industry.",
-    "image": "assets/729l.png"
+    "image": "assets/729l.webp"
   },
   {
     "id": 12,
@@ -106,7 +106,7 @@
       "size1": "216 × 158 mm",
     "description_short": "Product with code 107",
     "description_long": "Suitable for various uses in packaging and industry.",
-    "image": "assets/107l.png"
+    "image": "assets/107l.webp"
   },
   {
     "id": 13,
@@ -115,7 +115,7 @@
       "size1": "157 × 222 mm",
     "description_short": "Product with code 114",
     "description_long": "Suitable for various uses in packaging and industry.",
-    "image": "assets/114l.png"
+    "image": "assets/114l.webp"
   },
   {
     "id": 14,
@@ -124,7 +124,7 @@
      "size1": "220 × 174 mm",
     "description_short": "Product with code 222",
     "description_long": "Suitable for various uses in packaging and industry.",
-    "image": "assets/222l.png"
+    "image": "assets/222l.webp"
   },
   {
     "id": 15,
@@ -133,7 +133,7 @@
     "size1": "166 × 219 mm",
     "description_short": "Product with code 320",
     "description_long": "Suitable for various uses in packaging and industry.",
-    "image": "assets/320l.png"
+    "image": "assets/320l.webp"
   },
   {
     "id": 16,
@@ -142,7 +142,7 @@
     "size1": "251 × 146 mm",
     "description_short": "Product with code 230",
     "description_long": "Suitable for various uses in packaging and industry.",
-    "image": "assets/230l.png"
+    "image": "assets/230l.webp"
   },
   {
     "id": 17,
@@ -151,7 +151,7 @@
     "size1": "155 × 304 mm",
     "description_short": "Product with code 240",
     "description_long": "Suitable for various uses in packaging and industry.",
-    "image": "assets/240l.png"
+    "image": "assets/240l.webp"
   },
   {
     "id": 18,
@@ -160,7 +160,7 @@
      "size1": "318 × 167 mm",
     "description_short": "Product with code 250",
     "description_long": "Suitable for various uses in packaging and industry.",
-    "image": "assets/250l.png"
+    "image": "assets/250l.webp"
   },
   {
     "id": 19,
@@ -169,6 +169,6 @@
     "size1": "318 × 167 mm",
     "description_short": "Product with code 118",
     "description_long": "Suitable for various uses in packaging and industry.",
-    "image": "assets/118l.png"
+    "image": "assets/118l.webp"
   }
 ]

@@ -8,7 +8,7 @@
     "depth": "40 mm",
     "description_short": "Medium box suitable for pizzas",
     "description_long": " Ideal for various kitchen and packaging uses.",
-    "image": "assets/p2.png"
+    "image": "assets/p2.webp"
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "depth": "40 mm",
     "description_short": "Medium box suitable for pizzas",
     "description_long": " Ideal for various kitchen and packaging uses.",
-    "image": "assets/p1.png"
+    "image": "assets/p1.webp"
   },
   {
     "id": 3,
@@ -30,6 +30,6 @@
     "depth": "40 mm",
     "description_short": "Large box suitable for family pizzas",
     "description_long": " Ideal for various kitchen and packaging uses.",
-    "image": "assets/p3.png"
+    "image": "assets/p3.webp"
   }
 ]

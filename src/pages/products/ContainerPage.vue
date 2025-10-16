@@ -2,7 +2,7 @@
   <q-page>
     <nav-comp style="background-color: rgb(217, 234, 248); height: 74px" textColor="#11304c" />
     <div style="  background-color: rgb(217, 234, 248); display: flex; justify-content: center;">
-<img src="assets/container.png" class="smart-img" /></div>
+<img src="assets/container.webp" class="smart-img" /></div>
 
     <section class="containerr">
       <search-product category="container" button-color="#11304c" />
@@ -10,7 +10,7 @@
 
      <section class="catalog-section">
   <div class="catalog-image">
-    <img src="assets/catalog.png" alt="Catalog Preview" />
+    <img src="assets/catalog.webp" alt="Catalog Preview" />
   </div>
 
   <div class="catalog-content">

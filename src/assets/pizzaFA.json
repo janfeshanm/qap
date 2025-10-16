@@ -8,7 +8,7 @@
     "depth": "۴۰ میلی‌متر",
     "description_short": "جعبه متوسط مناسب برای پیتزاهای یک‌‌نفره",
     "description_long": "ایده‌آل برای مصارف مختلف آشپزخانه و بسته‌بندی.",
-    "image": "assets/p2.png"
+    "image": "assets/p2.webp"
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "depth": "۴۰ میلی‌متر",
     "description_short": "جعبه متوسط مناسب برای پیتزاهای یک‌‌نفره",
     "description_long": " مناسب برای مصارف مختلف آشپزخانه و بسته‌بندی.",
-    "image": "assets/p1.png"
+    "image": "assets/p1.webp"
   },
   {
     "id": 3,
@@ -30,6 +30,6 @@
     "depth": "۴۰ میلی‌متر",
     "description_short": "جعبه بزرگ مناسب برای پیتزاهای خانوادگی",
     "description_long": " مناسب برای مصارف مختلف آشپزخانه و بسته‌بندی.",
-    "image": "assets/p3.png"
+    "image": "assets/p3.webp"
   }
 ]

@@ -6,7 +6,7 @@
     "size1": "۱۱۵ × ۱۴۲ میلی‌متر",
     "description_short": "محصول با کد ۴۰",
     "description_long": "مناسب برای کاربردهای مختلف در بسته‌بندی و صنعت.",
-    "image": "assets/40l.png"
+    "image": "assets/40l.webp"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "size1": "۱۱۹ × ۱۴۶ میلی‌متر",
     "description_short": "محصول با کد ۵۰",
     "description_long": "مناسب برای کاربردهای مختلف در بسته‌بندی و صنعت.",
-    "image": "assets/50l.png"
+    "image": "assets/50l.webp"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "size1": "۱۰۶ × ۱۹۶ میلی‌متر",
     "description_short": "محصول با کد ۳۰",
     "description_long": "مناسب برای کاربردهای مختلف در بسته‌بندی و صنعت.",
-    "image": "assets/30l.png"
+    "image": "assets/30l.webp"
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "size1": "۱۰۶ × ۱۹۶ میلی‌متر",
     "description_short": "محصول با کد ۳۰٫۱",
     "description_long": "مناسب برای کاربردهای مختلف در بسته‌بندی و صنعت.",
-    "image": "assets/301l.png"
+    "image": "assets/301l.webp"
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "size1": "۱۳۴ × ۱۸۳ میلی‌متر",
     "description_short": "محصول با کد ۱۱۱",
     "description_long": "مناسب برای کاربردهای مختلف در بسته‌بندی و صنعت.",
-    "image": "assets/111l.png"
+    "image": "assets/111l.webp"
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "size1": "۱۴۰ × ۲۰۳ میلی‌متر",
     "description_short": "محصول با کد ۷۱۱",
     "description_long": "مناسب برای کاربردهای مختلف در بسته‌بندی و صنعت.",
-    "image": "assets/711l.png"
+    "image": "assets/711l.webp"
   },
   {
     "id": 7,
@@ -60,7 +60,7 @@
     "size1": "۱۴۴ × ۲۰۸ میلی‌متر",
     "description_short": "محصول با کد ۱۰۵t",
     "description_long": "مناسب برای کاربردهای مختلف در بسته‌بندی و صنعت.",
-    "image": "assets/105tl.png"
+    "image": "assets/105tl.webp"
   },
   {
     "id": 8,
@@ -69,7 +69,7 @@
     "size1": "۱۴۴ × ۲۰۸ میلی‌متر",
     "description_short": "محصول با کد ۱۰۵s",
     "description_long": "مناسب برای کاربردهای مختلف در بسته‌بندی و صنعت.",
-    "image": "assets/105sl.png"
+    "image": "assets/105sl.webp"
   },
   {
     "id": 9,
@@ -78,7 +78,7 @@
     "size1": "۲۱۲ × ۱۴۷ میلی‌متر",
     "description_short": "محصول با کد ۱۰۹",
     "description_long": "مناسب برای کاربردهای مختلف در بسته‌بندی و صنعت.",
-    "image": "assets/109l.png"
+    "image": "assets/109l.webp"
   },
   {
     "id": 10,
@@ -87,7 +87,7 @@
     "size1": "۱۴۹ × ۲۱۰ میلی‌متر",
     "description_short": "محصول با کد ۱۰۶",
     "description_long": "مناسب برای کاربردهای مختلف در بسته‌بندی و صنعت.",
-    "image": "assets/106l.png"
+    "image": "assets/106l.webp"
   },
   {
     "id": 11,
@@ -96,7 +96,7 @@
     "size1": "۲۲۰ × ۱۶۹ میلی‌متر",
     "description_short": "محصول با کد ۷۲۹",
     "description_long": "مناسب برای کاربردهای مختلف در بسته‌بندی و صنعت.",
-    "image": "assets/729l.png"
+    "image": "assets/729l.webp"
   },
   {
     "id": 12,
@@ -105,7 +105,7 @@
     "size1": "۲۱۶ × ۱۵۸ میلی‌متر",
     "description_short": "محصول با کد ۱۰۷",
     "description_long": "مناسب برای کاربردهای مختلف در بسته‌بندی و صنعت.",
-    "image": "assets/107l.png"
+    "image": "assets/107l.webp"
   },
   {
     "id": 13,
@@ -114,7 +114,7 @@
     "size1": "۱۵۷ × ۲۲۲ میلی‌متر",
     "description_short": "محصول با کد ۱۱۴",
     "description_long": "مناسب برای کاربردهای مختلف در بسته‌بندی و صنعت.",
-    "image": "assets/114l.png"
+    "image": "assets/114l.webp"
   },
   {
     "id": 14,
@@ -123,7 +123,7 @@
     "size1": "۲۲۰ × ۱۷۴ میلی‌متر",
     "description_short": "محصول با کد ۲۲۲",
     "description_long": "مناسب برای کاربردهای مختلف در بسته‌بندی و صنعت.",
-    "image": "assets/222l.png"
+    "image": "assets/222l.webp"
   },
   {
     "id": 15,
@@ -132,7 +132,7 @@
     "size1": "۱۶۶ × ۲۱۹ میلی‌متر",
     "description_short": "محصول با کد ۳۲۰",
     "description_long": "مناسب برای کاربردهای مختلف در بسته‌بندی و صنعت.",
-    "image": "assets/320l.png"
+    "image": "assets/320l.webp"
   },
   {
     "id": 16,
@@ -141,7 +141,7 @@
     "size1": "۲۵۱ × ۱۴۶ میلی‌متر",
     "description_short": "محصول با کد ۲۳۰",
     "description_long": "مناسب برای کاربردهای مختلف در بسته‌بندی و صنعت.",
-    "image": "assets/230l.png"
+    "image": "assets/230l.webp"
   },
   {
     "id": 17,
@@ -150,7 +150,7 @@
     "size1": "۱۵۵ × ۳۰۴ میلی‌متر",
     "description_short": "محصول با کد ۲۴۰",
     "description_long": "مناسب برای کاربردهای مختلف در بسته‌بندی و صنعت.",
-    "image": "assets/240l.png"
+    "image": "assets/240l.webp"
   },
   {
     "id": 18,
@@ -159,7 +159,7 @@
     "size1": "۳۱۸ × ۱۶۷ میلی‌متر",
     "description_short": "محصول با کد ۲۵۰",
     "description_long": "مناسب برای کاربردهای مختلف در بسته‌بندی و صنعت.",
-    "image": "assets/250l.png"
+    "image": "assets/250l.webp"
   },
   {
     "id": 19,
@@ -168,6 +168,6 @@
     "size1": "۳۱۸ × ۱۶۷ میلی‌متر",
     "description_short": "محصول با کد ۱۱۸",
     "description_long": "مناسب برای کاربردهای مختلف در بسته‌بندی و صنعت.",
-    "image": "assets/118l.png"
+    "image": "assets/118l.webp"
   }
 ]

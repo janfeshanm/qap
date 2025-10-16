@@ -8,7 +8,7 @@
     "Capacity": "350 ml",
     "description_short": "Product with code 40",
     "description_long": "Suitable for various uses in packaging and industry.",
-    "image": "assets/40.png"
+    "image": "assets/40.webp"
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "Capacity": "450 ml",
     "description_short": "Product with code 50",
     "description_long": "Suitable for various uses in packaging and industry.",
-    "image": "assets/50.png"
+    "image": "assets/50.webp"
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "Capacity": "500 ml",
     "description_short": "Product with code 30",
     "description_long": "Suitable for various uses in packaging and industry.",
-    "image": "assets/30.png"
+    "image": "assets/30.webp"
   },
   {
     "id": 4,
@@ -41,7 +41,7 @@
     "Capacity": "500 ml",
     "description_short": "Product with code 30.1",
     "description_long": "Suitable for various uses in packaging and industry.",
-    "image": "assets/301.png"
+    "image": "assets/301.webp"
   },
   {
     "id": 5,
@@ -52,7 +52,7 @@
     "Capacity": "750 ml",
     "description_short": "Product with code 111",
     "description_long": "Suitable for various uses in packaging and industry.",
-    "image": "assets/111.png"
+    "image": "assets/111.webp"
   },
   {
     "id": 6,
@@ -63,7 +63,7 @@
     "Capacity": "1000 ml",
     "description_short": "Product with code 711",
     "description_long": "Suitable for various uses in packaging and industry.",
-    "image": "assets/711.png"
+    "image": "assets/711.webp"
   },
   {
     "id": 7,
@@ -74,7 +74,7 @@
     "Capacity": "1000 ml",
     "description_short": "Product with code 105t",
     "description_long": "Suitable for various uses in packaging and industry.",
-    "image": "assets/105t.png"
+    "image": "assets/105t.webp"
   },
   {
     "id": 8,
@@ -85,7 +85,7 @@
     "Capacity": "1000 ml",
     "description_short": "Product with code 105s",
     "description_long": "Suitable for various uses in packaging and industry.",
-    "image": "assets/105s.png"
+    "image": "assets/105s.webp"
   },
   {
     "id": 9,
@@ -96,7 +96,7 @@
     "Capacity": "1000 ml",
     "description_short": "Product with code 109",
     "description_long": "Suitable for various uses in packaging and industry.",
-    "image": "assets/109.png"
+    "image": "assets/109.webp"
   },
   {
     "id": 10,
@@ -107,7 +107,7 @@
     "Capacity": "1300 ml",
     "description_short": "Product with code 106",
     "description_long": "Suitable for various uses in packaging and industry.",
-    "image": "assets/106.png"
+    "image": "assets/106.webp"
   },
   {
     "id": 11,
@@ -118,7 +118,7 @@
     "Capacity": "1500 ml",
     "description_short": "Product with code 729",
     "description_long": "Suitable for various uses in packaging and industry.",
-    "image": "assets/729.png"
+    "image": "assets/729.webp"
   },
   {
     "id": 12,
@@ -129,7 +129,7 @@
     "Capacity": "1500 ml",
     "description_short": "Product with code 107",
     "description_long": "Suitable for various uses in packaging and industry.",
-    "image": "assets/107.png"
+    "image": "assets/107.webp"
   },
   {
     "id": 13,
@@ -140,7 +140,7 @@
     "Capacity": "1500 ml",
     "description_short": "Product with code 114",
     "description_long": "Suitable for various uses in packaging and industry.",
-    "image": "assets/114.png"
+    "image": "assets/114.webp"
   },
   {
     "id": 14,
@@ -151,7 +151,7 @@
     "Capacity": "-",
     "description_short": "Product with code 222",
     "description_long": "Suitable for various uses in packaging and industry.",
-    "image": "assets/222.png"
+    "image": "assets/222.webp"
   },
   {
     "id": 15,
@@ -162,7 +162,7 @@
     "Capacity": "-",
     "description_short": "Product with code 320",
     "description_long": "Suitable for various uses in packaging and industry.",
-    "image": "assets/320.png"
+    "image": "assets/320.webp"
   },
   {
     "id": 16,
@@ -173,7 +173,7 @@
     "Capacity": "2000 ml",
     "description_short": "Product with code 230",
     "description_long": "Suitable for various uses in packaging and industry.",
-    "image": "assets/230.png"
+    "image": "assets/230.webp"
   },
   {
     "id": 17,
@@ -184,7 +184,7 @@
     "Capacity": "2300 ml",
     "description_short": "Product with code 240",
     "description_long": "Suitable for various uses in packaging and industry.",
-    "image": "assets/240.png"
+    "image": "assets/240.webp"
   },
   {
     "id": 18,
@@ -195,7 +195,7 @@
     "Capacity": "2500 ml",
     "description_short": "Product with code 250",
     "description_long": "Suitable for various uses in packaging and industry.",
-    "image": "assets/250.png"
+    "image": "assets/250.webp"
   },
   {
     "id": 19,
@@ -206,6 +206,6 @@
     "Capacity": "3500 ml",
     "description_short": "Product with code 118",
     "description_long": "Suitable for various uses in packaging and industry.",
-    "image": "assets/118.png"
+    "image": "assets/118.webp"
   }
 ]

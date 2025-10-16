@@ -2,10 +2,10 @@
   <q-page>
     <header>
       <q-carousel swipeable animated v-model="slide" :autoplay="autoplay" ref="carousel" infinite>
-        <q-carousel-slide :name="1" img-src="assets/slider1.png" />
-        <q-carousel-slide :name="2" img-src="assets/slider2.png" />
-        <q-carousel-slide :name="3" img-src="assets/slider3.png" />
-        <q-carousel-slide :name="4" img-src="assets/slider4.png" />
+        <q-carousel-slide :name="1" img-src="assets/slider1.webp" />
+        <q-carousel-slide :name="2" img-src="assets/slider2.webp" />
+        <q-carousel-slide :name="3" img-src="assets/slider3.webp" />
+        <q-carousel-slide :name="4" img-src="assets/slider4.webp" />
         <template v-slot:control>
           <q-carousel-control position="top" class="text-white rounded-borders">
             <nav-comp  textColor="#ffffffff" />
@@ -24,63 +24,62 @@
    <section id="certificates" class="certificates-section">
   <!-- ISO CERTIFIED -->
   <div class="certificate-item">
-    <img src="assets/c3.png" alt="ISO Certified">
+    <img src="assets/c3.webp" alt="ISO Certified">
     <h3>{{ $t('isoCertified') }}</h3>
   </div>
 
   <!-- MADE IN IRAN -->
   <div class="certificate-item">
-    <img src="assets/c2.png" alt="Made in Iran">
+    <img src="assets/c2.webp" alt="Made in Iran">
     <h3>{{ $t('madeInIran') }}</h3>
   </div>
 
   <!-- SIB SALAMAT -->
   <div class="certificate-item">
-    <img src="assets/c1.png" alt="SIB SALAMAT">
+    <img src="assets/c1.webp" alt="SIB SALAMAT">
     <h3>{{ $t('sibSalamat') }}</h3>
   </div>
 </section>
 
    <section id="hero" class="hero">
   <h4>{{ $t('heroIntro') }}</h4>
-  <h1>{{ $t('heroMainTitle') }}</h1>
+  <h2>{{ $t('heroMainTitle') }}</h2>
   <p>{{ $t('heroDescription') }}</p>
 </section>
 
 <section id="products" class="products">
   <!-- Product 1 -->
   <div class="product">
-    <div><img src="assets/r1.png" alt="Disposable Aluminum Containers" /></div>
+    <div><img src="assets/r1.webp" alt="Disposable Aluminum Containers" /></div>
     <div class="text">
       <h2>{{ $t('disposableTitle') }}</h2>
       <h3>{{ $t('disposableSubtitle') }}</h3>
       <p>{{ $t('disposableText') }}</p>
 
-      <ul>
-        <li>{{ $t('disposableList1') }}</li>
-        <li>{{ $t('disposableList2') }}</li>
-        <li>{{ $t('disposableList3') }}</li>
-        <li>{{ $t('disposableList4') }}</li>
-        <li>{{ $t('disposableList5') }}</li>
-      </ul>
+     
+       <p>{{ $t('disposableList1') }}</p>
+     <p>{{ $t('disposableList2') }}</p>
+     <p>{{ $t('disposableList3') }}</p>
+       <p>{{ $t('disposableList4') }}</p>
+      <p>{{ $t('disposableList5') }}</p>
+
 <router-link to="/products/container" class="link"> {{ $t('disposableLink') }}
 </router-link> </div>
   </div>
 
   <!-- Product 2 -->
   <div class="product reverse">
-    <div><img src="assets/r2.png" alt="Aluminum Foil Rolls" /></div>
+    <div><img src="assets/r2.webp" alt="Aluminum Foil Rolls" /></div>
     <div class="text">
       <h2>{{ $t('foilTitle') }}</h2>
       <h3>{{ $t('foilSubtitle') }}</h3>
       <p>{{ $t('foilText') }}</p>
-      <ul>
-        <li>{{ $t('foilList1') }}</li>
-        <li>{{ $t('foilList2') }}</li>
-        <li>{{ $t('foilList3') }}</li>
-        <li>{{ $t('foilList4') }}</li>
-        <li>{{ $t('foilList5') }}</li>
-      </ul>
+
+         <p>{{ $t('foilList1') }}</p>
+        <p>{{ $t('foilList2') }}</p>
+        <p>{{ $t('foilList3') }}</p>
+        <p>{{ $t('foilList4') }}</p>
+          <p>{{ $t('foilList5') }}</p>
 <router-link to="/products/foil" class="link">  {{ $t('foilLink') }}
 </router-link></div>
   </div>
@@ -89,16 +88,16 @@
 
 
     <section id="product" class="products-section">
- <h1 class="section-title">{{ $t('ourProducts') }}</h1>
+ <h2 class="section-title">{{ $t('ourProducts') }}</h2>
       <search-product category="all" button-color="#11304c" />
       <div class="product-category">
   <div class="category-header">
     <h2>{{ $t('categoryContainers') }}</h2>
 <router-link to="/products/container" class="link"> {{ $t('viewAll') }} </router-link>  </div>
   <div class="product-images" style="grid-template-columns: auto auto auto;">
-    <img src="assets/1.png" alt="Aluminium Containers 1" />
-    <img src="assets/2.png" alt="Aluminium Containers 2" />
-    <img src="assets/3.png" alt="Aluminium Containers 3" />
+    <img src="assets/1.webp" alt="Aluminium Containers 1" />
+    <img src="assets/2.webp" alt="Aluminium Containers 2" />
+    <img src="assets/3.webp" alt="Aluminium Containers 3" />
   </div>
 </div>
 
@@ -107,10 +106,10 @@
     <h2>{{ $t('categoryFoil') }}</h2>
 <router-link to="/products/foil" class="link"> {{ $t('viewAll') }} </router-link>  </div>
   <div class="product-images" style="grid-template-columns: auto auto auto auto;">
-    <img src="assets/4.png" alt="Aluminium Foil 1" />
-    <img src="assets/5.png" alt="Aluminium Foil 2" />
-    <img src="assets/6.png" alt="Aluminium Foil 3" />
-    <img src="assets/7.png" alt="Aluminium Foil 4" />
+    <img src="assets/4.webp" alt="Aluminium Foil 1" />
+    <img src="assets/5.webp" alt="Aluminium Foil 2" />
+    <img src="assets/6.webp" alt="Aluminium Foil 3" />
+    <img src="assets/7.webp" alt="Aluminium Foil 4" />
   </div>
 </div>
 
@@ -119,9 +118,9 @@
     <h2>{{ $t('categoryLids') }}</h2>
 <router-link to="/products/lids" class="link"> {{ $t('viewAll') }} </router-link>  </div>
   <div class="product-images" style="grid-template-columns: auto auto auto;">
-    <img src="assets/8.png" alt="Lids 1" />
-    <img src="assets/9.png" alt="Lids 2" />
-    <img src="assets/10.png" alt="Lids 3" />
+    <img src="assets/8.webp" alt="Lids 1" />
+    <img src="assets/9.webp" alt="Lids 2" />
+    <img src="assets/10.webp" alt="Lids 3" />
   </div>
 </div>
 
@@ -130,9 +129,9 @@
     <h2>{{ $t('categoryPizza') }}</h2>
 <router-link to="/products/pizza" class="link"> {{ $t('viewAll') }} </router-link>  </div>
   <div class="product-images" style="grid-template-columns: auto auto auto;">
-    <img src="assets/11.png" alt="Pizza Box 1" />
-    <img src="assets/12.png" alt="Pizza Box 2" />
-    <img src="assets/13.png" alt="Pizza Box 3" />
+    <img src="assets/11.webp" alt="Pizza Box 1" />
+    <img src="assets/12.webp" alt="Pizza Box 2" />
+    <img src="assets/13.webp" alt="Pizza Box 3" />
   </div>
 </div>
 
@@ -141,9 +140,9 @@
     <h2>{{ $t('categoryCover') }}</h2>
 <router-link to="/products/tablecover" class="link"> {{ $t('viewAll') }} </router-link>  </div>
   <div class="product-images" style="grid-template-columns: auto auto auto;">
-    <img src="assets/14.png" alt="Cover 1" />
-    <img src="assets/15.png" alt="Cover 2" />
-    <img src="assets/16.png" alt="Cover 3" />
+    <img src="assets/14.webp" alt="Cover 1" />
+    <img src="assets/15.webp" alt="Cover 2" />
+    <img src="assets/16.webp" alt="Cover 3" />
   </div>
 </div>
 
@@ -152,8 +151,8 @@
     <h2>{{ $t('categoryCup') }}</h2>
   </div>
   <div class="product-images" style="grid-template-columns: auto auto;">
-    <img src="assets/17.png" alt="Cup 1" />
-    <img src="assets/18.png" alt="Cup Coming Soon" />
+    <img src="assets/17.webp" alt="Cup 1" />
+    <img src="assets/18.webp" alt="Cup Coming Soon" />
   </div>
 </div>
     </section>
@@ -204,10 +203,10 @@
         {{ $t('serviceText2') }}
       </p>
       <p><strong>{{ $t('serviceTagline') }}</strong></p>
-      <img src="assets/s1.png" alt="Disposable packaging" />
+      <img src="assets/s1.webp" alt="Disposable packaging" />
     </div>
     <div class="service-details">
-      <img src="assets/s3.png" alt="Custom print" />
+      <img src="assets/s3.webp" alt="Custom print" />
       <ul>
         <li>{{ $t('serviceList1') }}</li>
         <li>{{ $t('serviceList2') }}</li>
@@ -222,14 +221,14 @@
     </div>
   </div>
   <div class="coming-soon">
-    <img src="assets/s2.png" alt="Coming Soon" />
+    <img src="assets/s2.webp" alt="Coming Soon" />
   </div>
 </section>
 
 
     <section id="catalog" class="catalog-section">
   <div class="catalog-image">
-    <img src="assets/catalog.png" alt="Catalog Preview" />
+    <img src="assets/catalog.webp" alt="Catalog Preview" />
   </div>
 
   <div class="catalog-content">
@@ -243,7 +242,7 @@
   <h2>{{ $t('blogSectionTitle') }}</h2>
 
   <div class="blog-card">
-    <img src="assets/b1.png" alt="Aluminum container" />
+    <img src="assets/b1.webp" alt="Aluminum container" />
     <div class="blog-content">
       <div class="stars">★★★★★</div>
       <p>{{ $t('blogArticle1Title') }}</p>
@@ -252,7 +251,7 @@
   </div>
 
   <div class="blog-card reverse">
-    <img src="assets/b2.png" alt="Recycling aluminum" />
+    <img src="assets/b2.webp" alt="Recycling aluminum" />
     <div class="blog-content">
       <p>{{ $t('blogArticle2Text') }}</p>
       <h3>{{ $t('blogArticle2Title') }}</h3>
@@ -261,7 +260,7 @@
   </div>
 
   <div class="blog-banner">
-    <img src="assets/b3.png" alt="Aluminum packaging" />
+    <img src="assets/b3.webp" alt="Aluminum packaging" />
     <div class="banner-text">
       <h3>{{ $t('blogLearnMoreTitle') }}</h3>
       <p>{{ $t('blogLearnMoreText') }}</p>
@@ -274,8 +273,8 @@
   <h2>{{ $t('exportTitle') }}</h2>
   <p>{{ $t('exportText') }}</p>
   <div class="export-images">
-    <img src="assets/ex1.png" alt="Loading aluminum export products" />
-    <img src="assets/ex2.png" alt="Factory worker handling aluminum containers" />
+    <img src="assets/ex1.webp" alt="Loading aluminum export products" />
+    <img src="assets/ex2.webp" alt="Factory worker handling aluminum containers" />
   </div>
 </section>
   </q-page>
@@ -339,13 +338,15 @@ html[dir="ltr"] .slider-overlay h1 {
 html[dir="ltr"] .slider-overlay h1 span {
   letter-spacing: 0px;
 }
-html[dir="rtl"] .slider-overlay h1 {
-  font-weight: lighter;
-}
 
 html[dir="rtl"] .slider-overlay h1 span {
-  font-weight: 400;
+  font-weight: 500;
 }
+
+html[dir="rtl"] .slider-overlay h1 > span:first-child {
+  font-weight: 600; 
+}
+
 .slider-overlay p {
   font-size: 18px;
   margin: 10px 0;
@@ -438,7 +439,7 @@ display: none;
   font-size: 1rem;
 }
 
-.hero h1 {
+.hero h2 {
   font-size: 2rem;
   color: #11304c;
   margin-bottom: 15px;
@@ -459,7 +460,7 @@ display: none;
     text-align: center;
   }
 
-  .hero h1 {
+  .hero h2 {
     font-size: 1.5rem;
     line-height: 1.3;
   }
@@ -542,7 +543,7 @@ display: none;
    margin-right: 10px;
   }
 
-  .hero h1 {
+  .hero h2 {
     font-size: 1.5rem;
   }
 

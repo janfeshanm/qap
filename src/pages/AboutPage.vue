@@ -32,7 +32,7 @@
   </div>
 </section>
     <div style="background-color: #11304c; width: 100%; justify-content: center; display: flex">
-      <img src="assets/about.png" alt="Office Building" class="aboutphoto" />
+      <img src="assets/about.webp" alt="Office Building" class="aboutphoto" />
     </div>
   </q-page>
 </template>

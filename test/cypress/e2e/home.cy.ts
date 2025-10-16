@@ -30,7 +30,7 @@ describe('Landing', () => {
 //   it('has pretty background', () => {
 //     cy.dataCy('landing-wrapper')
 //       .should('have.css', 'background')
-//       .and('match', /(".+(\/img\/background).+\.png)/);
+//       .and('match', /(".+(\/img\/background).+\.webp)/);
 //   });
 //   it('has pretty logo', () => {
 //     cy.dataCy('landing-wrapper img')

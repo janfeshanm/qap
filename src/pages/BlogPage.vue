@@ -10,7 +10,7 @@
           <h3 class="aluminum-title"><b>{{ $t('article1Title') }}</b></h3>
           <p class="aluminum-text">{{ $t('article1Text') }}</p>
         </div>
-        <img src="assets/b2.png" alt="Aluminum container" class="aluminum-img-full"/>
+        <img src="assets/b2.webp" alt="Aluminum container" class="aluminum-img-full"/>
       </div>
 
       <!-- Article 2 -->
@@ -19,7 +19,7 @@
           <h3 class="aluminum-title">{{ $t('article2Title') }}</h3>
           <p class="aluminum-text two-columns">{{ $t('article2Text') }}</p>
         </div>
-        <img src="assets/b1.png" alt="Aluminum containers" class="aluminum-img-full"/>
+        <img src="assets/b1.webp" alt="Aluminum containers" class="aluminum-img-full"/>
       </div>
 
       <!-- Article 3 -->
@@ -28,7 +28,7 @@
           <h3 class="aluminum-title">{{ $t('article3Title') }}</h3>
           <p class="aluminum-text">{{ $t('article3Text') }}</p>
         </div>
-        <img src="assets/b3.png" alt="Aluminum recycling" class="aluminum-img-full"/>
+        <img src="assets/b3.webp" alt="Aluminum recycling" class="aluminum-img-full"/>
       </div>
 
       <!-- CTA Box -->

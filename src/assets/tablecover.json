@@ -8,7 +8,7 @@
     "Weight": "1 kilogeram",
     "description_short": "table cover",
     "description_long": "A disposable plastic tablecloth is a practical item often used for gatherings, events, and trips, saving time on cleaning. It is commonly used in parties, restaurants, picnics, and group travels for convenience and hygiene.",
-    "image": "assets/tc1.png"
+    "image": "assets/tc1.webp"
   },
   {
     "id": 2,
@@ -19,6 +19,6 @@
     "Weight": "500 geram",
     "description_short": "table cover",
     "description_long": "A disposable plastic tablecloth is a practical item often used for gatherings, events, and trips, saving time on cleaning. It is commonly used in parties, restaurants, picnics, and group travels for convenience and hygiene.",
-    "image": "assets/tc2.png"
+    "image": "assets/tc2.webp"
   }
 ]

@@ -9,7 +9,7 @@
   </h1>
   <p v-html="$t('herooDescription')"></p>
 </div>
-    <div><img src="assets/foill.png" style="width: 100%; margin-bottom: -3px" /></div>
+    <div><img src="assets/foill.webp" style="width: 100%; margin-bottom: -3px" /></div>
 </div>
 </div>
 
@@ -18,7 +18,7 @@
     </section>
      <section class="catalog-section">
   <div class="catalog-image">
-    <img src="assets/catalog.png" alt="Catalog Preview" />
+    <img src="assets/catalog.webp" alt="Catalog Preview" />
   </div>
 
   <div class="catalog-content">

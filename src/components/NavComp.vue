@@ -8,12 +8,12 @@
         <a class="dropbtn" @click.prevent="toggleDropdown"
         :style="{ color: !isMenuOpen && props.textColor ? props.textColor : 'inherit' }">{{ $t("products") }} </a>
         <ul class="dropdown-content">
-          <li><a href="#/products/container"><img src="assets/2.png" />{{ $t("aluminiumContainers") }}</a></li>
-          <li><a href="#/products/foil"><img src="assets/66.png" />{{ $t("aluminiumFoil") }}</a></li>
-          <li><a href="#/products/lids"><img src="assets/10.png" />{{ $t("aluminiumLids") }}</a></li>
-          <li><a href="#/products/pizza"><img src="assets/12.png" />{{ $t("pizzaBox") }}</a></li>
-          <li><a href="#/products/tablecover"><img src="assets/15.png" />{{ $t("plasticTableCover") }}</a></li>
-          <li><a href="#/products/papercup"><img src="assets/17.png" />{{ $t("paperCup") }}</a></li>
+          <li><a href="#/products/container"><img src="assets/2.webp" />{{ $t("aluminiumContainers") }}</a></li>
+          <li><a href="#/products/foil"><img src="assets/66.webp" />{{ $t("aluminiumFoil") }}</a></li>
+          <li><a href="#/products/lids"><img src="assets/10.webp" />{{ $t("aluminiumLids") }}</a></li>
+          <li><a href="#/products/pizza"><img src="assets/12.webp" />{{ $t("pizzaBox") }}</a></li>
+          <li><a href="#/products/tablecover"><img src="assets/15.webp" />{{ $t("plasticTableCover") }}</a></li>
+          <li><a href="#/products/papercup"><img src="assets/17.webp" />{{ $t("paperCup") }}</a></li>
         </ul>
       </li>
       <li><a :style="{ color: !isMenuOpen && props.textColor ? props.textColor : 'inherit' }" href="#/catalog">{{ $t("catalog") }}</a></li>

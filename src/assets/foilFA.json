@@ -8,7 +8,7 @@
     "thickness": "۲۰ میکرون",
     "description_short": "محصول با کد ۲۰/۶۰",
     "description_long": "مناسب برای کاربردهای مختلف در بسته‌بندی و صنعت.",
-    "image": "assets/6020.png"
+    "image": "assets/6020.webp"
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "thickness": "۴۵ میکرون",
     "description_short": "محصول با کد ۸۰/۴۵",
     "description_long": "مناسب برای کاربردهای مختلف در بسته‌بندی و صنعت.",
-    "image": "assets/8045.png"
+    "image": "assets/8045.webp"
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "thickness": "۱۴ میکرون",
     "description_short": "محصول با کد ۱۴/۳۰",
     "description_long": "مناسب برای کاربردهای مختلف در بسته‌بندی و صنعت.",
-    "image": "assets/1430.png"
+    "image": "assets/1430.webp"
   },
   {
     "id": 4,
@@ -41,7 +41,7 @@
     "thickness": "۵۰ میکرون",
     "description_short": "محصول با کد ۶۰/۵۰",
     "description_long": "مناسب برای کاربردهای مختلف در بسته‌بندی و صنعت.",
-    "image": "assets/6050.png"
+    "image": "assets/6050.webp"
   },
   {
     "id": 5,
@@ -52,7 +52,7 @@
     "thickness": "۷۰ میکرون",
     "description_short": "محصول با کد ۸۰/۷۰",
     "description_long": "مناسب برای کاربردهای مختلف در بسته‌بندی و صنعت.",
-    "image": "assets/8070.png"
+    "image": "assets/8070.webp"
   },
   {
     "id": 6,
@@ -63,7 +63,7 @@
     "thickness": "۱۴ میکرون",
     "description_short": "محصول با کد ۳۰/۱۴",
     "description_long": "مناسب برای کاربردهای مختلف در بسته‌بندی و صنعت.",
-    "image": "assets/3014.png"
+    "image": "assets/3014.webp"
   },
   {
     "id": 7,
@@ -74,6 +74,6 @@
     "thickness": "۱۴ میکرون",
     "description_short": "محصول با کد ۱۴/۲۰",
     "description_long": "مناسب برای کاربردهای مختلف در بسته‌بندی و صنعت.",
-    "image": "assets/1420.png"
+    "image": "assets/1420.webp"
   }
 ]
