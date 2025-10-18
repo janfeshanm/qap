@@ -281,11 +281,22 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
-import NavComp from 'src/components/NavComp.vue';
-import SearchProduct from 'src/components/SearchProduct.vue';
-const slide = ref(1);
-const autoplay = ref(true);
+import { ref } from 'vue'
+import { useMeta } from 'quasar'
+import NavComp from 'src/components/NavComp.vue'
+import SearchProduct from 'src/components/SearchProduct.vue'
+
+const slide = ref(1)
+const autoplay = ref(true)
+
+useMeta({
+  link: {
+    preload1: { rel: 'preload', as: 'image', href: 'assets/slider1.webp' },
+    preload2: { rel: 'preload', as: 'image', href: 'assets/slider2.webp' },
+    preload3: { rel: 'preload', as: 'image', href: 'assets/slider3.webp' },
+    preload4: { rel: 'preload', as: 'image', href: 'assets/slider4.webp' }
+  }
+})
 </script>
 
 <style lang="scss">
