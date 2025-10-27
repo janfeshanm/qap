@@ -18,70 +18,59 @@ export default {
   contact: 'Contact Us',
 
 
-
   //index
   heroTitle: '<span>ALUM</span> PEYMAN',
   heroTitle1: 'ALUM',
   heroTitle2: 'PEYMAN',
-  heroSubtitle: 'The First and Largest Aluminum Foil and Disposable Container Manufacturer in Northwest Iran',
+  heroSubtitle: 'Kuzeybatı İran’ın İlk ve En Büyük Alüminyum Folyo ve Tek Kullanımlık Kap Üreticisi',
   heroButton: 'PRODUCTS',
 
   isoCertified: 'ISO CERTIFIED',
   madeInIran: 'MADE IN IRAN',
   sibSalamat: 'SIB SALAMAT',
 
-
   // Hero Section
-  heroIntro: 'High-Quality, Food-Grade Aluminum Products for Cooking, Packaging, and Storage',
-  heroMainTitle: 'Premium Aluminum Foil & Disposable Containers',
-  heroDescription: `Looking for reliable aluminum foil or durable disposable aluminum containers?
-  Our factory specializes in manufacturing food-safe aluminum solutions used in households,
-  restaurants, catering services, and food industries.`,
+  heroIntro: ' Yüksek Kaliteli, Gıda Sınıfı Alüminyum Ürünler – Pişirme, Paketleme ve Saklama İçin',
+  heroMainTitle: ' Premium Alüminyum Folyo ve Tek Kullanımlık Kaplar',
+  heroDescription: ` Güvenilir alüminyum folyo veya dayanıklı tek kullanımlık alüminyum kaplar mı arıyorsunuz?
+Fabrikamız, evlerde, restoranlarda, catering hizmetlerinde ve gıda endüstrisinde kullanılan gıda güvenliğine uygun alüminyum ürünlerin üretiminde uzmanlaşmıştır.`,
 
   // Products Section
-  disposableTitle: 'Disposable Aluminum Containers',
-  disposableSubtitle: 'Oven & Freezer Safe',
-  disposableText: `Our disposable aluminum containers are perfect for hot and cold meals,
-  extensively used in catering, takeout, and ready-meal packaging.`,
-  disposableList1: 'Multiple shapes and sizes: round, rectangular, deep or shallow',
-  disposableList2: 'Optional lids for safe storage and transportation',
-  disposableList3: '100% recyclable and environmentally friendly',
-  disposableList4: 'Oven-safe, microwave-safe and freezer-compatible',
-  disposableList5: 'Ideal for restaurants, food factories, and event catering',
-  disposableLink: 'Explore our Disposable Containers Collection',
+  disposableTitle: ' Tek Kullanımlık Alüminyum Kaplar',
+  disposableSubtitle: ' Fırın ve Dondurucuya Uygun',
+  disposableText: ` Tek kullanımlık alüminyum kaplarımız, sıcak ve soğuk yemekler için mükemmeldir; catering hizmetlerinde, paket serviste ve hazır yemek ambalajlarında yaygın olarak kullanılmaktadır.`,
+  disposableList1: ' Farklı şekil ve boyut seçenekleri: yuvarlak, dikdörtgen, derin veya sığ',
+  disposableList2: ' Güvenli saklama ve taşıma için isteğe bağlı kapak seçenekleri',
+  disposableList3: '%100 geri dönüştürülebilir ve çevre dostu',
+  disposableList4: ' Fırına, mikrodalgaya ve dondurucuya dayanıklıdır',
+  disposableList5: ' Restoranlar, gıda fabrikaları ve etkinlik cateringleri için idealdir',
+  disposableLink: ' Tek Kullanımlık Kap Koleksiyonumuzu Keşfedin',
 
-  foilTitle: 'Aluminum Foil Rolls',
-  foilSubtitle: 'Heat-Resistant & Food-Safe',
-  foilText: `We produce high-quality aluminum foil rolls in various widths and thicknesses,
-  suitable for both home and industrial use.`,
-  foilList1: 'Food-grade and hygienic',
-  foilList2: 'Resistant to high temperatures and moisture',
-  foilList3: 'Keeps food fresh by blocking light, air, and environmentel issues',
-  foilList4: 'Ideal for kitchens, barber shops, takeouts, and supermarkets',
-  foilList5: 'offered in tailored dimensions and private label options',
-  foilLink: 'View All Aluminum Foil Products',
-
+  foilTitle: 'Alüminyum Folyo Ruloları',
+  foilSubtitle: 'Isıya Dayanıklı ve Gıda Güvenli',
+  foilText: `Ev tipi ve endüstriyel kullanıma uygun, farklı genişlik ve kalınlıklarda yüksek kaliteli alüminyum folyo ruloları üretiyoruz.`,
+  foilList1: 'Gıda sınıfı ve hijyenik',
+  foilList2: 'Yüksek ısıya ve neme dayanıklı',
+  foilList3: 'Işığı, havayı ve çevresel etkenleri engelleyerek yiyeceklerin tazeliğini korur',
+  foilList4: 'Mutfaklar, kuaför salonları, paket servisler ve süpermarketler için idealdir',
+  foilList5: 'İsteğe göre özel ölçülerde ve özel markalı (private label) seçeneklerle sunulur',
+  foilLink: 'Tüm Alüminyum Folyo Ürünlerini Görüntüle',
 
   // Section Titles
-  ourProducts: 'OUR PRODUCTS',
+  ourProducts: 'ÜRÜNLERİMİZ',
   // Product Categories
-  categoryContainers: 'Aluminium Containers',
-  categoryFoil: 'Aluminium Foil',
-  categoryLids: 'Container Lids',
-  categoryPizza: 'Cardboard Pizza Box',
-  categoryCover: 'Plastic Table Cover',
+  categoryContainers: 'Alüminyum Kaplar',
+  categoryFoil: 'Alüminyum Folyo ',
+  categoryLids: 'Kapaklı Kaplar',
+  categoryPizza: 'Karton Pizza Kutusu',
+  categoryCover: 'Plastik Masa Örtüsü',
   categoryCup: 'Disposable Paper Cup',
   viewAll: 'view all',
 
   // About Section
-  aboutTitle: 'ABOUT US',
-  aboutText: `Founded in 2005, Alum Peyman was established to meet the growing market demands in the
-  packaging industry for food, pharmaceuticals, industrial products, bitumen sheets, and more.
-  As the first and largest manufacturer of disposable containers and aluminium foil using the
-  latest global technologies, the company began its operations in the Shahid Salimi Industrial
-  Park in Tabriz, northwest of Iran. From its inception, the strong market presence and high
-  customer satisfaction in the region inspired the management team to enhance product quality,
-  expand the product range, and grow its target markets. Market research has been scheduled to better respond to industry needs.`,
+  aboutTitle: ' HAKKIMIZDA',
+  aboutText: `2005 yılında kurulan Alum Peyman, gıda, ilaç, endüstriyel ürünler, bitüm levhalar ve benzeri alanlarda ambalaj sektöründe artan pazar taleplerini karşılamak amacıyla faaliyete geçmiştir. En son küresel teknolojileri kullanarak tek kullanımlık kaplar ve alüminyum folyo üretiminde bölgenin ilk ve en büyük üreticisi konumundaki şirket, faaliyetlerine İran’ın kuzeybatısında, Tebriz’deki Shahid Salimi Sanayi Bölgesi'nde başlamıştır.
+Kuruluşundan bu yana elde ettiği güçlü pazar konumu ve yüksek müşteri memnuniyeti, yönetim ekibini ürün kalitesini sürekli geliştirmeye, ürün yelpazesini genişletmeye ve hedef pazarlarda büyümeye yönlendirmiştir. Sektörün ihtiyaçlarına daha etkin yanıt verebilmek amacıyla kapsamlı pazar araştırmaları yürütülmektedir.`,
   learnMore: 'Learn More',
   watchVideo: 'Watch Video',
   yearsExperience: 'Years of experience',
@@ -89,24 +78,22 @@ export default {
   distributors: 'Distributors',
   colleagues: 'Expert Colleagues',
 
-
   // Service Section
-  serviceTitle: 'SERVICE',
-  serviceSubtitle: 'CUSTOM PRINTING ON DISPOSABLE Aluminum Containers',
-  serviceText1: `Elevate your brand with custom-printed disposable tableware. Whether you're running a cafe, restaurant, catering business, or organizing a special event, we offer high-quality printing on cups, plates, bowls, lids, and more.`,
-  serviceText2: `With options like direct printing and heat-transfer labeling, your logo, design, or promotional message will stand out, professionally printed with precision and durability.`,
-  serviceTagline: 'Let your packaging speak your brand',
-  serviceList1: 'High-resolution printing on various disposable items',
-  serviceList2: 'Full-color logo & design support',
-  serviceList3: 'Low minimum order quantities',
-  serviceList4: 'Fast turnaround times',
-  serviceList5: 'Free consultation on print-ready artwork',
-  serviceText3: 'Perfect for Coffee shops, fast food chains, events, marketing campaigns, and private labels.',
-
+  serviceTitle: ' HİZMETLERİMİZ',
+  serviceSubtitle: 'CUSTOM PRINTING ON Alüminyum Kaplar',
+  serviceText1: `Marka kimliğinizi güçlendirin! Kafe, restoran, catering firması ya da özel etkinlik işletiyor olun — bardak, tabak, kase, kapak ve benzeri tek kullanımlık ürünler üzerinde yüksek kaliteli özel baskı çözümleri sunuyoruz.`,
+  serviceText2: `Doğrudan baskı ve ısı transfer etiketleme gibi gelişmiş üretim tekniklerimiz sayesinde logonuz, tasarımınız veya tanıtım mesajınız profesyonel bir şekilde, netlik ve dayanıklılıkla uygulanır.`,
+  serviceTagline: ' Ambalajınız markanızın dili olsun.',
+  serviceList1: 'estetik, kaliteli ve profesyonel',
+  serviceList2: ' Tam renkli logo ve tasarım desteği',
+  serviceList3: 'Düşük minimum sipariş miktarları',
+  serviceList4: 'Hızlı üretim ve teslimat süreleri',
+  serviceList5: 'Baskıya hazır tasarımlar için ücretsiz danışmanlık',
+  serviceText3: 'Kahve zincirleri, fast food markaları, etkinlikler, pazarlama kampanyaları ve özel markalar için mükemmel bir çözümdür.',
 
   // Catalog Section
-  catalogTitle: 'CATALOG',
-  catalogText: `To get a comprehensive overview of our products, including detailed specifications, sizes, and various applications, you can download our digital catalog. It provides all the necessary information to help you choose the right product for your needs.`,
+  catalogTitle: 'KATALOG',
+  catalogText: `Ürünlerimizin detaylı özellikleri, boyutları ve farklı kullanım alanlarını içeren kapsamlı bir genel bakış için dijital katalogumuzu indirebilirsiniz. Katalog, ihtiyaçlarınıza en uygun ürünü seçmenize yardımcı olacak tüm bilgileri sunmaktadır.`,
   catalogButton: 'DOWNLOAD CATALOG',
 
   // Blog Section
@@ -119,20 +106,16 @@ He managed to obtain the metal using a chemical process, but it was not practica
   blogArticle2Text: `Disposable containers became popular because of their ease of use, simple transport, and time-saving benefits.
 Since they do not require washing, they are quick and practical to use.`,
 
-
   blogBtn: 'Learn More',
 
   // Export Section
-  exportTitle: 'Export',
-  exportText: `At Alum Peyman, we specialize in the export of premium-quality aluminum containers and
-household aluminum foil products. With over 20 years of experience in manufacturing and
-international trade, our company is a reliable partner for businesses seeking trusted,
-hygienic, and durable aluminum packaging solutions.`,
-
+  exportTitle: 'İHRACAT',
+  exportText: `İHRACAT Alum Peyman olarak, yüksek kaliteli alüminyum kaplar ve ev tipi alüminyum folyo ürünlerinin ihracatında uzmanız.
+Üretim ve uluslararası ticaret alanındaki 20 yılı aşkın deneyimimizle, güvenilir, hijyenik ve dayanıklı alüminyum ambalaj çözümleri arayan işletmeler için güvenilir bir küresel iş ortağı konumundayız.`,
 
   // Contact Section
-  contactTitle: 'CONTACT US',
-  contactText: `We are here to help! Whether you have questions about our products, need assistance with an order, or want to discuss a business partnership, don’t hesitate to get in touch with us.`,
+  contactTitle: 'Bizimle iletişime geçin',
+  contactText: `Size yardımcı olmaktan memnuniyet duyarız. Ürünlerimizle ilgili sorularınız, siparişleriniz konusunda desteğe ihtiyacınız ya da olası bir iş birliğini görüşme talebiniz olması durumunda, lütfen bizimle iletişime geçmekten çekinmeyin.`,
   contactCardTitle: 'Get In Touch',
   phoneLabel: 'Phone',
   phoneNumbers: '098 413 366 0393\n098 413 432 9665\n098 914 692 4952',
@@ -235,7 +218,6 @@ hygienic, and durable aluminum packaging solutions.`,
   blogLearnMoreTitle: 'Want to learn more?',
   blogLearnMoreText: 'Explore our blog for more tips, articles, and industry updates.',
 
-
   //foil
   alum: "ALUM",
   peyman: "PEYMAN",
@@ -243,4 +225,5 @@ hygienic, and durable aluminum packaging solutions.`,
   
   exploreMoree: 'Explore More',
 }
+
 

@@ -31,6 +31,8 @@
         <ul v-if="isLangMenuOpen" class="lang-dropdown">
           <li @click="setLanguage('en-US')">INT</li>
           <li @click="setLanguage('fa-IR')">فارسی</li>
+          <li @click="setLanguage('tr-TR')">Türkçe</li>
+
         </ul>
       </div>
       <div class="menu-toggle" @click="toggleMenu">☰</div>
@@ -54,9 +56,12 @@ const toggleMenu = () => (isMenuOpen.value = !isMenuOpen.value);
 const toggleDropdown = () => (isDropdownOpen.value = !isDropdownOpen.value);
 const toggleLangMenu = () => (isLangMenuOpen.value = !isLangMenuOpen.value);
 
-const currentLangLabel = computed(() =>
-  locale.value === "fa-IR" ? "فارسی" : "INT"
-);
+const currentLangLabel = computed(() => {
+  if (locale.value === "fa-IR") return "فارسی";
+  if (locale.value === "tr-TR") return "Türkçe";
+  return "INT"; // برای انگلیسی
+});
+
 
 const setLanguage = (lang: string) => {
   locale.value = lang;

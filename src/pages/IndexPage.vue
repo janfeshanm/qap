@@ -48,15 +48,10 @@
 </section>
 
 <section id="products" class="products">
-  <!-- Product 1 -->
-  <div class="product">
-    <div><img src="assets/r1.webp" alt="Disposable Aluminum Containers" /></div>
     <div class="text">
       <h2>{{ $t('disposableTitle') }}</h2>
       <h3>{{ $t('disposableSubtitle') }}</h3>
       <p>{{ $t('disposableText') }}</p>
-
-     
        <p>{{ $t('disposableList1') }}</p>
      <p>{{ $t('disposableList2') }}</p>
      <p>{{ $t('disposableList3') }}</p>
@@ -65,16 +60,12 @@
 
 <router-link to="/products/container" class="link"> {{ $t('disposableLink') }}
 </router-link> </div>
-  </div>
-
-  <!-- Product 2 -->
-  <div class="product reverse">
+    <div><img src="assets/r1.webp" alt="Disposable Aluminum Containers" /></div>
     <div><img src="assets/r2.webp" alt="Aluminum Foil Rolls" /></div>
     <div class="text">
       <h2>{{ $t('foilTitle') }}</h2>
       <h3>{{ $t('foilSubtitle') }}</h3>
       <p>{{ $t('foilText') }}</p>
-
          <p>{{ $t('foilList1') }}</p>
         <p>{{ $t('foilList2') }}</p>
         <p>{{ $t('foilList3') }}</p>
@@ -82,7 +73,6 @@
           <p>{{ $t('foilList5') }}</p>
 <router-link to="/products/foil" class="link">  {{ $t('foilLink') }}
 </router-link></div>
-  </div>
 </section>
 
 
@@ -319,10 +309,19 @@ html[dir="ltr"] .q-page {
   font-size: 16px;
   line-height: 1.6;
 }
+
 .q-carousel {
   width: 100%;
   aspect-ratio: 192 / 90;
   height: auto;
+}
+
+.q-carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 .slider-overlay {
@@ -343,23 +342,23 @@ html[dir="ltr"] .q-page {
   font-weight: 400;
   letter-spacing: 0;
 }
+
+/* LTR / RTL adjustments */
 html[dir="ltr"] .slider-overlay h1 {
   letter-spacing: 6px;
 }
 html[dir="ltr"] .slider-overlay h1 span {
-  letter-spacing: 0px;
+  letter-spacing: 0;
 }
-
 html[dir="rtl"] .slider-overlay h1 span {
   font-weight: 500;
 }
-
 html[dir="rtl"] .slider-overlay h1 > span:first-child {
-  font-weight: 600; 
+  font-weight: 600;
 }
 
 .slider-overlay p {
-  font-size: 18px;
+  font-size: 24px;
   margin: 10px 0;
   color: #ffffff;
 }
@@ -379,25 +378,6 @@ html[dir="rtl"] .slider-overlay h1 > span:first-child {
   color: #fff;
 }
 
-@media (max-width: 820px) {
-  .slider-overlay {
-    padding: 7px 15px;
-  }
-
-  .slider-overlay h1 {
-    font-size: 28px;
-  }
-
-  .slider-overlay p {
-display: none;
-  }
-
-  .slider-overlay .btn {
- display: none;
-
-  }
-}
-
 .slideshow-container {
   width: 100%;
   position: relative;
@@ -408,6 +388,57 @@ display: none;
 .fade {
   animation-name: fade;
   animation-duration: 2.5s;
+}
+
+@media (max-width: 992px) {
+  .q-carousel {
+    height: 60vh; 
+  }
+
+  .slider-overlay {
+    padding: 15px 30px;
+  }
+
+  .slider-overlay h1 {
+    font-size: 36px;
+  }
+
+  .slider-overlay p {
+    font-size: 20px;
+  }
+
+  .slider-overlay .btn {
+    padding: 10px 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .q-carousel {
+    height: 50vh; 
+  }
+
+  .slider-overlay {
+    padding: 10px 15px;
+  }
+
+  .slider-overlay h1 {
+    font-size: 28px;
+  }
+
+  .slider-overlay p {
+    font-size: 16px;
+  }
+
+  .slider-overlay .btn {
+    padding: 8px 40px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 430px) {
+  .slider-overlay p {
+    display: none;
+  }
 }
 
 .certificates-section {
@@ -442,13 +473,17 @@ display: none;
 }
 
 .hero {
-  text-align: center;
-  max-width: 800px;
-  margin: 50px auto;
-  padding: 0 20px;
-  margin-top: 200px;
+  width: 100%;          /* بلوک تمام عرض بگیرد */
+  max-width: 800px;     /* محدودیت حداکثر */
+  margin: 200px auto 50px auto;
+  padding: 0 20px;      /* فاصله از کناره‌ها */
   font-size: 1rem;
+  text-align: center;
+  display: flex;        /* برای وسط‌چین دقیق عمودی/افقی */
+  flex-direction: column;
+  align-items: center;
 }
+
 
 .hero h2 {
   font-size: 2rem;
@@ -463,80 +498,63 @@ display: none;
   margin-bottom: 10px;
   font-weight: 600;
 }
-
 @media (max-width: 600px) {
-  .hero {
-    margin-top: 60px;
+.hero {
+    margin: 60px auto 40px auto;
     padding: 0 15px;
-    text-align: center;
-  }
-
-  .hero h2 {
-    font-size: 1.5rem;
-    line-height: 1.3;
-  }
-
-  .hero h4 {
-    font-size: 1rem;
-    line-height: 1.8;
-  }
-
-  .hero p {
-    font-size: 0.9rem;
-    line-height: 1.6;
-    margin-top: 10px;
   }
 }
+
 
 
 .products {
+  display: flex; 
+  flex-wrap: wrap;      
+  justify-content: center; 
+  gap: 80px;            
+  max-width: 1550px;     
+  margin: 200px auto;
+  align-items: center;
+  box-sizing: border-box;
+   row-gap: 220px;
+}
+
+.products > div {
+  flex: 0 0 600px;
+  height: 400px;
   display: flex;
   flex-direction: column;
-  gap: 60px;
-  max-width: 1100px;
-  margin: 100px auto;
-  padding: 20px;
 }
 
-.product {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-  padding: 20px;
-}
-
-.product.reverse {
-  flex-direction: row-reverse;
-  margin: 100px 0px;
-}
-
-.product img {
-  width: 100%;
-  max-width: 500px;
+.products img {
   border-radius: 12px;
+  height: 400px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
 }
 
-
-.product h2 {
+.products h2 {
   font-size: 1.5rem;
   color: #296097;
+  font-weight:700;
+  margin: 0 0 0 0;
 }
 
-.product h3 {
+.products h3 {
   font-size: 1.2rem;
   color: #11304c;
   margin-bottom: 10px;
+margin-top: 0px;
+  font-weight:700;
 }
 
-.product ul {
+.products ul {
   margin: 15px 0;
   padding-left: 20px;
 }
 
 .link {
   display: inline-block;
-  margin-top: 10px;
   color: #11304c;
   text-decoration: none;
   font-weight: bold;
@@ -546,60 +564,58 @@ display: none;
   text-decoration: underline;
 }
 
-@media (max-width: 1000px) {
-  .hero {
-    margin-top: 100px;
-    padding: 0 10px;
-    margin-left: 10px;
-   margin-right: 10px;
-  }
-
-  .hero h2 {
-    font-size: 1.5rem;
-  }
-
-  .hero h4 {
-    font-size: 0.8rem;
-  }
-
+@media (max-width: 1345px) {
   .products {
-    padding: 10px;
+    flex-direction: column;
     gap: 40px;
+    margin: 100px auto;   
+    padding: 0 25px;     
+    max-width: 800px;     
+    align-items: center;
+    box-sizing: border-box; 
   }
 
-  .product,
-  .product.reverse {
-    flex-direction: column !important;
-  }
-
-  .product img {
-    max-width: 100%;
+  .products > div {
+    flex: 0 0 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     height: auto;
   }
 
-  .product .text {
-    padding-top: 20px;
-    text-align: left;
-      flex: 1;
-    padding: auto;
+  .products img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 12px;
   }
 
-  .product h2 {
-    font-size: 1.3rem;
+  .products h2,
+  .products h3,
+  .products p,
+  .products ul {
+    text-align: center;
   }
 
-  .product h3 {
-    font-size: 1rem;
+  .products > div:nth-child(3) {
+    order: 4;
   }
 
-  .link {
-    font-size: 0.95rem;
+  .products > div:nth-child(4) {
+    order: 3;
   }
 }
 
+
+
+
+
+
 .products-section {
   width: 100%;
-  padding: 30px 60px;
+  padding: 30px 30px;
     background: rgb(217, 234, 248);
 
 }
@@ -669,6 +685,7 @@ display: none;
    .product-images {
       gap: 15px;
   }
+
   .product-images img {
     height: 300px;
   }
@@ -678,8 +695,9 @@ display: none;
   .product-images {
       gap: 8px;
   }
+
   .product-images img {
-    height: 100px;
+    height: 200px;
   }
 }
 .product-category:nth-child(3) .product-images,
@@ -1193,4 +1211,11 @@ display: none;
   align-items: center;
   padding: 10px 20px 60px 20px;
 }
+
+@media (max-width: 600px) {
+  .hero h2 {
+    font-size: 1.5rem; 
+  }
+}
+
 </style>
