@@ -4,18 +4,29 @@
 export default {
 
   //product item
-  piCode: 'Code',
-  piTopOut: 'Top out',
-  piTopIn: 'Top in',
-  piSize: 'Size',
-  piThickness: 'Thickness',
-  piDepth: 'Depth',
-  piWidth: 'Width',
-  piWeight: 'Weight',
+  piCode: 'Kod',
+  piTopOut: 'Dış üst ölçü',
+  piTopIn: 'İç üst ölçü',
+  piSize: 'Boyut',
+  piThickness: 'Kalınlık',
+  piDepth: 'Yükseklik',
+  piWidth: 'Genişlik',
+  piWeight: 'Ağırlık',
 
  
+  //menu
+  products: 'Ürünler',
+  aluminiumContainers: 'Alüminyum Kaplar',
+  aluminiumFoil: 'Alüminyum Folyo',
+  aluminiumLids: 'Kapaklı Kaplar',
+  pizzaBox: 'Karton Pizza Kutusu',
+  plasticTableCover: 'Plastik Masa Örtüsü',
+  paperCup: 'Tek Kullanımlık Kâğıt Bardak',
+  catalog: 'Katalog',
+  about: 'Hakkımızda',
+
   blog: 'Blog',
-  contact: 'Contact Us',
+  contact: 'İletişim',
 
 
   //index
@@ -23,10 +34,10 @@ export default {
   heroTitle1: 'ALUM',
   heroTitle2: 'PEYMAN',
   heroSubtitle: 'Kuzeybatı İran’ın İlk ve En Büyük Alüminyum Folyo ve Tek Kullanımlık Kap Üreticisi',
-  heroButton: 'PRODUCTS',
+  heroButton: 'Ürünler',
 
-  isoCertified: 'ISO CERTIFIED',
-  madeInIran: 'MADE IN IRAN',
+  isoCertified: 'ISO Sertifikalı',
+  madeInIran: 'İran’da Üretilmiştir',
   sibSalamat: 'SIB SALAMAT',
 
   // Hero Section
@@ -64,19 +75,19 @@ Fabrikamız, evlerde, restoranlarda, catering hizmetlerinde ve gıda endüstrisi
   categoryLids: 'Kapaklı Kaplar',
   categoryPizza: 'Karton Pizza Kutusu',
   categoryCover: 'Plastik Masa Örtüsü',
-  categoryCup: 'Disposable Paper Cup',
-  viewAll: 'view all',
+  categoryCup: 'Tek Kullanımlık Kâğıt Bardak',
+  viewAll: 'Tümünü Gör',
 
   // About Section
   aboutTitle: ' HAKKIMIZDA',
   aboutText: `2005 yılında kurulan Alum Peyman, gıda, ilaç, endüstriyel ürünler, bitüm levhalar ve benzeri alanlarda ambalaj sektöründe artan pazar taleplerini karşılamak amacıyla faaliyete geçmiştir. En son küresel teknolojileri kullanarak tek kullanımlık kaplar ve alüminyum folyo üretiminde bölgenin ilk ve en büyük üreticisi konumundaki şirket, faaliyetlerine İran’ın kuzeybatısında, Tebriz’deki Shahid Salimi Sanayi Bölgesi'nde başlamıştır.
 Kuruluşundan bu yana elde ettiği güçlü pazar konumu ve yüksek müşteri memnuniyeti, yönetim ekibini ürün kalitesini sürekli geliştirmeye, ürün yelpazesini genişletmeye ve hedef pazarlarda büyümeye yönlendirmiştir. Sektörün ihtiyaçlarına daha etkin yanıt verebilmek amacıyla kapsamlı pazar araştırmaları yürütülmektedir.`,
-  learnMore: 'Learn More',
-  watchVideo: 'Watch Video',
-  yearsExperience: 'Years of experience',
-  exports: 'Our Exports',
-  distributors: 'Distributors',
-  colleagues: 'Expert Colleagues',
+  learnMore: 'Daha Fazla Bilgi',
+  watchVideo: 'Videoyu İzle',
+  yearsExperience: 'Yılların Deneyimi',
+  exports: 'İhracatlarımız',
+  distributors: 'Distribütörler',
+  colleagues: 'Uzman Ekip Arkadaşlarımız',
 
   // Service Section
   serviceTitle: ' HİZMETLERİMİZ',
@@ -94,19 +105,17 @@ Kuruluşundan bu yana elde ettiği güçlü pazar konumu ve yüksek müşteri me
   // Catalog Section
   catalogTitle: 'KATALOG',
   catalogText: `Ürünlerimizin detaylı özellikleri, boyutları ve farklı kullanım alanlarını içeren kapsamlı bir genel bakış için dijital katalogumuzu indirebilirsiniz. Katalog, ihtiyaçlarınıza en uygun ürünü seçmenize yardımcı olacak tüm bilgileri sunmaktadır.`,
-  catalogButton: 'DOWNLOAD CATALOG',
+  catalogButton: 'KATALOĞU İNDİR',
 
   // Blog Section
-  blogSectionTitle: 'OUR LATEST ARTICLES & BLOG POSTS',
-  blogArticle1Title: 'Discovery of Aluminum and Its Uses',
-  blogArticle1Text: `Aluminum was first discovered in 1825 by Danish chemist Hans Christian Ørsted.
-He managed to obtain the metal using a chemical process, but it was not practical for large-scale use.`,
+  blogSectionTitle: 'EN SON MAKALELERİMİZ VE BLOG YAZILARIMI',
+  blogArticle1Title: 'Alüminyumun Keşfi ve Kullanım Alanları',
+  blogArticle1Text: `Alüminyum ilk kez 1825 yılında Danimarkalı kimyager Hans Christian Ørsted tarafından keşfedildi. Ørsted, kimyasal bir işlemle metali elde etmeyi başardı, ancak yöntemi geniş çaplı üretim için uygun değildi.`,
 
-  blogArticle2Title: 'The Rise and Development of Aluminum Disposable Containers',
-  blogArticle2Text: `Disposable containers became popular because of their ease of use, simple transport, and time-saving benefits.
-Since they do not require washing, they are quick and practical to use.`,
+  blogArticle2Title: 'Alüminyum Tek Kullanımlık Kapların Gelişimi ve Yükselişi',
+  blogArticle2Text: `Tek kullanımlık kaplar, kullanım kolaylığı, taşınabilirliği ve zaman tasarrufu sağlamaları nedeniyle popüler hale geldi. Yıkanma gerektirmedikleri için pratik ve hızlı kullanım sunarlar.  `,
 
-  blogBtn: 'Learn More',
+  blogBtn: 'Daha Fazla Bilgi',
 
   // Export Section
   exportTitle: 'İHRACAT',
@@ -116,114 +125,48 @@ Since they do not require washing, they are quick and practical to use.`,
   // Contact Section
   contactTitle: 'Bizimle iletişime geçin',
   contactText: `Size yardımcı olmaktan memnuniyet duyarız. Ürünlerimizle ilgili sorularınız, siparişleriniz konusunda desteğe ihtiyacınız ya da olası bir iş birliğini görüşme talebiniz olması durumunda, lütfen bizimle iletişime geçmekten çekinmeyin.`,
-  contactCardTitle: 'Get In Touch',
-  phoneLabel: 'Phone',
+  contactCardTitle: 'Bizimle İletişime Geçin',
+  phoneLabel: 'Telefon',
   phoneNumbers: '098 413 366 0393\n098 413 432 9665\n098 914 692 4952',
-  emailLabel: 'Email',
+  emailLabel: 'E-posta',
   email: 'info@alumpeyman.com',
-  addressLabel: 'Address',
-  officeAddress: 'Office: 16th Floor, Unit 1, World Trade Center Tower, World Trade Street, World Trade Square, Tabriz, Iran',
-  factoryAddress: 'Factory: Km 27, Shahid Salimi Industrial Zone, Km 30 of Azarshahr – Tabriz Road, Tabriz, Iran',
-  socialFollow: 'Follow Us',
+  addressLabel: 'Adres',
+  officeAddress: 'Ofis: 16. Kat, 1. Daire, Dünya Ticaret Merkezi Kulesi, Dünya Ticaret Caddesi, Dünya Ticaret Meydanı, Tebriz, İran',
+  factoryAddress: 'Fabrika: Km 27, Şehit Salimi Sanayi Bölgesi, Tebriz – Azarshahr Yolu Üzeri, Km 30, Tebriz, İran',
+  socialFollow: 'Bizi Takip Edin',
   footerAlum: 'Alum Peyman',
-  footerPrivacy: 'Privacy Policy',
-  footerTerms: 'Terms & Conditions',
+  footerPrivacy: 'Gizlilik Politikası',
+  footerTerms: 'Şartlar ve Koşullar',
 
   //blog
-  blogPageTitle: 'OUR LATEST ARTICLES & BLOG POSTS',
+  blogPageTitle: 'EN SON MAKALELERİMİZ VE BLOG YAZILARIMIZ',
 
   // Article 1
-  article1Title: 'Discovery of Aluminum and Its Uses',
+  article1Title: 'Alüminyumun Keşfi ve Kullanım Alanları',
   article1Text: `
-  Aluminum was first discovered in 1825 by a Danish chemist named Hans Christian Ørsted.
-  He managed to obtain the metal using a chemical process, but his method was very limited and not practical.
-
-  Later, in 1886, two scientists—Charles Martin Hall in the US and Paul Héroult in France—
-  independently developed a new method for producing aluminum.
-  This method is still the main process used today, reducing production costs significantly.
-
-  Aluminum does not naturally exist as a pure metal; instead, it is found in mineral compounds.
-  The main source is an ore called bauxite, found in tropical and subtropical regions.
-  After extraction, bauxite is converted into pure aluminum through electrolysis.
-
-  Large deposits exist in Brazil, Guinea, Australia, and India.
-
-  The element was first named "Alumium" in 1807 by English chemist Sir Humphry Davy,
-  derived from "Alum". In 1812, the name was changed to "Aluminum" for consistency.
+  Alüminyum, 1825 yılında Danimarkalı kimyager Hans Christian Ørsted tarafından keşfedildi. Ørsted, kimyasal bir işlemle metali elde etmeyi başardı ancak yöntemi sınırlı ve pratik değildi. 1886’da Amerikalı Charles Martin Hall ve Fransız Paul Héroult, alüminyum üretimi için yeni bir yöntem geliştirdiler. Bu yöntem hâlâ günümüzde kullanılmakta ve üretim maliyetlerini önemli ölçüde düşürmektedir. Alüminyum doğada saf halde bulunmaz; genellikle bileşik minerallerde yer alır. Başlıca kaynağı, tropikal bölgelerde bulunan boksit cevheridir. Boksit çıkarıldıktan sonra elektroliz yöntemiyle saf alüminyuma dönüştürülür. Büyük rezervler Brezilya, Gine, Avustralya ve Hindistan’da bulunur. Elementin adı ilk olarak 1807’de İngiliz kimyager Sir Humphry Davy tarafından “Alumium” olarak önerilmiş, 1812’de ise “Aluminum” olarak değiştirilmiştir.
   `,
 
   // Article 2
-  article2Title: 'The Rise and Development of Aluminum Disposable Containers Worldwide',
+  article2Title: 'Alüminyum Tek Kullanımlık Kapların Dünyadaki Gelişimi',
   article2Text: `
-  After World War II, aluminum production technology advanced rapidly,
-  and aluminum disposable containers became popular for their convenience.
-  With the growth of food and packaging industries, their usage increased significantly.
-
-  **History of Disposable Containers**
-  They became popular in the early 20th century. Before then, people used permanent and glass containers.
-  After WWII, new materials like plastic and paper spread quickly. Since the 1950s, their use expanded widely.
-
-  **Reasons for Popularity**
-  They are easy to use, transport, and save time. They don’t require washing, are affordable, and practical.
-  Among the oldest and best-quality types are aluminum disposable containers.
-
-  **Challenges**
-  Production requires high energy, increasing costs and environmental impact.
-  Improper recycling or disposal can harm nature.
-
-  **History in Iran**
-  Aluminum disposable containers entered Iran in the 1990s as alternatives to plastic and paper.
-  They quickly gained popularity, especially in restaurants and fast-food packaging.
-
-  **Why Aluminum is Suitable**
-  1. Lightweight and portable
-  2. Heat resistant
-  3. Corrosion resistant
-  4. Fully recyclable
-  5. Flexible for different shapes
-
-  **Environmental Impact**
-  Production requires lots of energy, causing pollution.
-  Though recyclable, improper disposal harms the environment.
-  Efforts continue to improve recycling and minimize impacts.
+ II. Dünya Savaşı’ndan sonra alüminyum üretim teknolojisi hızla gelişti ve alüminyum tek kullanımlık kaplar pratiklikleriyle popüler hale geldi. Gıda ve ambalaj endüstrilerinin büyümesiyle kullanımları yaygınlaştı. Tek Kullanımlık Kapların Tarihi 20. yüzyılın başlarında popülerleşmeye başladılar. Savaş öncesinde cam ve metal kaplar kullanılıyordu. 1950’lerden itibaren plastik ve kâğıt malzemeler hızla yayıldı. Popülerlik Nedenleri Kolay kullanılır, taşınabilir, zamandan tasarruf sağlar. Yıkanma gerektirmez, uygun fiyatlı ve pratiktir. Zorluklar Üretimleri yüksek enerji gerektirir, bu da maliyet ve çevresel etki yaratır. Yanlış geri dönüşüm doğayı olumsuz etkiler. İran’daki Tarihçe Alüminyum tek kullanımlık kaplar 1990’larda İran’a girmiştir ve özellikle restoranlar ve hızlı servislerde hızla yayılmıştır. Alüminyumun Avantajları Hafif, ısıya dayanıklı, korozyona dirençli, tamamen geri dönüştürülebilir ve şekillendirmeye uygundur. Çevresel Etki Üretim sırasında yüksek enerji gereksinimi nedeniyle kirlilik oluşabilir. Doğru geri dönüşüm yapılmadığında çevreye zarar verir, bu yüzden geri dönüşüm sistemlerinin geliştirilmesi önemlidir.
   `,
 
   // Article 3
-  article3Title: 'Strategies to Reduce Negative Impacts and Sustainability of Aluminum Containers',
+  article3Title: 'Alüminyum Kaplarda Sürdürülebilirlik ve Olumsuz Etkileri Azaltma Stratejileri',
   article3Text: `
-  **Ways to Reduce Impacts**
-  • Use recycled aluminum
-  • Educate people on proper use and disposal
-  • Optimize production to cut energy and emissions
-  • Increase recycling systems
+  Etkileri Azaltma Yöntemleri: Geri dönüştürülmüş alüminyum kullanmak, kullanım ve atık yönetimi konusunda bilinçlendirme yapmak, üretimi optimize ederek enerji ve emisyonları azaltmak, geri dönüşüm sistemlerini artırmak. Sürdürülebilirlik: Alüminyum, kalite kaybı olmadan sonsuz kez geri dönüştürülebilir. Neme, havaya ve kimyasallara karşı dayanıklıdır. Geri dönüşüm, enerji tüketimini ve sera gazı salınımını azaltır. Geri Dönüşüm Süreci: Kaplar toplanır, temizlenir, parçalanır ve eritilerek yeniden ürün haline getirilir. Geri dönüşüm, ham üretime göre çok daha az enerji tüketir. Diğer Malzemelerle Farkı: Alüminyum hafif, ısıya dayanıklı ve korozyon direncine sahiptir. Plastik ve kâğıda göre daha kolay geri dönüştürülür ancak üretimi daha fazla enerji gerektirir. Gelecek: Geri dönüştürülebilirliği ve verimliliği sayesinde geleceği parlak görünmektedir. Teknolojik ilerlemeler çevresel etkileri daha da azaltacaktır.`,
 
-  **Sustainability**
-  Aluminum can be recycled endlessly without losing quality.
-  It resists moisture, air, and chemicals. Recycling reduces pollution and greenhouse gases.
-
-  **Recycling Process**
-  Containers are collected, cleaned, shredded, and melted into new products.
-  Recycling consumes less energy than raw production.
-
-  **Differences with Other Materials**
-  Aluminum is lightweight, heat-resistant, and corrosion-proof.
-  Unlike plastic/paper, it is easier to recycle.
-  But production requires significant energy.
-
-  **Future**
-  The future looks bright due to recyclability and efficiency.
-  Advances in technology are expected to reduce environmental impacts further.
-  `,
-
-  blogLearnMoreTitle: 'Want to learn more?',
-  blogLearnMoreText: 'Explore our blog for more tips, articles, and industry updates.',
+  blogLearnMoreTitle: 'Daha Fazla Bilgi Edinmek İster misiniz?',
+  blogLearnMoreText: 'Daha fazla ipucu, makale ve sektörel içerik için blogumuzu keşfedin.',
 
   //foil
   alum: "ALUM",
   peyman: "PEYMAN",
-  herooDescription: "Leading Manufacturer of Premium Aluminum Foils and Disposable Containers for Every Kitchen and Industry in Northwest Iran",
+  herooDescription: "İran’ın kuzeybatısında mutfaklar ve endüstriler için yüksek kaliteli alüminyum folyo ve tek kullanımlık kaplar üreten lider üretici",
   
-  exploreMoree: 'Explore More',
+  exploreMoree: 'Daha Fazlasını Keşfet',
 }
 
 

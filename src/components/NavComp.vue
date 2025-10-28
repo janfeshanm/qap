@@ -30,8 +30,8 @@
         </button>
         <ul v-if="isLangMenuOpen" class="lang-dropdown">
           <li @click="setLanguage('en-US')">INT</li>
-          <li @click="setLanguage('fa-IR')">فارسی</li>
-          <li @click="setLanguage('tr-TR')">Türkçe</li>
+          <li @click="setLanguage('fa-IR')">فا</li>
+          <li @click="setLanguage('tr-TR')">TR</li>
 
         </ul>
       </div>
