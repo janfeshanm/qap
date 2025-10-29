@@ -13,7 +13,17 @@ export default {
   piWidth: 'Width',
   piWeight: 'Weight',
 
- 
+  //menu
+  products: 'Products',
+  aluminiumContainers: 'Aluminium Containers',
+  aluminiumFoil: 'Aluminium Foil',
+  aluminiumLids: 'Aluminium Lids',
+  pizzaBox: 'Pizza Box',
+  plasticTableCover: 'Plastic Table Cover',
+  paperCup: 'Paper Cup',
+
+  catalog: 'Catalog',
+  about: 'About',
   blog: 'Blog',
   contact: 'Contact Us',
 
@@ -240,7 +250,7 @@ hygienic, and durable aluminum packaging solutions.`,
   alum: "ALUM",
   peyman: "PEYMAN",
   herooDescription: "Leading Manufacturer of Premium Aluminum Foils and Disposable Containers for Every Kitchen and Industry in Northwest Iran",
-  
+
   exploreMoree: 'Explore More',
 }
 

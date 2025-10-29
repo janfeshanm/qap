@@ -13,7 +13,6 @@ export default {
   piWidth: 'Genişlik',
   piWeight: 'Ağırlık',
 
- 
   //menu
   products: 'Ürünler',
   aluminiumContainers: 'Alüminyum Kaplar',
@@ -22,9 +21,9 @@ export default {
   pizzaBox: 'Karton Pizza Kutusu',
   plasticTableCover: 'Plastik Masa Örtüsü',
   paperCup: 'Tek Kullanımlık Kâğıt Bardak',
+
   catalog: 'Katalog',
   about: 'Hakkımızda',
-
   blog: 'Blog',
   contact: 'İletişim',
 
@@ -165,7 +164,7 @@ Kuruluşundan bu yana elde ettiği güçlü pazar konumu ve yüksek müşteri me
   alum: "ALUM",
   peyman: "PEYMAN",
   herooDescription: "İran’ın kuzeybatısında mutfaklar ve endüstriler için yüksek kaliteli alüminyum folyo ve tek kullanımlık kaplar üreten lider üretici",
-  
+
   exploreMoree: 'Daha Fazlasını Keşfet',
 }
 

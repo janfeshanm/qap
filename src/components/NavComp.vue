@@ -32,7 +32,6 @@
           <li @click="setLanguage('en-US')">INT</li>
           <li @click="setLanguage('fa-IR')">فا</li>
           <li @click="setLanguage('tr-TR')">TR</li>
-
         </ul>
       </div>
       <div class="menu-toggle" @click="toggleMenu">☰</div>
@@ -159,7 +158,7 @@ onMounted(() => {
 .dropdown.active .dropdown-content {
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   justify-items: center;
   align-items: center;
   gap: clamp(12px, 2vw, 20px);
